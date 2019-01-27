@@ -1,3 +1,11 @@
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  width: 100%;
+  min-width: 940px; }
 
+.container {
+  width: 940px;
+  margin: 0 avto; }
 
 /*# sourceMappingURL=style.css.map */
