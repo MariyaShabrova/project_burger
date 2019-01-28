@@ -1,10 +1,18 @@
-.wrapper {
-    overflow: hidden;
-    min-height: 100%;
-    width: 100%;
-    min-width: 940px;
-}
-.container {
-    width: 940px;
-    margin: 0 avto;
-}
+//colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+
+//_misc
+@import "./_misc/layout.scss";
+
+//normaliz
+@import "./_misc/normalize.css";
+
+//block
+@import "./block/header.scss";
+@import "./block/hero.scss";
+@import "./block/btn.scss";
+@import "./block/title.scss";
+@import "./block/profit.scss";

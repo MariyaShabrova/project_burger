@@ -1,0 +1,28 @@
+.hero {
+    background: url(../img/video-bg.jpg) center center / cover no-repeat;  
+}
+.hero_container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;;
+}
+.order_btn {
+    margin-left: 15px; 
+}
+.content_hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: .65;
+}
+
+.title_slogan {
+    color: #fff;
+    font-size: 65px;
+    font-family: "Lifehack-Medium";
+}
+.content_hero_bottom {
+    position: absolute;
+    bottom: 5%;
+    left: 49.5%;
+}

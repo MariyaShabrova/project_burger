@@ -1,38 +1,20 @@
 /*
 Error: Base-level rules cannot contain the parent-selector-referencing character '&'.
-        on line 12 of C:/Users/user/Dropbox/Git/project_burger/css/block/profit.scss
-        from line 18 of C:\Users\user\Dropbox\Git\project_burger\css\style.scss
+        on line 12 of C:\Users\user\Dropbox\Git\project_burger\css\block\profit.scss
 
-7: //_misc
-8: @import "./_misc/layout.scss";
-9: 
-10: //normaliz
-11: @import "./_misc/normalize.css";
-12: 
-13: //block
-14: @import "./block/header.scss";
-15: @import "./block/hero.scss";
-16: @import "./block/btn.scss";
-17: @import "./block/title.scss";
+7: }
+8: .profit_item {
+9:     width: 33.3%;
+10:     margin-right: 15px;
+11: }
+12: &:last-child {
+13:     margin-right: 0;
+14: }
 
 Backtrace:
-C:/Users/user/Dropbox/Git/project_burger/css/block/profit.scss:12
-C:\Users\user\Dropbox\Git\project_burger\css\style.scss:18
+C:\Users\user\Dropbox\Git\project_burger\css\block\profit.scss:12
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/selector/comma_sequence.rb:31:in `resolve_parent_refs'
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:439:in `visit_rule'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `map'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -62,3 +44,7 @@ C:/Program Files/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>
 C:/Program Files/Koala/bin/sass:22:in `load'
 C:/Program Files/Koala/bin/sass:22:in `<main>'
 */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Base-level rules cannot contain the parent-selector-referencing character '&'.\A         on line 12 of C:\Users\user\Dropbox\Git\project_burger\css\block\profit.scss\A \A 7: }\A 8: .profit_item {\A 9:     width: 33.3%;\A 10:     margin-right: 15px;\A 11: }\A 12: &:last-child {\A 13:     margin-right: 0;\A 14: }"; }
