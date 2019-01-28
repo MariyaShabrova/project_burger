@@ -1,64 +1,144 @@
-/*
-Error: Base-level rules cannot contain the parent-selector-referencing character '&'.
-        on line 12 of C:/Users/user/Dropbox/Git/project_burger/css/block/profit.scss
-        from line 18 of C:\Users\user\Dropbox\Git\project_burger\css\style.scss
+@import url(./_misc/normalize.css);
+html,
+body {
+  height: 100%; }
 
-7: //_misc
-8: @import "./_misc/layout.scss";
-9: 
-10: //normaliz
-11: @import "./_misc/normalize.css";
-12: 
-13: //block
-14: @import "./block/header.scss";
-15: @import "./block/hero.scss";
-16: @import "./block/btn.scss";
-17: @import "./block/title.scss";
+body {
+  font-size: 16px;
+  line-height: 1.42;
+  position: relative;
+  color: black; }
 
-Backtrace:
-C:/Users/user/Dropbox/Git/project_burger/css/block/profit.scss:12
-C:\Users\user\Dropbox\Git\project_burger\css\style.scss:18
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/selector/comma_sequence.rb:31:in `resolve_parent_refs'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:439:in `visit_rule'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `map'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files/Koala/bin/sass:22:in `load'
-C:/Program Files/Koala/bin/sass:22:in `<main>'
-*/
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  width: 100%;
+  min-width: 940px; }
+
+.container {
+  margin: 0 avto;
+  width: 100%;
+  max-width: 940px;
+  text-align: center; }
+
+.section {
+  height: 100vh;
+  min-height: 650px; }
+  .section_centered .title {
+    width: 100%;
+    text-align: center; }
+  .section_centered .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+  ul li {
+    list-style: none; }
+
+p {
+  padding: 0;
+  margin: 0; }
+
+footer {
+  position: relative;
+  width: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.header_menu_btn {
+  display: flex;
+  align-items: center; }
+
+.site-navigation {
+  display: flex;
+  align-items: center; }
+
+.menu {
+  display: flex;
+  align-items: center; }
+  .menu:last-child:after {
+    display: none; }
+  .menu:after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+    margin: 0 10px; }
+
+.menu_navigation {
+  color: white;
+  text-decoration: none; }
+
+.hero {
+  background: url(../img/video-bg.jpg) center center/cover no-repeat; }
+
+.hero_container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-width: 960px; }
+
+.order_btn {
+  margin-left: 15px; }
+
+.content_hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: .65; }
+
+.title_slogan {
+  color: #fff;
+  font-size: 65px;
+  font-family: "Lifehack-Medium"; }
+
+.content_hero_bottom {
+  position: absolute;
+  bottom: 5%;
+  left: 49.5%; }
+
+.btn {
+  background: #e35028;
+  padding: 9px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px; }
+
+.title {
+  font-size: 72px;
+  color: #f9b43b;
+  font-family: "Gagalin-Regular";
+  line-height: 1.1; }
+
+.profit {
+  background: url(../img/bg.jpg) center center/cover no-repeat; }
+
+.profit_list {
+  display: flex; }
+
+.profit_item {
+  width: 33.3%;
+  margin-right: 15px; }
+  .profit_item:last-child {
+    margin-right: 0; }
+
+/*# sourceMappingURL=style.css.map */

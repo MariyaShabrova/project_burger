@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAQ;EACJ,UAAU,EAAE,gDAAkD;;AAElE,YAAa;EACT,OAAO,EAAE,IAAI;;AAGjB,YAAa;EACT,KAAK,EAAE,KAAK;EACZ,YAAY,EAAE,IAAI;EAEtB,uBAAa;IACT,YAAY,EAAE,CAAC",
+"sources": ["pr.scss"],
+"names": [],
+"file": "pr.css"
+}

@@ -1,50 +1,46 @@
-/*
-Error: Invalid CSS after "    @if $staly ": expected "{", was "= light {"
-        on line 45 of C:\Users\user\Dropbox\Git\project_burger\css\_misc\fonts.scss
+@font-face {
+  font-family: "Gagalin-Regular";
+  src: url(./fonts/Gagalin/Gagalin-Regular.woff) format "woff";
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Lifehack-Medium";
+  src: url(./fonts/Lifehack-Medium.woff) format "woff";
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Ubuntu";
+  src: url(./fonts/Ubuntu/Ubuntu-Light.woff) format("woff");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: "Ubuntu";
+  src: url(./fonts/Ubuntu/Ubuntu-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: "Ubuntu";
+  src: url(/fonts/Ubuntu/Ubuntu-B.woff) format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: "Ubuntu";
+  src: url(/fonts/Ubuntu/Ubuntu-Light.woff) format("woff");
+  font-weight: 300;
+  font-style: normal; }
+/*@mixin gagalin() {
+    font-family: "Gagalin-Regular", Helvetica, sans-serif;
+}
 
-40: }
-41: 
-42: @mixin ubuntu($staly: light) {
-43:     font-family: "Ubuntu", Helvetica, sans-serif;  
-44: 
-45:     @if $staly = light {
-46:         font-weight: 300;
-47:     }
-48:     @if $staly = medium {
-49:         font-weight: 500;
-50:     }
+/*@mixin ubuntu($staly: light) {
+    font-family: "Ubuntu", Helvetica, sans-serif;  
 
-Backtrace:
-C:\Users\user\Dropbox\Git\project_burger\css\_misc\fonts.scss:45
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:331:in `if_directive'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:234:in `special_directive'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:209:in `directive'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:246:in `mixin_directive'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:234:in `special_directive'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:209:in `directive'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files/Koala/bin/sass:22:in `load'
-C:/Program Files/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"    @if $staly \": expected \"{\", was \"= light {\"\A         on line 45 of C:\Users\user\Dropbox\Git\project_burger\css\_misc\fonts.scss\A \A 40: }\A 41: \A 42: @mixin ubuntu($staly: light) {\A 43:     font-family: \"Ubuntu\", Helvetica, sans-serif;  \A 44: \A 45:     @if $staly = light {\A 46:         font-weight: 300;\A 47:     }\A 48:     @if $staly = medium {\A 49:         font-weight: 500;\A 50:     }"; }
+    @if $staly = light {
+        font-weight: 300;
+    }
+    @if $staly = medium {
+        font-weight: 500;
+    }
+}*/
+
+/*# sourceMappingURL=fonts.css.map */
