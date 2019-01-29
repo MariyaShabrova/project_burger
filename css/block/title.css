@@ -8,7 +8,8 @@ Error: Undefined variable: "$yellow".
 4:     font-family: "Gagalin-Regular";
 5:     line-height: 1.1;
 6:     margin-bottom: 45px;
-7: }
+7:     width: 100%;
+8:     text-align: center;
 
 Backtrace:
 C:\Users\user\Dropbox\Git\project_burger\css\block\title.scss:3
@@ -58,4 +59,4 @@ C:/Program Files/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$yellow\".\A         on line 3 of C:\Users\user\Dropbox\Git\project_burger\css\block\title.scss\A \A 1: .title {\A 2:     font-size: 72px;\A 3:     color: $yellow;\A 4:     font-family: \"Gagalin-Regular\";\A 5:     line-height: 1.1;\A 6:     margin-bottom: 45px;\A 7: }"; }
+  content: "Error: Undefined variable: \"$yellow\".\A         on line 3 of C:\Users\user\Dropbox\Git\project_burger\css\block\title.scss\A \A 1: .title {\A 2:     font-size: 72px;\A 3:     color: $yellow;\A 4:     font-family: \"Gagalin-Regular\";\A 5:     line-height: 1.1;\A 6:     margin-bottom: 45px;\A 7:     width: 100%;\A 8:     text-align: center;"; }
