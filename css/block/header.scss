@@ -33,5 +33,13 @@
 .menu_navigation {
     color: white;
     text-decoration: none;
-    
+
+ &:hover   {
+     color: $yellow;
+ }
+}
+
+.order_btn:hover {
+    background-color: #c1401e;
+    cursor: pointer;
 }

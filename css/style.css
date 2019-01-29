@@ -83,6 +83,12 @@ footer {
 .menu_navigation {
   color: white;
   text-decoration: none; }
+  .menu_navigation:hover {
+    color: #f9b43b; }
+
+.order_btn:hover {
+  background-color: #c1401e;
+  cursor: pointer; }
 
 .hero {
   background: url(../img/video-bg.jpg) center center/cover no-repeat; }
@@ -120,12 +126,15 @@ footer {
   color: #fff;
   text-decoration: none;
   font-size: 13px; }
+  .btn_background_black {
+    background: #2f3234; }
 
 .title {
   font-size: 72px;
   color: #f9b43b;
   font-family: "Gagalin-Regular";
-  line-height: 1.1; }
+  line-height: 1.1;
+  margin-bottom: 45px; }
 
 .profit {
   background: url(../img/bg.jpg) center center/cover no-repeat; }
@@ -135,8 +144,59 @@ footer {
 
 .profit_item {
   width: 33.3%;
-  margin-right: 15px; }
+  margin-right: 15px;
+  text-align: center; }
   .profit_item:last-child {
     margin-right: 0; }
+
+.profit_icon {
+  display: inline-block; }
+
+.review_section {
+  background: #000;
+  position: relative; }
+
+.review_list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+  .review_list:hover .review_item,
+  .review_list:hover .review_item_hover {
+    opacity: 1; }
+
+.review_item {
+  width: 25%;
+  height: 50%;
+  background: center center / cover no-repeat;
+  position: relative;
+  filter: grayscale(100%); }
+
+.review_item_hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px 30px 30px 20px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity .3s; }
+
+.review_name {
+  font-size: 0.875rem;
+  margin-bottom: 20px; }
+
+.review_text {
+  font-family: "Ubuntu-Light";
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  margin-bottom: 20px;
+  overflow: hidden; }
 
 /*# sourceMappingURL=style.css.map */

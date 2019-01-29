@@ -1,6 +1,7 @@
 .profit {
     background: url(../img/bg.jpg) center center / cover no-repeat;
 }
+
 .profit_list {
     display: flex;
 
@@ -8,8 +9,12 @@
 .profit_item {
     width: 33.3%;
     margin-right: 15px;
+    text-align: center;
 
 &:last-child {
     margin-right: 0;
 }
+}
+.profit_icon {
+    display: inline-block;
 }
