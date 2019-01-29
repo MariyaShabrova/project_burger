@@ -1,8 +1,25 @@
 .order_section {
     background: url(../img/Rectangle\ 6.jpg) center center / cover no-repeat; 
 }
+.form_order {
+    display: flex; 
+}
 .form {
+    display: flex;  
+}
+.form_content_column {
+    width: 50%;
+    flex: 1;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form_row {
     display: flex;
+    
+}
+.form_content_column_row {
+    width: 50%;
+   
 }
 .form_content {
     margin-right: 20px;
