@@ -6,8 +6,12 @@
 
 .profit_item {
   width: 33.3%;
-  margin-right: 15px; }
+  margin-right: 15px;
+  text-align: center; }
   .profit_item:last-child {
     margin-right: 0; }
+
+.profit_icon {
+  display: inline-block; }
 
 /*# sourceMappingURL=pr.css.map */
