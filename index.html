@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel = "stylesheet" type = "text/css" href = "css/normalize.css">
-    <link rel = "stylesheet" type = "text/css" href = "css/style.css"> 
+    <link rel = "stylesheet" type = "text/css" href = "./css/style.css"> 
 </head>
 <body>
   <div class="wrapper">
   <div class="main_content">
+      <!---Первая секция-->
       <section class="section hero">
           <div class="container hero_container">
               <header class="header">
@@ -20,7 +20,7 @@
                       </a>    
                   </div>
                   <div class="header_menu_btn">
-                      <nav class="navigation">
+                      <nav class="navigation navigation_fonts">
                           <ul class="site-navigation">
                               <li class="menu"><a href="" class="menu_navigation">О нас</a></li>
                               <li class="menu"><a href="" class="menu_navigation">Бургеры</a></li>
@@ -35,21 +35,22 @@
               </header>
               <div class="content_hero">
                   <div class="content_hero_img">
-                      <img src="img/drops.png" class="hero_burger_img" alt="Бургер">
+                      <img src="./img/drops.png" class="hero_burger_img" alt="Бургер">
                   </div>
                   <div class="content_hero_text">
-                      <div class="title">МЫ ДЕЛАЕМ</div>
-                      <div class="title_slogan">натуральные бургеры</div>
+                      <div class="title">мы делаем</div>
+                      <div class="slogan_title">натуральные бургеры</div>
                   </div>
               </div>
               <a href="" class="content_hero_bottom">
-                  <img src="img/arrow-scroll.svg" class="hero_bottom_img">
+                  <img src="./img/arrow-scroll.svg" class="hero_bottom_img">
               </a> 
           </div>
       </section>
+       <!---Вторая секция-->
       <section class="section section_centered profit">
           <div class="container">
-              <div class="title">МЫ ЛУЧШИЕ</div>
+              <div class="title">мы лучшие</div>
               <ul class="profit_list">
                   <li class="profit_item">
                     <div class="profit_img">
@@ -93,6 +94,20 @@
               </ul>
           </div>
       </section>
+      <!--Третья секция-->
+      <section class="section slider_section">
+          <div class="slider_conteiner">
+              <div class="burger_slider">
+                 <div class="burger_ingredient">
+                     <a href="" class="ingredient_btn">
+                         <img src="./img/burger.svg" class="burger_btn_img">
+                     </a>
+                 </div>
+
+              </div>
+          </div>
+      </section>
+       <!---Шестая секция-->
       <section class="section review_section">
           <ul class="review_list">
             <li class="review_item" style="background-image: url('./img/review-1.jpg')">
@@ -185,8 +200,10 @@
             </li>
           </ul>
       </section>
+       <!---Седьмая секция-->
       <section class="section order_section">
           <div class="title">Закажите доставку</div>
+          <div class="form-order-column">
           <form action="" class="form_order">
               <div class="form_content_column">
               <div class="form">
@@ -230,11 +247,12 @@
                         <div class="form_content_title_row">Имя</div>
                         <input type="text" class="form_content_input_row">
                     </label>
-
+        </div>
       </div>
           </form>
       </section>
   </div>
+   <!---Навигация фиксированная справа-->
   <nav class="fixed-menu">
   <ul class="fixed-menu-list">
       <li class="fixed-menu-item">
