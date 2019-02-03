@@ -378,6 +378,16 @@ footer {
   display: flex;
   flex-direction: column; }
 
+.team_name_activ::before {
+  transition: .5s;
+  margin-right: 10px;
+  content: "";
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-top-color: #f9b43b;
+  border-bottom-width: 0px; }
+
 .team_item_activ
 .team_name_activ {
   color: #f9b43b; }
@@ -388,7 +398,21 @@ footer {
   font-family: "gagalinregular";
   font-size: 1.5rem; }
 
-.teamo_img {
+.team_img {
   border-radius: 50%; }
+
+.activ_content {
+  display: none; }
+
+.activ_content_text {
+  color: #fff;
+  margin-left: 15px;
+  font-family: "ubuntulight";
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 29px; }
+
+.activ_content_title {
+  font-weight: 800; }
 
 /*# sourceMappingURL=style.css.map */
