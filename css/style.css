@@ -197,6 +197,8 @@ footer {
   .btn_background_black {
     background: #2f3234;
     font-family: "ubuntumedium"; }
+  .btn_colorless {
+    background: none; }
 
 .title {
   font-size: 72px;
@@ -288,41 +290,107 @@ footer {
 .order_section {
   background: url("../img/order.jpg") center center/cover no-repeat; }
 
-.form_order {
-  display: flex; }
+.order_container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 .form-order-column {
   width: 100%;
   margin-top: 40px; }
+
+.form_order {
+  display: flex;
+  margin-bottom: 110px;
+  color: #fff;
+  text-align: left; }
 
 .form {
   display: flex; }
 
 .form_content_column {
   width: 50%;
+  display: flex;
   flex: 1;
   padding: 15px;
   margin: 0 auto;
   flex-direction: column; }
 
-.form_row {
-  display: flex; }
-
 .form_content_column_row {
-  width: 50%; }
+  width: 50%;
+  margin-right: 0; }
 
 .form_content {
   margin-right: 20px;
-  flex: 1; }
+  flex: 1;
+  margin-bottom: 10px;
+  font-family: "ubuntulight";
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: #fff; }
   .form_content:last-child {
     margin-right: 0; }
 
 .form_content_input {
   border-radius: 5px;
   background: #fff;
-  border: none;
+  border: 0;
   width: 100%;
+  height: 35px;
   padding: 5px 10px; }
+
+.form_content_input_row {
+  height: 110px;
+  max-height: 110px;
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+  flex: 3; }
+
+.form_content_row:last-child {
+  margin-right: 0; }
+
+.radio_label {
+  margin-right: 15px; }
+
+.checkbox,
+.radio_inpyt {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  margin: -1px; }
+
+.radio_custom,
+.radio_inpyt:checked + .radio_custom::before {
+  border-radius: 50%; }
+
+.checkbox_custom,
+.radio_custom,
+.radio_text {
+  display: inline-block;
+  vertical-align: middle; }
+
+.radio_custom,
+.checkbox_custom {
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  position: relative; }
+
+.radio_text,
+.checkbox_text {
+  margin-left: 10px; }
+
+.btn_colorless:hover {
+  background-color: #646261;
+  border-radius: 5px; }
 
 .fixed-menu {
   position: fixed;
@@ -353,6 +421,25 @@ footer {
 
 .slider_section {
   background: url(../img/slider.jpg) center center/cover no-repeat; }
+
+.slider-left {
+  transform: rotate(90deg);
+  position: absolute;
+  left: 3.5%;
+  top: 50%; }
+
+.slider-right {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 3.5%;
+  top: 50%; }
+
+.slider_conteiner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center; }
 
 .team_section {
   background-color: rgba(0, 0, 0, 0.31);
@@ -392,6 +479,10 @@ footer {
 .team_name_activ {
   color: #f9b43b; }
 
+.team_item_activ
+.team_name_activ::before {
+  transform: rotate(-180deg); }
+
 .team_name_activ {
   display: flex;
   align-items: center;
@@ -414,5 +505,85 @@ footer {
 
 .activ_content_title {
   font-weight: 800; }
+
+.section_screen {
+  background: url(../img/screen.jpg) center center/cover no-repeat;
+  position: relative; }
+
+.screen_title {
+  position: absolute;
+  left: 10%; }
+
+.screen_activ {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  right: 0; }
+
+.accordeon_list {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden; }
+
+.accordeon_item {
+  display: flex; }
+
+.accordeon_item_activ
+.accordeon_item_link {
+  color: #f9b43b; }
+
+.accordeon_item_link_active
+.accordeon_item_link_text {
+  max-width: 33.75rem;
+  padding: 3.875rem 2.1875rem;
+  visibility: visible;
+  opacity: 1; }
+
+.accordeon_item_link {
+  position: relative;
+  width: 5rem;
+  display: inline-block;
+  font-family: "gagalinregular";
+  font-size: 2.5rem;
+  color: #fff;
+  line-height: 5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  text-transform: uppercase; }
+
+.accordeon_item_link span {
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: rotateZ(-90deg);
+  transform-origin: 0 0;
+  text-align: center; }
+
+.accordeon_item_link_text {
+  background-color: rgba(47, 50, 52, 0.929);
+  color: #fff;
+  font-size: 0.875rem;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.714;
+  max-width: 0rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+  transition-property: max-width, opacity, visibility;
+  transition-timing-function: ease;
+  transition-duration: .8s;
+  transition-property: width; }
 
 /*# sourceMappingURL=style.css.map */

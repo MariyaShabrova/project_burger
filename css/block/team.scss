@@ -37,6 +37,10 @@
 .team_name_activ {
     color:#f9b43b;
 }
+.team_item_activ
+.team_name_activ::before {
+    transform: rotate(-180deg);
+}
 .team_name_activ {
     display: flex;
     align-items: center;
