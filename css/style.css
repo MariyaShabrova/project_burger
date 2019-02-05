@@ -118,7 +118,8 @@ footer {
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  margin-top: 5px; }
 
 .header_menu_btn {
   display: flex;
@@ -173,13 +174,28 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: .65; }
+  flex: .65;
+  top: 20%; }
+
+.title_hero {
+  font-size: 72px;
+  color: #f9b43b;
+  font-family: "gagalinregular";
+  line-height: 1.1;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase; }
+
+.content_hero_text {
+  margin-top: 25px;
+  line-height: 20.8px; }
 
 .slogan_title {
   color: #fff;
   font-family: "lifehackmedium";
   font-size: 65px;
-  line-height: 85px; }
+  line-height: 85px;
+  margin-left: 40px; }
 
 .content_hero_bottom {
   position: absolute;
@@ -457,13 +473,25 @@ footer {
   padding-left: 80px;
   justify-content: space-around; }
 
+.title_team {
+  font-size: 72px;
+  color: #f9b43b;
+  font-family: "gagalinregular";
+  line-height: 1.1;
+  width: 100%;
+  text-transform: uppercase;
+  margin: 0; }
+
 .team_list {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 135px; }
 
 .team_item {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 35px; }
 
 .team_name_activ::before {
   transition: .5s;
@@ -475,8 +503,7 @@ footer {
   border-top-color: #f9b43b;
   border-bottom-width: 0px; }
 
-.team_item_activ
-.team_name_activ {
+.team_item_activ {
   color: #f9b43b; }
 
 .team_item_activ
@@ -484,16 +511,21 @@ footer {
   transform: rotate(-180deg); }
 
 .team_name_activ {
+  color: #fff;
   display: flex;
   align-items: center;
   font-family: "gagalinregular";
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none; }
 
 .team_img {
   border-radius: 50%; }
 
 .activ_content {
-  display: none; }
+  height: 0;
+  overflow: hidden;
+  display: flex; }
 
 .activ_content_text {
   color: #fff;

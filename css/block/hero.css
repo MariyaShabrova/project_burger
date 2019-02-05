@@ -1,0 +1,45 @@
+.hero {
+  background: url(../img/video-bg.jpg) center center/cover no-repeat; }
+
+.hero_container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 960px; }
+
+.order_btn {
+  margin-left: 15px; }
+
+.content_hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: .65;
+  top: 20%; }
+
+.title_hero {
+  font-size: 72px;
+  color: #f9b43b;
+  font-family: "gagalinregular";
+  line-height: 1.1;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase; }
+
+.content_hero_text {
+  margin-top: 25px;
+  line-height: 20.8px; }
+
+.slogan_title {
+  color: #fff;
+  font-family: "lifehackmedium";
+  font-size: 65px;
+  line-height: 85px;
+  margin-left: 40px; }
+
+.content_hero_bottom {
+  position: absolute;
+  bottom: 5%;
+  left: 49.5%; }
+
+/*# sourceMappingURL=hero.css.map */
