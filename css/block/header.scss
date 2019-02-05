@@ -2,10 +2,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 5px;
 }
 .header_menu_btn {
     display: flex;
     align-items: center;
+}
+.navigation_fonts {
+    font-family: "ubuntumedium";
+    text-transform: uppercase;
+    font-size: 0.8125rem;
 }
 .site-navigation {
     display: flex;
@@ -35,7 +41,7 @@
     text-decoration: none;
 
  &:hover   {
-     color: $yellow;
+     color: #f9b43b;
  }
 }
 

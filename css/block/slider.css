@@ -1,0 +1,23 @@
+.slider_section {
+  background: url(../img/slider.jpg) center center/cover no-repeat; }
+
+.slider-left {
+  transform: rotate(90deg);
+  position: absolute;
+  left: 3.5%;
+  top: 50%; }
+
+.slider-right {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 3.5%;
+  top: 50%; }
+
+.slider_conteiner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center; }
+
+/*# sourceMappingURL=slider.css.map */

@@ -6,6 +6,7 @@ $red: #e35028;
 
 //_misc
 @import "./_misc/layout.scss";
+@import "./_misc/fonts.scss";
 
 //normaliz
 @import "./_misc/normalize.css";
@@ -17,3 +18,8 @@ $red: #e35028;
 @import "./block/title.scss";
 @import "./block/pr.scss";
 @import "./block/review.scss";
+@import "./block/order.scss";
+@import "./block/fixed.scss";
+@import "./block/slider.scss";
+@import "./block/team.scss";
+@import "./block/screen.scss";

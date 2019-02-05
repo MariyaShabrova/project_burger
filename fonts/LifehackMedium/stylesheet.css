@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Lifehack';
+    src: url('subset-Lifehack-Medium.eot');
+    src: url('subset-Lifehack-Medium.eot?#iefix') format('embedded-opentype'),
+        url('subset-Lifehack-Medium.woff2') format('woff2'),
+        url('subset-Lifehack-Medium.woff') format('woff'),
+        url('subset-Lifehack-Medium.ttf') format('truetype'),
+        url('subset-Lifehack-Medium.svg#Lifehack-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
