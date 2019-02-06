@@ -10,12 +10,12 @@
   background: rgba(47, 50, 52, 0.93);
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
-  padding-left: 80px;
+  padding-top: 3.125rem;
+  padding-left: 5rem;
   justify-content: space-around; }
 
 .title_team {
-  font-size: 72px;
+  font-size: 4.5rem;
   color: #f9b43b;
   font-family: "gagalinregular";
   line-height: 1.1;
@@ -27,16 +27,16 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 135px; }
+  margin-bottom: 8.4375rem; }
 
 .team_item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 35px; }
+  margin-bottom: 2.1875rem; }
 
 .team_name_activ::before {
   transition: .5s;
-  margin-right: 10px;
+  margin-right: 0.625rem;
   content: "";
   height: 0;
   width: 0;
@@ -70,11 +70,11 @@
 
 .activ_content_text {
   color: #fff;
-  margin-left: 15px;
+  margin-left: 0.9375rem;
   font-family: "ubuntulight";
   font-size: 0.875rem;
   font-weight: 300;
-  line-height: 29px; }
+  line-height: 1.8125rem; }
 
 .activ_content_title {
   font-weight: 800; }

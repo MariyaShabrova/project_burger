@@ -4,11 +4,10 @@
 .hero_container {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  max-width: 960px; }
+  height: 100%; }
 
 .order_btn {
-  margin-left: 15px; }
+  margin-left: 0.9375rem; }
 
 .content_hero {
   display: flex;
@@ -18,7 +17,7 @@
   top: 20%; }
 
 .title_hero {
-  font-size: 72px;
+  font-size: 4.5rem;
   color: #f9b43b;
   font-family: "gagalinregular";
   line-height: 1.1;
@@ -27,15 +26,15 @@
   text-transform: uppercase; }
 
 .content_hero_text {
-  margin-top: 25px;
-  line-height: 20.8px; }
+  margin-top: 1.5625rem;
+  line-height: 1.25rem; }
 
 .slogan_title {
   color: #fff;
   font-family: "lifehackmedium";
-  font-size: 65px;
-  line-height: 85px;
-  margin-left: 40px; }
+  font-size: 4.0625rem;
+  line-height: 5.3125rem;
+  margin-left: 2.5rem; }
 
 .content_hero_bottom {
   position: absolute;

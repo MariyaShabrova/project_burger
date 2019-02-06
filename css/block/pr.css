@@ -1,0 +1,31 @@
+.profit {
+  background: url(../img/bg.jpg) center center/cover no-repeat; }
+
+.profit_list {
+  display: flex; }
+
+.profit_item {
+  width: 33.3%;
+  margin-right: 0.9375rem;
+  text-align: center; }
+  .profit_item:last-child {
+    margin-right: 0; }
+
+.profit_icon {
+  display: inline-block; }
+
+.profit_text_title {
+  color: #2f3234;
+  font-family: "lifehackmedium";
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  margin-top: 2.1875rem;
+  margin-bottom: 1.5625rem; }
+
+.profit_text_content {
+  font-family: "ubuntulight";
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem; }
+
+/*# sourceMappingURL=pr.css.map */
