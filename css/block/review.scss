@@ -19,10 +19,17 @@
     background: center center / cover no-repeat;
     position: relative;
     filter: grayscale(100%);
+
+    @include tablets() {
+        width: 50%;
+        height: 25%;
+    }
+    
     &:hover .review_item_hover {
         opacity: 1;
-
     }
+
+   
 }
 .review_item_hover {
     position: absolute;

@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 24 of C:\Users\user\Dropbox\Git\project_burger\css\block\team.scss, in `tablets'
-        from line 24 of C:\Users\user\Dropbox\Git\project_burger\css\block\team.scss
+        on line 12 of C:\Users\user\Dropbox\Git\project_burger\css\block\hamburger_menu.scss, in `tablets'
+        from line 12 of C:\Users\user\Dropbox\Git\project_burger\css\block\hamburger_menu.scss
 
-19:     //padding-top: 3.125rem;
-20:     //padding-left: 5rem;
-21:     //justify-content: space-around;
-22:     padding: 5% 2% 0 7%;
-23: 
-24:     @include tablets() {
-25:         left: 0;
-26:         display: flex;
-27:         align-items: center;
-28:         justify-content: center;
-29:         flex-direction: column;
+7:     display: flex;
+8:     margin-left: 1.875rem;
+9: 
+10:     display: none;
+11: 
+12:     @include tablets() {
+13:         display: flex;
+14:     }
+15: }
+16: 
+17: .hamburger_menu_bars {
 
 Backtrace:
-C:\Users\user\Dropbox\Git\project_burger\css\block\team.scss:24:in `tablets'
-C:\Users\user\Dropbox\Git\project_burger\css\block\team.scss:24
+C:\Users\user\Dropbox\Git\project_burger\css\block\hamburger_menu.scss:12:in `tablets'
+C:\Users\user\Dropbox\Git\project_burger\css\block\hamburger_menu.scss:12
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 24 of C:\Users\user\Dropbox\Git\project_burger\css\block\team.scss, in `tablets'\A         from line 24 of C:\Users\user\Dropbox\Git\project_burger\css\block\team.scss\A \A 19:     //padding-top: 3.125rem;\A 20:     //padding-left: 5rem;\A 21:     //justify-content: space-around;\A 22:     padding: 5% 2% 0 7%;\A 23: \A 24:     @include tablets() {\A 25:         left: 0;\A 26:         display: flex;\A 27:         align-items: center;\A 28:         justify-content: center;\A 29:         flex-direction: column;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 12 of C:\Users\user\Dropbox\Git\project_burger\css\block\hamburger_menu.scss, in `tablets'\A         from line 12 of C:\Users\user\Dropbox\Git\project_burger\css\block\hamburger_menu.scss\A \A 7:     display: flex;\A 8:     margin-left: 1.875rem;\A 9: \A 10:     display: none;\A 11: \A 12:     @include tablets() {\A 13:         display: flex;\A 14:     }\A 15: }\A 16: \A 17: .hamburger_menu_bars {"; }
