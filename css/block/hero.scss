@@ -26,6 +26,7 @@
     }
     
 }
+
 .title_hero {
     font-size: 4.5rem;
     color: #f9b43b;
@@ -42,14 +43,32 @@
     @include tablets() {
         margin-top: 0;
     }
-}
 
+   
+
+}
+.hero_burger_img {
+    width: 28.75rem;
+
+    @include tablets() {
+        width: 26rem;
+    }
+
+    @include phones() {
+        width: 25rem;
+        padding: 0;
+    }
+}
 .slogan_title {
     color: #fff;
     font-family: "lifehackmedium";
     font-size: 4.0625rem;
     line-height: 5.3125rem;
     margin-left: 2.5rem;
+
+    @include phones() {
+        font-size: 3.4375rem;
+    }
 }
 .content_hero_bottom {
     position: absolute;

@@ -154,7 +154,10 @@ footer {
 
 .menu {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  padding: 0 0.625rem; }
+  .menu:last-child {
+    padding: 0; }
   .menu:last-child:after {
     display: none; }
 
@@ -215,12 +218,25 @@ footer {
     .content_hero_text {
       margin-top: 0; } }
 
+.hero_burger_img {
+  width: 28.75rem; }
+  @media screen and (max-width: 768px) {
+    .hero_burger_img {
+      width: 26rem; } }
+  @media screen and (max-width: 480px) {
+    .hero_burger_img {
+      width: 25rem;
+      padding: 0; } }
+
 .slogan_title {
   color: #fff;
   font-family: "lifehackmedium";
   font-size: 4.0625rem;
   line-height: 5.3125rem;
   margin-left: 2.5rem; }
+  @media screen and (max-width: 480px) {
+    .slogan_title {
+      font-size: 3.4375rem; } }
 
 .content_hero_bottom {
   position: absolute;
@@ -238,8 +254,28 @@ footer {
   .btn_background_black {
     background: #2f3234;
     font-family: "ubuntumedium"; }
-  .btn_colorless {
-    background: none; }
+
+.btn_order {
+  font-family: "ubuntumedium";
+  background: #e35028;
+  padding: 0.5625rem 0.9375rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  margin: auto; }
+
+.btn_order_colorless {
+  font-family: "ubuntumedium";
+  padding: 0.5625rem 0.9375rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  border: none;
+  background: none; }
 
 .title {
   font-size: 4.5rem;
@@ -256,16 +292,32 @@ footer {
 
 .profit_list {
   display: flex; }
+  @media screen and (max-width: 480px) {
+    .profit_list {
+      flex-direction: column; } }
 
 .profit_item {
-  width: 33.3%;
   margin-right: 0.9375rem;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-direction: column; }
+  @media screen and (max-width: 480px) {
+    .profit_item {
+      flex-direction: row; } }
   .profit_item:last-child {
     margin-right: 0; }
 
 .profit_icon {
   display: inline-block; }
+
+@media screen and (max-width: 480px) {
+  .profit_img {
+    width: 35%; } }
+
+@media screen and (max-width: 480px) {
+  .profit_text {
+    text-align: left;
+    margin: 5px 0; } }
 
 .profit_text_title {
   color: #2f3234;
@@ -323,6 +375,11 @@ footer {
   font-family: "gagalinregular";
   font-size: 0.875rem;
   margin-bottom: 1.25rem; }
+  @media screen and (max-width: 480px) {
+    .review_name {
+      font-size: 2rem;
+      line-height: 2rem;
+      text-align: center; } }
 
 .review_text {
   font-family: "ubuntulight";
@@ -331,6 +388,9 @@ footer {
   line-height: 1.5rem;
   margin-bottom: 1.25rem;
   overflow: hidden; }
+  @media screen and (max-width: 480px) {
+    .review_text {
+      display: none; } }
 
 .order_section {
   background: url("../img/order.jpg") center center/cover no-repeat; }
@@ -343,8 +403,8 @@ footer {
   justify-content: center; }
 
 .form-order-column {
-  width: 100%;
-  margin-top: 2.5rem; }
+  margin-top: 2.5rem;
+  width: 100%; }
 
 .form_order {
   display: flex;
@@ -356,12 +416,42 @@ footer {
   display: flex; }
 
 .form_content_column {
-  width: 50%;
   display: flex;
+  margin-left: -5%; }
+  @media screen and (max-width: 768px) {
+    .form_content_column {
+      flex-direction: column;
+      margin-left: 0;
+      padding: 0 12%; } }
+  @media screen and (max-width: 480px) {
+    .form_content_column {
+      padding: 0; } }
+
+.form--left {
+  width: 50%;
+  margin-left: 5%; }
+  @media screen and (max-width: 768px) {
+    .form--left {
+      margin-left: 0;
+      width: initial; } }
+
+.form--right {
+  width: 50%;
+  margin-bottom: 1rem;
+  padding-left: 1.9375rem; }
+  @media screen and (max-width: 768px) {
+    .form--right {
+      width: initial;
+      padding-left: 0; } }
+
+.form_right_row {
   flex: 1;
-  padding: 0.9375rem;
-  margin: 0 auto;
-  flex-direction: column; }
+  margin-bottom: 0.625rem;
+  font-family: "ubuntulight";
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: #fff; }
 
 .form_content_column_row {
   width: 50%;
@@ -697,5 +787,52 @@ footer {
   position: absolute; }
 .hamburger_menu_bars:before {
   top: 0; }
+
+.contacts {
+  background: url("../img/map.jpg") no-repeat;
+  background-color: rgba(236, 234, 234, 0.31);
+  background-size: cover;
+  background-position: center bottom; }
+
+.map {
+  width: 100%;
+  height: 100%; }
+
+.footer {
+  position: absolute;
+  width: 100%;
+  background-color: #101010;
+  height: 3.4375rem; }
+
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 100%; }
+
+.footer_addres {
+  color: #fff;
+  font-family: "ubuntulight";
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  margin: 10px 0px 0px 80px;
+  font-size: 14px; }
+
+.footer_phone {
+  color: #e45028;
+  font-family: "Ubuntu";
+  font-weight: 800;
+  margin: 0px 0px 0px 80px; }
+
+.footer_social {
+  display: flex;
+  margin: 15px 60px 0px 0px; }
+
+.social_icons {
+  display: inline-block;
+  vertical-align: middle;
+  fill: #5b5b5b;
+  width: 23px;
+  height: 23px; }
 
 /*# sourceMappingURL=style.css.map */

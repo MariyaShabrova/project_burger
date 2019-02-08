@@ -12,7 +12,32 @@
          font-family: "ubuntumedium";
 
      }
-    &_colorless {
-        background: none;
     }
+
+.btn_order {
+        font-family: "ubuntumedium";
+        background: #e35028;
+        padding: 0.5625rem 0.9375rem;
+        border-radius: 5px;
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: none; 
+        font-size: 0.8125rem;  
+        margin: auto;
+        
 }
+    
+.btn_order_colorless {
+        font-family: "ubuntumedium";
+        padding: 0.5625rem 0.9375rem;
+        border-radius: 5px;
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: none; 
+        font-size: 0.8125rem;  
+        //display: flex;
+        border: none;
+        background: none;
+        //width: 6.25rem;
+        //height: 2.375rem;
+ }

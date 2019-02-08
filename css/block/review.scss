@@ -24,7 +24,7 @@
         width: 50%;
         height: 25%;
     }
-    
+
     &:hover .review_item_hover {
         opacity: 1;
     }
@@ -48,6 +48,12 @@
     font-family: "gagalinregular";
     font-size: 0.875rem;
     margin-bottom: 1.25rem;
+
+    @include phones() {
+     font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    }
 }
 .review_text {
     font-family: "ubuntulight";
@@ -56,4 +62,8 @@
     line-height: 1.5rem;
     margin-bottom: 1.25rem;
     overflow: hidden;
+
+    @include phones() {
+        display: none;
+    }
 }

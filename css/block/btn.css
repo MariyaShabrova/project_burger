@@ -9,7 +9,27 @@
   .btn_background_black {
     background: #2f3234;
     font-family: "ubuntumedium"; }
-  .btn_colorless {
-    background: none; }
+
+.btn_order {
+  font-family: "ubuntumedium";
+  background: #e35028;
+  padding: 0.5625rem 0.9375rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  margin: auto; }
+
+.btn_order_colorless {
+  font-family: "ubuntumedium";
+  padding: 0.5625rem 0.9375rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  border: none;
+  background: none; }
 
 /*# sourceMappingURL=btn.css.map */

@@ -9,8 +9,8 @@
     justify-content: center;
 }
 .form-order-column {
-    width: 100%;
     margin-top: 2.5rem;
+    width: 100%;
 }
 .form_order {
     display: flex; 
@@ -23,12 +23,52 @@
     
 }
 .form_content_column {
-    width: 50%;
+   
     display: flex;
+    //flex: 1;
+    //padding: 0.9375rem;
+    margin-left: -5%;
+    //flex-direction: column;
+
+    @include tablets() {
+        flex-direction: column;
+        margin-left: 0; 
+        padding: 0 12%;
+    }
+    
+    @include phones() {
+        padding: 0;
+    }
+ }
+.form--left {
+    width: 50%;
+    margin-left: 5%;
+
+    @include tablets() {
+        margin-left: 0;
+        width: initial;
+    }
+}
+.form--right {
+    width: 50%;
+    margin-bottom: 1rem;
+    //display: flex;
+    padding-left: 1.9375rem;
+
+    @include tablets() {
+        width: initial;
+        padding-left: 0;
+    }
+}
+
+.form_right_row {
     flex: 1;
-    padding: 0.9375rem;
-    margin: 0 auto;
-    flex-direction: column;
+    margin-bottom: 0.625rem;
+    font-family: "ubuntulight";
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: #fff;
 }
 
 .form_content_column_row {
@@ -50,6 +90,7 @@
     margin-right: 0;
 }
 }
+
 .form_content_input {
     border-radius: 0.3125rem;
     background: #fff;
