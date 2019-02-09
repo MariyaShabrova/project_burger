@@ -5,21 +5,30 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    max-width: 960px;
+    //max-width: rem(960px);
 }
 .order_btn {
-    margin-left: 15px; 
+    margin-left: 0.9375rem; 
 }
+
 .content_hero {
     display: flex;
     align-items: center;
     justify-content: center;
     flex: .65;
     top: 20%;
+
+
+    @include tablets() {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
     
 }
+
 .title_hero {
-    font-size: 72px;
+    font-size: 4.5rem;
     color: #f9b43b;
     font-family: "gagalinregular";
     line-height: 1.1;
@@ -28,16 +37,38 @@
     text-transform: uppercase; 
 }
 .content_hero_text {
-    margin-top: 25px;
-    line-height: 20.8px;
-}
+    margin-top: 1.5625rem;
+    line-height: 1.25rem;
+    
+    @include tablets() {
+        margin-top: 0;
+    }
 
+   
+
+}
+.hero_burger_img {
+    width: 28.75rem;
+
+    @include tablets() {
+        width: 26rem;
+    }
+
+    @include phones() {
+        width: 25rem;
+        padding: 0;
+    }
+}
 .slogan_title {
     color: #fff;
     font-family: "lifehackmedium";
-    font-size: 65px;
-    line-height: 85px;
-    margin-left: 40px;
+    font-size: 4.0625rem;
+    line-height: 5.3125rem;
+    margin-left: 2.5rem;
+
+    @include phones() {
+        font-size: 3.4375rem;
+    }
 }
 .content_hero_bottom {
     position: absolute;

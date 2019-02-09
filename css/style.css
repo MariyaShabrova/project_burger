@@ -1,10 +1,19 @@
 @import url(./_misc/normalize.css);
+html {
+  font-size: 16px; }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 14px; } }
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 13px; } }
+
 html,
 body {
   height: 100%; }
 
 body {
-  font-size: 16px;
+  /*font-size: 16px;*/
   line-height: 1.42;
   position: relative;
   color: black; }
@@ -12,17 +21,18 @@ body {
 .wrapper {
   overflow: hidden;
   min-height: 100%;
-  width: 100%;
-  min-width: 940px; }
+  width: 100%; }
 
 .container {
+  position: relative;
   margin: 0 auto;
-  width: 940px;
+  max-width: 58.75rem;
+  width: 95%;
   /*text-align: center;*/ }
 
 .section {
   height: 100vh;
-  min-height: 650px; }
+  min-height: 40.625rem; }
   .section_centered .title {
     width: 100%;
     text-align: center; }
@@ -119,11 +129,19 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 5px; }
+  margin-top: 0.3125rem; }
 
 .header_menu_btn {
   display: flex;
-  align-items: center; }
+  margin-left: auto; }
+  @media screen and (max-width: 768px) {
+    .header_menu_btn {
+      display: none; } }
+
+.header_links {
+  display: flex;
+  align-items: center;
+  margin-left: auto; }
 
 .navigation_fonts {
   font-family: "ubuntumedium";
@@ -136,21 +154,24 @@ footer {
 
 .menu {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  padding: 0 0.625rem; }
+  .menu:last-child {
+    padding: 0; }
   .menu:last-child:after {
     display: none; }
-  .menu:after {
-    content: "";
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #fff;
-    display: inline-block;
-    margin: 0 10px; }
 
 .menu_navigation {
   color: white;
   text-decoration: none; }
+  .menu_navigation:after {
+    content: "";
+    width: 0.375rem;
+    height: 0.375rem;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+    margin: 0 0.625rem; }
   .menu_navigation:hover {
     color: #f9b43b; }
 
@@ -164,11 +185,10 @@ footer {
 .hero_container {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  max-width: 960px; }
+  height: 100%; }
 
 .order_btn {
-  margin-left: 15px; }
+  margin-left: 0.9375rem; }
 
 .content_hero {
   display: flex;
@@ -176,9 +196,14 @@ footer {
   justify-content: center;
   flex: .65;
   top: 20%; }
+  @media screen and (max-width: 768px) {
+    .content_hero {
+      flex-direction: column;
+      align-items: center;
+      text-align: center; } }
 
 .title_hero {
-  font-size: 72px;
+  font-size: 4.5rem;
   color: #f9b43b;
   font-family: "gagalinregular";
   line-height: 1.1;
@@ -187,15 +212,31 @@ footer {
   text-transform: uppercase; }
 
 .content_hero_text {
-  margin-top: 25px;
-  line-height: 20.8px; }
+  margin-top: 1.5625rem;
+  line-height: 1.25rem; }
+  @media screen and (max-width: 768px) {
+    .content_hero_text {
+      margin-top: 0; } }
+
+.hero_burger_img {
+  width: 28.75rem; }
+  @media screen and (max-width: 768px) {
+    .hero_burger_img {
+      width: 26rem; } }
+  @media screen and (max-width: 480px) {
+    .hero_burger_img {
+      width: 25rem;
+      padding: 0; } }
 
 .slogan_title {
   color: #fff;
   font-family: "lifehackmedium";
-  font-size: 65px;
-  line-height: 85px;
-  margin-left: 40px; }
+  font-size: 4.0625rem;
+  line-height: 5.3125rem;
+  margin-left: 2.5rem; }
+  @media screen and (max-width: 480px) {
+    .slogan_title {
+      font-size: 3.4375rem; } }
 
 .content_hero_bottom {
   position: absolute;
@@ -204,24 +245,44 @@ footer {
 
 .btn {
   background: #e35028;
-  padding: 9px 15px;
+  padding: 0.5625rem 0.9375rem;
   border-radius: 5px;
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
-  font-size: 13px; }
+  font-size: 0.8125rem; }
   .btn_background_black {
     background: #2f3234;
     font-family: "ubuntumedium"; }
-  .btn_colorless {
-    background: none; }
+
+.btn_order {
+  font-family: "ubuntumedium";
+  background: #e35028;
+  padding: 0.5625rem 0.9375rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  margin: auto; }
+
+.btn_order_colorless {
+  font-family: "ubuntumedium";
+  padding: 0.5625rem 0.9375rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  border: none;
+  background: none; }
 
 .title {
-  font-size: 72px;
+  font-size: 4.5rem;
   color: #f9b43b;
   font-family: "gagalinregular";
   line-height: 1.1;
-  margin-bottom: 45px;
+  margin-bottom: 2.8125rem;
   width: 100%;
   text-align: center;
   text-transform: uppercase; }
@@ -231,30 +292,57 @@ footer {
 
 .profit_list {
   display: flex; }
+  @media screen and (max-width: 480px) {
+    .profit_list {
+      flex-direction: column; } }
 
 .profit_item {
-  width: 33.3%;
-  margin-right: 15px;
-  text-align: center; }
+  margin-right: 0.9375rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column; }
+  @media screen and (max-width: 480px) {
+    .profit_item {
+      flex-direction: row; } }
   .profit_item:last-child {
     margin-right: 0; }
 
 .profit_icon {
   display: inline-block; }
 
-.profit_text_title {
+@media screen and (max-width: 480px) {
+  .profit_img {
+    width: 35%; } }
+
+@media screen and (max-width: 480px) {
+  .profit_text {
+    margin: 5px 0;
+    text-align: left;
+    margin-left: 30px;
+    line-height: 24px;
+    width: 65%; } }
+.profit_text .profit_text_title {
   color: #2f3234;
   font-family: "lifehackmedium";
-  font-size: 24px;
-  line-height: 28px;
-  margin-top: 35px;
-  margin-bottom: 25px; }
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  margin-top: 2.1875rem;
+  margin-bottom: 1.5625rem; }
+  @media screen and (max-width: 480px) {
+    .profit_text .profit_text_title {
+      font-size: 24px;
+      line-height: 28px;
+      margin-top: 1.25rem;
+      margin-bottom: 0.625rem; } }
 
 .profit_text_content {
   font-family: "ubuntulight";
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
-  line-height: 24px; }
+  line-height: 1.5rem; }
+  @media screen and (max-width: 480px) {
+    .profit_text_content {
+      line-height: 0.875rem; } }
 
 .review_section {
   background: #000;
@@ -275,6 +363,10 @@ footer {
   background: center center / cover no-repeat;
   position: relative;
   filter: grayscale(100%); }
+  @media screen and (max-width: 768px) {
+    .review_item {
+      width: 50%;
+      height: 25%; } }
   .review_item:hover .review_item_hover {
     opacity: 1; }
 
@@ -285,7 +377,7 @@ footer {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  padding: 50px 30px 30px 20px;
+  padding: 3.125rem 1.875rem 1.875rem 1.25rem;
   color: #fff;
   opacity: 0;
   transition: opacity .3s; }
@@ -293,15 +385,23 @@ footer {
 .review_name {
   font-family: "gagalinregular";
   font-size: 0.875rem;
-  margin-bottom: 20px; }
+  margin-bottom: 1.25rem; }
+  @media screen and (max-width: 480px) {
+    .review_name {
+      font-size: 2rem;
+      line-height: 2rem;
+      text-align: center; } }
 
 .review_text {
   font-family: "ubuntulight";
   font-weight: 300;
   font-size: 0.875rem;
   line-height: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   overflow: hidden; }
+  @media screen and (max-width: 480px) {
+    .review_text {
+      display: none; } }
 
 .order_section {
   background: url("../img/order.jpg") center center/cover no-repeat; }
@@ -314,12 +414,12 @@ footer {
   justify-content: center; }
 
 .form-order-column {
-  width: 100%;
-  margin-top: 40px; }
+  margin-top: 2.5rem;
+  width: 100%; }
 
 .form_order {
   display: flex;
-  margin-bottom: 110px;
+  margin-bottom: 6.875rem;
   color: #fff;
   text-align: left; }
 
@@ -327,21 +427,51 @@ footer {
   display: flex; }
 
 .form_content_column {
-  width: 50%;
   display: flex;
+  margin-left: -5%; }
+  @media screen and (max-width: 768px) {
+    .form_content_column {
+      flex-direction: column;
+      margin-left: 0;
+      padding: 0 12%; } }
+  @media screen and (max-width: 480px) {
+    .form_content_column {
+      padding: 0; } }
+
+.form--left {
+  width: 50%;
+  margin-left: 5%; }
+  @media screen and (max-width: 768px) {
+    .form--left {
+      margin-left: 0;
+      width: initial; } }
+
+.form--right {
+  width: 50%;
+  margin-bottom: 1rem;
+  padding-left: 1.9375rem; }
+  @media screen and (max-width: 768px) {
+    .form--right {
+      width: initial;
+      padding-left: 0; } }
+
+.form_right_row {
   flex: 1;
-  padding: 15px;
-  margin: 0 auto;
-  flex-direction: column; }
+  margin-bottom: 0.625rem;
+  font-family: "ubuntulight";
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: #fff; }
 
 .form_content_column_row {
   width: 50%;
   margin-right: 0; }
 
 .form_content {
-  margin-right: 20px;
+  margin-right: 1.25rem;
   flex: 1;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   font-family: "ubuntulight";
   font-size: 0.875rem;
   font-weight: 300;
@@ -351,16 +481,16 @@ footer {
     margin-right: 0; }
 
 .form_content_input {
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   background: #fff;
   border: 0;
   width: 100%;
-  height: 35px;
-  padding: 5px 10px; }
+  height: 2.1875rem;
+  padding: 0.3125rem 0.625rem; }
 
 .form_content_input_row {
-  height: 110px;
-  max-height: 110px;
+  height: 6.875rem;
+  max-height: 6.875rem;
   resize: none;
   width: 100%;
   box-sizing: border-box;
@@ -370,7 +500,7 @@ footer {
   margin-right: 0; }
 
 .radio_label {
-  margin-right: 15px; }
+  margin-right: 0.9375rem; }
 
 .checkbox,
 .radio_inpyt {
@@ -379,9 +509,9 @@ footer {
   clip: rect(0 0 0 0);
   padding: 0;
   border: 0;
-  height: 1px;
-  width: 1px;
-  margin: -1px; }
+  height: 0.0625rem;
+  width: 0.0625rem;
+  margin: -0.0625rem; }
 
 .radio_custom,
 .radio_inpyt:checked + .radio_custom::before {
@@ -395,14 +525,14 @@ footer {
 
 .radio_custom,
 .checkbox_custom {
-  width: 14px;
-  height: 14px;
+  width: 0.875rem;
+  height: 0.875rem;
   background: #fff;
   position: relative; }
 
 .radio_text,
 .checkbox_text {
-  margin-left: 10px; }
+  margin-left: 0.625rem; }
 
 .btn_colorless:hover {
   background-color: #646261;
@@ -410,17 +540,20 @@ footer {
 
 .fixed-menu {
   position: fixed;
-  top: 90px;
-  right: 25px; }
+  top: 5.625rem;
+  right: 1.5625rem; }
+  @media screen and (max-width: 768px) {
+    .fixed-menu {
+      display: none; } }
 
 .fixed-menu-item {
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 0.625rem;
+  height: 0.625rem;
   border: 1px solid transparent;
   position: relative;
   border-radius: 50%;
-  margin-bottom: 20px; }
+  margin-bottom: 1.25rem; }
   .fixed-menu-item:hover {
     border-color: #fff;
     cursor: pointer; }
@@ -430,8 +563,8 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 4px;
-    height: 4px;
+    width: 0.25rem;
+    height: 0.25rem;
     border-radius: 50%;
     background: #fff; }
 
@@ -458,57 +591,72 @@ footer {
   align-items: center; }
 
 .team_section {
-  background-color: rgba(0, 0, 0, 0.31);
-  background: url(../img/team-activ.jpg) center center/cover no-repeat; }
+  background: url(../img/team-activ.jpg) 50% no-repeat;
+  background-size: cover;
+  position: relative; }
 
 .activ_section {
   position: absolute;
-  width: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0;
   left: 50%;
-  height: 100%;
   background: rgba(47, 50, 52, 0.93);
-  display: flex;
-  flex-direction: column;
-  padding-top: 50px;
-  padding-left: 80px;
-  justify-content: space-around; }
+  padding: 5% 2% 0 7%; }
+  @media screen and (max-width: 768px) {
+    .activ_section {
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; } }
 
 .title_team {
-  font-size: 72px;
+  margin-bottom: 12%;
+  font-size: 4.5rem;
   color: #f9b43b;
   font-family: "gagalinregular";
-  line-height: 1.1;
-  width: 100%;
-  text-transform: uppercase;
-  margin: 0; }
+  text-transform: uppercase; }
 
 .team_list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 135px; }
+  margin-bottom: 8.4375rem; }
+  @media screen and (max-width: 768px) {
+    .team_list {
+      text-align: center; } }
 
 .team_item {
-  display: flex;
+  color: #fff;
   flex-direction: column;
-  margin-bottom: 35px; }
+  margin-bottom: 2.1875rem;
+  font-size: 0.875rem;
+  display: block;
+  position: relative;
+  /* &:last-child {
+       margin-bottom: 0;
+   }*/ }
+  .team_item_activ .team_name_activ {
+    color: #f9b43b; }
+    .team_item_activ .team_name_activ:before {
+      transform: rotate(-180eg); }
 
 .team_name_activ::before {
-  transition: .5s;
-  margin-right: 10px;
+  margin-right: 0.625rem;
   content: "";
+  display: block;
+  position: absolute;
+  left: -1.125rem;
+  top: 0.5rem;
   height: 0;
   width: 0;
-  border: 7px solid transparent;
-  border-top-color: #f9b43b;
-  border-bottom-width: 0px; }
-
-.team_item_activ {
-  color: #f9b43b; }
-
-.team_item_activ
-.team_name_activ::before {
-  transform: rotate(-180deg); }
+  border-top: 0.4375rem solid #f9b43b;
+  border-left: 0.3125rem solid transparent;
+  border-right: 0.3125rem solid transparent;
+  border-bottom: 0rem solid transparent;
+  transform: rotate(0deg);
+  transition: .3s; }
 
 .team_name_activ {
   color: #fff;
@@ -518,6 +666,9 @@ footer {
   font-size: 1.5rem;
   cursor: pointer;
   text-decoration: none; }
+  @media screen and (max-width: 768px) {
+    .team_name_activ {
+      display: inline-block; } }
 
 .team_img {
   border-radius: 50%; }
@@ -526,14 +677,19 @@ footer {
   height: 0;
   overflow: hidden;
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .activ_content {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
 
 .activ_content_text {
   color: #fff;
-  margin-left: 15px;
+  margin-left: 0.9375rem;
   font-family: "ubuntulight";
   font-size: 0.875rem;
   font-weight: 300;
-  line-height: 29px; }
+  line-height: 1.8125rem; }
 
 .activ_content_title {
   font-weight: 800; }
@@ -617,5 +773,77 @@ footer {
   transition-timing-function: ease;
   transition-duration: .8s;
   transition-property: width; }
+
+.hamburger_menu {
+  vertical-align: middle;
+  position: relative;
+  height: 1.375rem;
+  align-items: center;
+  display: flex;
+  margin-left: 1.875rem;
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .hamburger_menu {
+      display: flex; } }
+
+.hamburger_menu_bars, .hamburger_menu_bars:before, .hamburger_menu_bars:after {
+  background: #fff;
+  width: 1.5rem;
+  height: 0.3125rem;
+  border-radius: 3px;
+  cursor: pointer; }
+.hamburger_menu_bars:before, .hamburger_menu_bars:after {
+  content: "";
+  display: block;
+  position: absolute; }
+.hamburger_menu_bars:before {
+  top: 0; }
+
+.contacts {
+  background: url("../img/map.jpg") no-repeat;
+  background-color: rgba(236, 234, 234, 0.31);
+  background-size: cover;
+  background-position: center bottom; }
+
+.map {
+  width: 100%;
+  height: 100%; }
+
+.footer {
+  position: absolute;
+  width: 100%;
+  background-color: #101010;
+  height: 3.4375rem; }
+
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 100%; }
+
+.footer_addres {
+  color: #fff;
+  font-family: "ubuntulight";
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  margin: 10px 0px 0px 80px;
+  font-size: 14px; }
+
+.footer_phone {
+  color: #e45028;
+  font-family: "Ubuntu";
+  font-weight: 800;
+  margin: 0px 0px 0px 80px; }
+
+.footer_social {
+  display: flex;
+  margin: 15px 60px 0px 0px; }
+
+.social_icons {
+  display: inline-block;
+  vertical-align: middle;
+  fill: #5b5b5b;
+  width: 23px;
+  height: 23px; }
 
 /*# sourceMappingURL=style.css.map */

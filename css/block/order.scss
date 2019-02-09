@@ -9,12 +9,12 @@
     justify-content: center;
 }
 .form-order-column {
+    margin-top: 2.5rem;
     width: 100%;
-    margin-top: 40px;
 }
 .form_order {
     display: flex; 
-    margin-bottom: 110px;
+    margin-bottom: 6.875rem;
     color: #fff;
     text-align: left;
 }
@@ -23,12 +23,52 @@
     
 }
 .form_content_column {
-    width: 50%;
+   
     display: flex;
+    //flex: 1;
+    //padding: 0.9375rem;
+    margin-left: -5%;
+    //flex-direction: column;
+
+    @include tablets() {
+        flex-direction: column;
+        margin-left: 0; 
+        padding: 0 12%;
+    }
+    
+    @include phones() {
+        padding: 0;
+    }
+ }
+.form--left {
+    width: 50%;
+    margin-left: 5%;
+
+    @include tablets() {
+        margin-left: 0;
+        width: initial;
+    }
+}
+.form--right {
+    width: 50%;
+    margin-bottom: 1rem;
+    //display: flex;
+    padding-left: 1.9375rem;
+
+    @include tablets() {
+        width: initial;
+        padding-left: 0;
+    }
+}
+
+.form_right_row {
     flex: 1;
-    padding: 15px;
-    margin: 0 auto;
-    flex-direction: column;
+    margin-bottom: 0.625rem;
+    font-family: "ubuntulight";
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: #fff;
 }
 
 .form_content_column_row {
@@ -37,9 +77,9 @@
    
 }
 .form_content {
-    margin-right: 20px;
+    margin-right: 1.25rem;
     flex: 1;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     font-family: "ubuntulight";
     font-size: 0.875rem;
     font-weight: 300;
@@ -50,17 +90,18 @@
     margin-right: 0;
 }
 }
+
 .form_content_input {
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     background: #fff;
     border: 0;
     width: 100%;
-    height: 35px;
-    padding: 5px 10px;
+    height: 2.1875rem;
+    padding: 0.3125rem 0.625rem;
 }
 .form_content_input_row {
-    height: 110px;
-    max-height: 110px;
+    height: 6.875rem;
+    max-height: 6.875rem;
     resize: none;
     width: 100%;
     box-sizing: border-box;
@@ -70,7 +111,7 @@
     margin-right: 0;
 }
 .radio_label {
-    margin-right: 15px;
+    margin-right: 0.9375rem;
 }
 .checkbox,
 .radio_inpyt {
@@ -79,9 +120,9 @@
     clip: rect(0 0 0 0);
     padding: 0;
     border: 0;
-    height: 1px;
-    width: 1px;
-    margin: -1px;
+    height: 0.0625rem;
+    width: 0.0625rem;
+    margin: -0.0625rem;
 }
 .radio_custom,
 .radio_inpyt:checked + .radio_custom::before {
@@ -95,14 +136,14 @@
 }
 .radio_custom,
 .checkbox_custom {
-    width: 14px;
-    height: 14px;
+    width:  0.875rem;
+    height: 0.875rem;
     background: #fff;
     position: relative;
 }
 .radio_text,
 .checkbox_text {
-    margin-left: 10px;
+    margin-left: 0.625rem;
 }
 
 .btn_colorless:hover {
