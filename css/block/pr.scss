@@ -36,9 +36,12 @@
 .profit_text {
 
     @include phones() {
-        text-align: left;
         margin: 5px 0;
-    }
+        text-align: left;
+        margin-left: 30px;
+        line-height: 24px;
+        width: 65%;
+        
 }
 .profit_text_title {
     color: #2f3234;
@@ -47,10 +50,22 @@
     line-height: 1.75rem;
     margin-top: 2.1875rem;
     margin-bottom: 1.5625rem;
+
+    @include phones() {
+        font-size: 24px;
+        line-height: 28px;
+         margin-top: 1.25rem;
+         margin-bottom: 0.625rem;
+    }
+    }
 }
 .profit_text_content {
     font-family: "ubuntulight";
     font-size: 0.875rem;
     font-weight: 300;
     line-height: 1.5rem;
+
+    @include phones() {
+        line-height: 0.875rem;
+    }
 }
