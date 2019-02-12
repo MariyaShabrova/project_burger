@@ -681,7 +681,8 @@ footer {
     .activ_content {
       display: flex;
       flex-direction: column;
-      align-items: center; } }
+      align-items: center;
+      transition: .5s; } }
 
 .activ_content_text {
   color: #fff;
