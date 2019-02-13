@@ -637,16 +637,15 @@ footer {
   /* &:last-child {
        margin-bottom: 0;
    }*/ }
-  .team_item_activ .team_name_activ {
+  .team_item_activ {
     color: #f9b43b; }
-    .team_item_activ .team_name_activ:before {
+    .team_item_activ:before {
       transform: rotate(-180eg); }
 
 .team_name_activ::before {
   margin-right: 0.625rem;
   content: "";
   display: block;
-  position: absolute;
   left: -1.125rem;
   top: 0.5rem;
   height: 0;
@@ -676,7 +675,7 @@ footer {
 .activ_content {
   height: 0;
   overflow: hidden;
-  display: flex; }
+  display: inline-block; }
   @media screen and (max-width: 768px) {
     .activ_content {
       display: flex;

@@ -62,7 +62,7 @@
     }*/
 
     &_activ {
-        .team_name_activ {
+        
             color: #f9b43b;
     &:before {
         transform: rotate(-180eg);
@@ -70,14 +70,14 @@
     }
  }
 }
-}
+
 
 .team_name_activ::before {
     //transition: .5s;
     margin-right: 0.625rem;
     content: "";
     display: block;
-    position: absolute;
+    //position: absolute;
     left: -1.125rem;
     top: 0.5rem;
     height: 0;
@@ -114,7 +114,8 @@
 .activ_content {
    height: 0;
    overflow: hidden;
-   display: flex;
+   display: inline-block;
+   
 
    @include tablets() {
     display: flex;
