@@ -104,20 +104,20 @@
       </section>
       <!--Третья секция-->
       <section class="section slider_section">
-         <!-- <a href="#" class="slider-left">
-              <img src="img/arrow-scroll.svg" alt="Влево">
-          </a>
+          <div class="slider-icon">
+        <a href="#" class="slider-left">
+        <img src="img/arrow-scroll.svg" alt="Влево"></a>
           <a href="#" class="slider-right">
-                <img src="img/arrow-scroll.svg" alt="Вправо">
-          </a>-->
-          <div class="container burger_conteiner">
+        <img src="img/arrow-scroll.svg" alt="Вправо"></a>
+          </div>
+        <div class="container burger_conteiner">
               <div class="burger">
-                  <div class="burger_viewport">
-                      <div class="slider_conteiner">
-                          <div class="burger_slider"></div>           
+                      <div class="slider_burger">           
                  <div class="burger_ingredient">
-                     <!--<svg class="ingredient_btn"> <rect width="50%" height="100" x="50%" y="100" fill="#e45028"></rect></svg>
-                       <svg xmlns="./img/burger.svg" class="burger_btn_img"></svg>-->
+                     <svg class="ingredient_btn"> 
+                         <use xlink:href="./img/burger.svg#burger">
+                        </use>
+                         </svg>
                 <div class="btn_burger">Состав</div>
                 <div class="ingredient_table">
                 <ul class="ingredient">
@@ -153,7 +153,7 @@
                     </li>
                 </ul>
             </div>
-                 </div>
+        </div>
                  <div class="burger_calories">
                      <svg class="burger_btn-cal"></svg>
                      <div class="burger_calories-nam">
@@ -180,12 +180,14 @@
                     </div>
                     </div>
                    </div>  
-                 </div>
+                
+                </div>
                  <div class="burger_slider"></div>
                  <div class="burger_slider"></div>
                  <div class="burger_slider"></div>
                  <div class="burger_slider"></div>
              </div>
+         </div>
          </div>
               </div>
           </div>
