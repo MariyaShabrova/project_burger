@@ -591,11 +591,12 @@ footer {
   flex-direction: column;
   justify-content: center; }
 
-.burger_viewport {
+.burger {
   width: 100%;
   overflow: hidden;
   position: relative;
-  height: 480px; }
+  height: 480px;
+  padding: 20px; }
 
 .slider_burger {
   position: relative;
@@ -613,8 +614,121 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 95%;
+  width: 100%;
   height: 100%; }
+
+.burger_ingredient {
+  position: absolute;
+  top: 12%;
+  left: 2%;
+  display: flex;
+  flex-direction: column;
+  width: 5rem;
+  height: 5rem;
+  background-color: #f08c33;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px; }
+  .burger_ingredient:hover .ingredient_table {
+    display: block; }
+
+.ingredient_btn {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  fill: #fff; }
+
+.btn_burger {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "gagalinregular"; }
+
+.ingredient_table {
+  display: none;
+  position: absolute;
+  left: 5.3125rem;
+  top: 0;
+  font-family: "Ubuntubold";
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  border-radius: 10px;
+  width: 16.875rem; }
+
+.ingredient {
+  display: flex;
+  height: 54px;
+  justify-content: space-between;
+  margin-left: 10px; }
+
+.ingredient_scroll {
+  width: 38px;
+  height: 38px; }
+
+.ingredient_menu {
+  width: 100px;
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  font-family: "ubuntumedium"; }
+
+.ingredient_gram {
+  width: 70px;
+  font-family: "ubuntulight";
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem; }
+
+.burger_calories {
+  position: absolute;
+  bottom: 12%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 5.625rem;
+  height: 5.625rem;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff; }
+
+.burger_btn-cal {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  fill: #fff; }
+
+.burger_calories-nam {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 90px;
+  height: 95px;
+  margin: -50px 0px;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: "gagalinregular"; }
+
+.burger_calories-nam p {
+  font-size: 14px; }
+
+.burger img {
+  max-width: 100%;
+  display: block; }
+
+.burger_img {
+  margin: 30% 0; }
+
+.burger_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 480px;
+  margin-left: 15px;
+  width: 80%; }
 
 .team_section {
   background: url(../img/team-activ.jpg) 50% no-repeat;
