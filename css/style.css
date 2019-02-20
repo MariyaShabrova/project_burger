@@ -503,7 +503,7 @@ footer {
   margin-right: 0.9375rem; }
 
 .checkbox,
-.radio_inpyt {
+.radio_input {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -514,8 +514,16 @@ footer {
   margin: -0.0625rem; }
 
 .radio_custom,
-.radio_inpyt:checked + .radio_custom::before {
-  border-radius: 50%; }
+.radio_input:checked + .radio_custom::before {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+  background: #e45028; }
 
 .checkbox_custom,
 .radio_custom,
@@ -533,6 +541,13 @@ footer {
 .radio_text,
 .checkbox_text {
   margin-left: 0.625rem; }
+
+.checkbox:checked + .checkbox_custom::before {
+  content: url(../img/arrow-scroll.svg);
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: 2px; }
 
 .btn_colorless:hover {
   background-color: #646261;
@@ -729,6 +744,42 @@ footer {
   height: 480px;
   margin-left: 15px;
   width: 80%; }
+
+.burger_title {
+  font-family: 'gagalinregular';
+  font-size: 4.5rem;
+  color: #ffffff;
+  line-height: 64px; }
+
+.burger_content-text {
+  font-family: "ubuntulight";
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: #fff;
+  margin-top: 35px; }
+
+.burger_content-order {
+  display: flex;
+  margin-top: 3.75rem; }
+
+.burger_content-price {
+  font-size: 72px;
+  line-height: 12px;
+  font-family: 'gagalinregular';
+  color: #e35028;
+  margin-right: 15px; }
+
+.burger_content-price--currency {
+  font-size: 30px; }
+
+.order-link {
+  font-family: 'ubuntumedium';
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  margin: auto;
+  color: #fff;
+  text-decoration: none; }
 
 .team_section {
   background: url(../img/team-activ.jpg) 50% no-repeat;

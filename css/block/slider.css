@@ -160,4 +160,40 @@
   margin-left: 15px;
   width: 80%; }
 
+.burger_title {
+  font-family: 'gagalinregular';
+  font-size: 4.5rem;
+  color: #ffffff;
+  line-height: 64px; }
+
+.burger_content-text {
+  font-family: "ubuntulight";
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: #fff;
+  margin-top: 35px; }
+
+.burger_content-order {
+  display: flex;
+  margin-top: 3.75rem; }
+
+.burger_content-price {
+  font-size: 72px;
+  line-height: 12px;
+  font-family: 'gagalinregular';
+  color: #e35028;
+  margin-right: 15px; }
+
+.burger_content-price--currency {
+  font-size: 30px; }
+
+.order-link {
+  font-family: 'ubuntumedium';
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  margin: auto;
+  color: #fff;
+  text-decoration: none; }
+
 /*# sourceMappingURL=slider.css.map */
