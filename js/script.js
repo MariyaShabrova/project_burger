@@ -1,3 +1,4 @@
+/*Секция четвертая, команда*/
 const items = document.querySelectorAll(".team_item");
 
 for (item of items) {
@@ -32,5 +33,15 @@ function openItem(item) {
     item.classList.add("activ");
     content.style.height = '200px';    
 }
+/*Секция третья, слайдер*/
+const leftBtn = document.querySelector('#left');
+const rightBtn = document.querySelector('#right');
+const slider = document.querySelector('#slider .slider_burger');
+
+const step = 960;
+
+rightBtn.addEventListener('click', e => {
+    slider.style.right = '$(step)px';
+})
 
 
