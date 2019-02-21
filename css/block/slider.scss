@@ -8,7 +8,7 @@
     top: 50%;
     text-decoration: none;
     cursor: pointer;
-   
+    z-index: 2;
 }
 .slider-right {
     transform: rotate(-90deg);
@@ -17,8 +17,7 @@
     top: 50%;
     text-decoration: none;
     cursor: pointer;
-
-    
+    z-index: 2;
 }
 .slider_container {
     width: 4800px;

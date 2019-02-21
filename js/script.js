@@ -36,12 +36,25 @@ function openItem(item) {
 /*Секция третья, слайдер*/
 const leftBtn = document.querySelector('#left');
 const rightBtn = document.querySelector('#right');
-const slider = document.querySelector('#slider .slider_burger');
+const slider = document.querySelector('#slider');
 
 const step = 960;
+let count = 0;
 
 rightBtn.addEventListener('click', e => {
-    slider.style.right = '$(step)px';
+    count++;
+    if (count==5) {
+        count = 0;
+    } 
+    slider.style.right = step*count +'px';
+})
+
+leftBtn.addEventListener('click', e => {
+    count--;
+    if (count==-1) {
+        count = 4;
+    } 
+    slider.style.right = step*count +'px';
 })
 
 

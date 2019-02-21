@@ -592,7 +592,8 @@ footer {
   left: 3.5%;
   top: 50%;
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 2; }
 
 .slider-right {
   transform: rotate(-90deg);
@@ -600,7 +601,8 @@ footer {
   right: 3.5%;
   top: 50%;
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 2; }
 
 .slider_container {
   width: 4800px;
@@ -837,10 +839,10 @@ footer {
   /* &:last-child {
        margin-bottom: 0;
    }*/ }
-  .team_item_activ {
+  .team_item.activ .team_name_activ {
     color: #f9b43b; }
-    .team_item_activ:before {
-      transform: rotate(-180eg); }
+    .team_item.activ .team_name_activ:before {
+      transform: rotate(-180deg); }
 
 .team_name_activ::before {
   margin-right: 0.625rem;
