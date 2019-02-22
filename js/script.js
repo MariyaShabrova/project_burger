@@ -38,23 +38,39 @@ const leftBtn = document.querySelector('#left');
 const rightBtn = document.querySelector('#right');
 const slider = document.querySelector('#slider');
 
-const step = 960;
-let count = 0;
+const step = slider.firstElementChild.getBoundingClientRect().width;
+const slidersInView = 1;
+const maxRight = (slider.children.length - slidersInView) * step;
+const minRight = 0;
+let currentRight = 0;
+
 
 rightBtn.addEventListener('click', e => {
-    count++;
-    if (count==5) {
-        count = 0;
-    } 
-    slider.style.right = step*count +'px';
+    if (currentRight < maxRight) {
+    currentRight += step;
+    slider.style.right = currentRight + 'px';
+    } else {
+        currentRight = 0;
+        slider.style.right = 0;
+    }
 })
 
 leftBtn.addEventListener('click', e => {
-    count--;
-    if (count==-1) {
-        count = 4;
-    } 
-    slider.style.right = step*count +'px';
+    if (currentRight > minRight) {
+    currentRight -= step;
+    slider.style.right = currentRight + 'px';
+    } else {
+        currentRight = maxRight;
+        slider.style.right = maxRight;
+    }
 })
 
+/*Гамбургер модалка*/
+const btn = document.querySelector('#hamburger');
+const hamburger = document.querySelector('.hamburger_container');
+
+btn.addEventListener('click', e => {
+ hamburger.classList.add('.opened');
+}
+)
 

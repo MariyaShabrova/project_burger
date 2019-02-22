@@ -179,6 +179,9 @@ footer {
   background-color: #c1401e;
   cursor: pointer; }
 
+@media screen and (max-width: 768px) {
+  .logo {
+    margin: 10px 0px 0px 20px; } }
 .hero {
   background: url(../img/video-bg.jpg) center center/cover no-repeat; }
 
@@ -976,16 +979,17 @@ footer {
   transition-duration: .8s;
   transition-property: width; }
 
-.hamburger_menu {
+.hamburger_menu_btn {
   vertical-align: middle;
   position: relative;
   height: 1.375rem;
   align-items: center;
   display: flex;
   margin-left: 1.875rem;
+  z-index: 5;
   display: none; }
   @media screen and (max-width: 768px) {
-    .hamburger_menu {
+    .hamburger_menu_btn {
       display: flex; } }
 
 .hamburger_menu_bars, .hamburger_menu_bars:before, .hamburger_menu_bars:after {
@@ -1000,6 +1004,63 @@ footer {
   position: absolute; }
 .hamburger_menu_bars:before {
   top: 0; }
+
+.hamburger_container {
+  position: fixed;
+  top: 0;
+  left: -9999px;
+  opacity: 0; }
+
+.hamburger_links_menu {
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  background: rgba(47, 50, 52, 0.99);
+  height: 100%; }
+
+.hamdurger_links_container {
+  display: flex;
+  justify-content: space-between; }
+
+.closeIcon {
+  margin: 30px 20px 0px 0px; }
+
+.hamburger_menu_nav {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-content: center; }
+
+.hamburger_menu_link {
+  display: inline-block;
+  margin: 30px;
+  font-family: "Ubuntu";
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  position: relative;
+  text-decoration: none; }
+  .hamburger_menu_link::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 200%; }
+
+.hamburger_menu_item:last-child .hamburger_menu_link::after {
+  display: none; }
+
+.opened {
+  opacity: 1;
+  transition: opacity 0.3s;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 .contacts {
   background: url("../img/map.jpg") no-repeat;

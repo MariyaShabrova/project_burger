@@ -72,3 +72,8 @@
     background-color: #c1401e;
     cursor: pointer;
 }
+@include tablets() {
+    .logo {
+        margin: 10px 0px 0px 20px;
+    }
+}
