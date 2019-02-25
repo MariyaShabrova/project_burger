@@ -72,6 +72,7 @@
         
     &:before {
         transform: rotate(-180deg);
+        transition: .5s;
     }
     }
  }
@@ -92,7 +93,7 @@
     border-right: 0.3125rem solid transparent;
     border-bottom: 0rem solid transparent;
     transform: rotate(0deg);
-    transition: .3s;
+    transition: .5s;
 
 }
 
@@ -109,7 +110,9 @@
     text-decoration: none;
 
     @include tablets {
-        display: inline-block;
+        //display: inline-block; 
+    margin-left: 25%;
+    font-size: 24px
     }
 }
 

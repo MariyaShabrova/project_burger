@@ -61,16 +61,20 @@ leftBtn.addEventListener('click', e => {
     slider.style.right = currentRight + 'px';
     } else {
         currentRight = maxRight;
-        slider.style.right = maxRight;
+        slider.style.right = maxRight + 'px';
     }
 })
 
 /*Гамбургер модалка*/
 const btn = document.querySelector('#hamburger');
 const hamburger = document.querySelector('.hamburger_container');
+const close = document.querySelector('.closeIcon_links');
 
 btn.addEventListener('click', e => {
- hamburger.classList.add('.opened');
+ hamburger.classList.add('opened');
 }
 )
 
+close.addEventListener('click', e => {
+hamburger.classList.remove('opened');
+})
