@@ -1,15 +1,6 @@
 
-$(function() {
-	alert ('jQuery подключен и отлично работает!');
-});
-
-
-
-
-
-
 $(document).ready(function() {
-    let btn = $('.accordeon_item');
+    let btn = $('.accordeon_item_link');
 
     var activeClass = 'accordeon_item_activ';
 

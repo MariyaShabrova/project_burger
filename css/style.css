@@ -1,3 +1,7 @@
+/*$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;*/
 @import url(./_misc/normalize.css);
 html {
   font-size: 16px; }
@@ -856,8 +860,7 @@ footer {
   .team_item.activ .team_name_activ {
     color: #f9b43b; }
     .team_item.activ .team_name_activ:before {
-      transform: rotate(-180deg);
-      transition: .5s; }
+      transform: rotate(-180deg); }
 
 .team_name_activ::before {
   margin-right: 0.625rem;
@@ -872,7 +875,7 @@ footer {
   border-right: 0.3125rem solid transparent;
   border-bottom: 0rem solid transparent;
   transform: rotate(0deg);
-  transition: .5s; }
+  transition: .3s; }
 
 .team_name_activ {
   color: #fff;
@@ -884,8 +887,7 @@ footer {
   text-decoration: none; }
   @media screen and (max-width: 768px) {
     .team_name_activ {
-      margin-left: 25%;
-      font-size: 24px; } }
+      display: inline-block; } }
 
 .team_img {
   border-radius: 50%; }
@@ -893,7 +895,8 @@ footer {
 .activ_content {
   height: 0;
   overflow: hidden;
-  display: inline-block; }
+  display: flex;
+  margin-right: 30px; }
   @media screen and (max-width: 768px) {
     .activ_content {
       display: flex;
@@ -986,7 +989,7 @@ footer {
   max-width: 0rem;
   visibility: hidden;
   opacity: 0;
-  transition: 1s;
+  transition: .3s;
   transition-property: max-width, opacity, visibility;
   transition-timing-function: ease;
   transition-duration: .8s;
@@ -994,10 +997,18 @@ footer {
 
 .accordeon_item_activ
 .accordeon_item_link_text {
-  max-width: 33rem;
+  max-width: 46rem;
   padding: 3rem 3rem;
   visibility: visible;
   opacity: 1; }
+
+.accordeon_item_text {
+  width: 700px;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: #fff;
+  font-family: "ubuntulight"; }
 
 .hamburger_menu_btn {
   vertical-align: middle;

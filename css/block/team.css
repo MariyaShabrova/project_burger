@@ -1,107 +1,69 @@
-.team_section {
-  background: url(../img/team-activ.jpg) 50% no-repeat;
-  background-size: cover;
-  position: relative; }
+/*
+Error: Undefined mixin 'tablets'.
+        on line 25 of C:\Users\user\Dropbox\Git\project_burger\css\block\team.scss, in `tablets'
+        from line 25 of C:\Users\user\Dropbox\Git\project_burger\css\block\team.scss
 
-.activ_section {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 50%;
-  background: rgba(47, 50, 52, 0.93);
-  padding: 5% 2% 0 7%; }
-  @media screen and (max-width: 768px) {
-    .activ_section {
-      left: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column; } }
+20:     //padding-top: 3.125rem;
+21:     //padding-left: 5rem;
+22:     //justify-content: space-around;
+23:     padding: 5% 2% 0 7%;
+24: 
+25:     @include tablets {
+26:         left: 0;
+27:         display: flex;
+28:         align-items: center;
+29:         justify-content: center;
+30:         flex-direction: column;
 
-.title_team {
-  margin-bottom: 12%;
-  font-size: 4.5rem;
-  color: #f9b43b;
-  font-family: "gagalinregular";
-  text-transform: uppercase; }
-
-.team_list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 8.4375rem; }
-  @media screen and (max-width: 768px) {
-    .team_list {
-      text-align: center; } }
-
-.team_item {
-  color: #fff;
-  flex-direction: column;
-  margin-bottom: 2.1875rem;
-  font-size: 0.875rem;
-  display: block;
-  position: relative;
-  /* &:last-child {
-       margin-bottom: 0;
-   }*/ }
-  .team_item.activ .team_name_activ {
-    color: #f9b43b; }
-    .team_item.activ .team_name_activ:before {
-      transform: rotate(-180deg);
-      transition: .5s; }
-
-.team_name_activ::before {
-  margin-right: 0.625rem;
-  content: "";
-  display: block;
-  left: -1.125rem;
-  top: 0.5rem;
-  height: 0;
-  width: 0;
-  border-top: 0.4375rem solid #f9b43b;
-  border-left: 0.3125rem solid transparent;
-  border-right: 0.3125rem solid transparent;
-  border-bottom: 0rem solid transparent;
-  transform: rotate(0deg);
-  transition: .5s; }
-
-.team_name_activ {
-  color: #fff;
-  display: flex;
-  align-items: center;
-  font-family: "gagalinregular";
-  font-size: 1.5rem;
-  cursor: pointer;
-  text-decoration: none; }
-  @media screen and (max-width: 768px) {
-    .team_name_activ {
-      margin-left: 25%;
-      font-size: 24px; } }
-
-.team_img {
-  border-radius: 50%; }
-
-.activ_content {
-  height: 0;
-  overflow: hidden;
-  display: inline-block; }
-  @media screen and (max-width: 768px) {
-    .activ_content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transition: .5s; } }
-
-.activ_content_text {
-  color: #fff;
-  margin-left: 0.9375rem;
-  font-family: "ubuntulight";
-  font-size: 0.875rem;
-  font-weight: 300;
-  line-height: 1.8125rem; }
-
-.activ_content_title {
-  font-weight: 800; }
-
-/*# sourceMappingURL=team.css.map */
+Backtrace:
+C:\Users\user\Dropbox\Git\project_burger\css\block\team.scss:25:in `tablets'
+C:\Users\user\Dropbox\Git\project_burger\css\block\team.scss:25
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'tablets'.\A         on line 25 of C:\Users\user\Dropbox\Git\project_burger\css\block\team.scss, in `tablets'\A         from line 25 of C:\Users\user\Dropbox\Git\project_burger\css\block\team.scss\A \A 20:     //padding-top: 3.125rem;\A 21:     //padding-left: 5rem;\A 22:     //justify-content: space-around;\A 23:     padding: 5% 2% 0 7%;\A 24: \A 25:     @include tablets {\A 26:         left: 0;\A 27:         display: flex;\A 28:         align-items: center;\A 29:         justify-content: center;\A 30:         flex-direction: column;"; }
