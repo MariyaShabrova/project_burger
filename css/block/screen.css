@@ -78,4 +78,11 @@
   transition-duration: .8s;
   transition-property: width; }
 
+.accordeon_item_activ
+.accordeon_item_link_text {
+  max-width: 33rem;
+  padding: 3rem 3rem;
+  visibility: visible;
+  opacity: 1; }
+
 /*# sourceMappingURL=screen.css.map */

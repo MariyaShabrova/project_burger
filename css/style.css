@@ -626,6 +626,9 @@ footer {
   overflow: hidden;
   position: relative;
   height: 480px; }
+  @media screen and (max-width: 768px) {
+    .burger {
+      height: 100%; } }
 
 .slider_burger {
   position: relative;
@@ -635,6 +638,11 @@ footer {
   flex-direction: row;
   height: 90%;
   justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .slider_burger {
+      flex-direction: column;
+      max-width: 37.5rem;
+      justify-content: center; } }
 
 .slider-icon {
   overflow: hidden;
@@ -750,6 +758,9 @@ footer {
 
 .burger_img {
   margin: 30% 0; }
+  @media screen and (max-width: 768px) {
+    .burger_img {
+      margin: 15px 0; } }
 
 .burger_content {
   display: flex;
@@ -980,6 +991,13 @@ footer {
   transition-timing-function: ease;
   transition-duration: .8s;
   transition-property: width; }
+
+.accordeon_item_activ
+.accordeon_item_link_text {
+  max-width: 33rem;
+  padding: 3rem 3rem;
+  visibility: visible;
+  opacity: 1; }
 
 .hamburger_menu_btn {
   vertical-align: middle;

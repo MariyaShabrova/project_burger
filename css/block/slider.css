@@ -1,210 +1,69 @@
-.slider_section {
-  background: url(../img/slider.jpg) center center/cover no-repeat; }
+/*
+Error: Undefined mixin 'tablets'.
+        on line 47 of C:\Users\user\Dropbox\Git\project_burger\css\block\slider.scss, in `tablets'
+        from line 47 of C:\Users\user\Dropbox\Git\project_burger\css\block\slider.scss
 
-.slider-left {
-  transform: rotate(90deg);
-  position: absolute;
-  left: 3.5%;
-  top: 50%;
-  text-decoration: none;
-  cursor: pointer;
-  z-index: 2; }
+42:     overflow: hidden;
+43:     position: relative;
+44:     height: 480px;
+45:     //padding: 20px;
+46: 
+47:     @include tablets() {
+48:         height: 100%;
+49:     }
+50: }
+51: 
+52: 
 
-.slider-right {
-  transform: rotate(-90deg);
-  position: absolute;
-  right: 3.5%;
-  top: 50%;
-  text-decoration: none;
-  cursor: pointer;
-  z-index: 2; }
-
-.slider_container {
-  width: 4800px;
-  position: relative;
-  transition: right 0.3s;
-  height: 30rem;
-  display: flex; }
-
-.burger_conteiner {
-  margin: 0 auto;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.burger {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  height: 480px; }
-
-.slider_burger {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  height: 90%;
-  justify-content: center; }
-
-.slider-icon {
-  overflow: hidden;
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 100%; }
-
-.burger_ingredient {
-  position: absolute;
-  top: 12%;
-  left: 2%;
-  display: flex;
-  flex-direction: column;
-  width: 5rem;
-  height: 5rem;
-  background-color: #f08c33;
-  border-radius: 5px;
-  text-align: center;
-  color: #fff;
-  border-radius: 5px; }
-  .burger_ingredient:hover .ingredient_table {
-    display: block; }
-
-.ingredient_btn {
-  width: 60px;
-  height: 60px;
-  margin: auto;
-  fill: #fff; }
-
-.btn_burger {
-  font-size: 20px;
-  line-height: 24px;
-  font-family: "gagalinregular"; }
-
-.ingredient_table {
-  display: none;
-  position: absolute;
-  left: 5.3125rem;
-  top: 0;
-  font-family: "Ubuntubold";
-  background: rgba(255, 255, 255, 0.9);
-  color: #000;
-  border-radius: 10px;
-  width: 16.875rem; }
-
-.ingredient {
-  display: flex;
-  height: 54px;
-  justify-content: space-between;
-  margin-left: 10px; }
-
-.ingredient_scroll {
-  width: 38px;
-  height: 38px; }
-
-.ingredient_menu {
-  width: 100px;
-  text-align: left;
-  font-size: 0.875rem;
-  font-weight: 300;
-  line-height: 1.5rem;
-  font-family: "ubuntumedium"; }
-
-.ingredient_gram {
-  width: 70px;
-  font-family: "ubuntulight";
-  font-size: 0.875rem;
-  font-weight: 300;
-  line-height: 1.5rem; }
-
-.burger_calories {
-  position: absolute;
-  bottom: 12%;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  width: 5.625rem;
-  height: 5.625rem;
-  border-radius: 5px;
-  text-align: center;
-  color: #fff; }
-
-.burger_btn-cal {
-  width: 60px;
-  height: 60px;
-  margin: auto;
-  fill: #fff; }
-
-.burger_calories-nam {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 90px;
-  height: 95px;
-  margin: -50px 0px;
-  font-size: 20px;
-  line-height: 26px;
-  font-family: "gagalinregular"; }
-
-.burger_calories-nam p {
-  font-size: 14px; }
-
-.burger img {
-  max-width: 100%;
-  display: block; }
-
-.burger_img {
-  margin: 30% 0; }
-
-.burger_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 480px;
-  margin-left: 15px;
-  width: 80%; }
-
-.burger_title {
-  font-family: 'gagalinregular';
-  font-size: 4.5rem;
-  color: #ffffff;
-  line-height: 64px; }
-
-.burger_content-text {
-  font-family: "ubuntulight";
-  font-size: 0.875rem;
-  font-weight: 300;
-  line-height: 1.5rem;
-  color: #fff;
-  margin-top: 35px; }
-
-.burger_content-order {
-  display: flex;
-  margin-top: 3.75rem; }
-
-.burger_content-price {
-  font-size: 72px;
-  line-height: 12px;
-  font-family: 'gagalinregular';
-  color: #e35028;
-  margin-right: 15px; }
-
-.burger_content-price--currency {
-  font-size: 30px; }
-
-.order-link {
-  font-family: 'ubuntumedium';
-  text-transform: uppercase;
-  font-size: 0.8125rem;
-  margin: auto;
-  color: #fff;
-  text-decoration: none; }
-
-/*# sourceMappingURL=slider.css.map */
+Backtrace:
+C:\Users\user\Dropbox\Git\project_burger\css\block\slider.scss:47:in `tablets'
+C:\Users\user\Dropbox\Git\project_burger\css\block\slider.scss:47
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files/Koala/bin/sass:22:in `load'
+C:/Program Files/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'tablets'.\A         on line 47 of C:\Users\user\Dropbox\Git\project_burger\css\block\slider.scss, in `tablets'\A         from line 47 of C:\Users\user\Dropbox\Git\project_burger\css\block\slider.scss\A \A 42:     overflow: hidden;\A 43:     position: relative;\A 44:     height: 480px;\A 45:     //padding: 20px;\A 46: \A 47:     @include tablets() {\A 48:         height: 100%;\A 49:     }\A 50: }\A 51: \A 52: "; }

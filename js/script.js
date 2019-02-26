@@ -46,6 +46,7 @@ let currentRight = 0;
 
 
 rightBtn.addEventListener('click', e => {
+    e.preventDefault();
     if (currentRight < maxRight) {
     currentRight += step;
     slider.style.right = currentRight + 'px';
@@ -56,6 +57,7 @@ rightBtn.addEventListener('click', e => {
 })
 
 leftBtn.addEventListener('click', e => {
+    e.preventDefault();
     if (currentRight > minRight) {
     currentRight -= step;
     slider.style.right = currentRight + 'px';
@@ -64,6 +66,22 @@ leftBtn.addEventListener('click', e => {
         slider.style.right = maxRight + 'px';
     }
 })
+
+/*rightBtn.addEventListener('click', function() {
+    loop('rightBtn');
+})
+
+leftBtn.addEventListener('click', function() {
+    loop('leftBtn'); 
+})
+
+function loop(direction) {
+    if (direction === 'rightBtn') {
+        slider.oppendChild(slider.firstElementChild);
+    } else {
+        slider.insertBefore(slider.lostElementChild, slider.firstElementChild);
+    }
+}*/
 
 /*Гамбургер модалка*/
 const btn = document.querySelector('#hamburger');
@@ -78,3 +96,25 @@ btn.addEventListener('click', e => {
 close.addEventListener('click', e => {
 hamburger.classList.remove('opened');
 })
+
+/*Аккардеон*/
+/*const accordeon = document.querySelector('.accordeon_list');
+
+createAccord(accordElement);
+
+
+function createAccord(element) {
+    const accordeonLink = document.querySelectorAll('.accordeon_item');
+    let activContent;
+}
+for (i=0; i<accordeonLink.length; i++) {
+    const accordeon_item_link = accordeonLink[i];
+}
+accordeon_item_link.addEventListener('click', function() {
+    if(activContent) {
+        activContent.classList.remove('.accordeon_item_activ')
+    }
+    activContent = accordeon_item_link.nextElementSibling;
+    activContent.classList.add('.accordeon_item_activ');
+}) */
+

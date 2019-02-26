@@ -33,7 +33,7 @@
     //max-width: 1100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;   
 
 }
 
@@ -43,6 +43,10 @@
     position: relative;
     height: 480px;
     //padding: 20px;
+
+    @include tablets() {
+        height: 100%;
+    }
 }
 
 
@@ -54,6 +58,13 @@
     flex-direction: row;
     height: 90%;
     justify-content: center;
+
+    @include tablets() {
+       flex-direction: column;
+       max-width: 37.5rem;
+       justify-content: center;
+
+    }
 }
 .slider-icon {
     overflow: hidden;
@@ -175,6 +186,10 @@
 }
 .burger_img {
     margin: 30% 0;
+
+    @include tablets () {
+        margin: 15px 0;
+    }
 }
 .burger_content {
     display: flex;
