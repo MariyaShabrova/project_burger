@@ -155,7 +155,7 @@
     margin-left: 0.625rem;
 }
 .checkbox:checked + .checkbox_custom::before {
-    content: url(../img/arrow-scroll.svg);
+    content: url(../img/scroll.png);
     display: block;
     position: absolute;
     top: -4px;
