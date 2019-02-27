@@ -13,7 +13,7 @@ Error: Undefined mixin 'tablets'.
 102:     }
 103: 
 104:     @include phones() {
-105:         width: 10rem;
+105:         width: 8rem;
 
 Backtrace:
 C:\Users\user\Dropbox\Git\project_burger\css\block\screen.scss:100:in `tablets'
@@ -66,4 +66,4 @@ C:/Program Files/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 100 of C:\Users\user\Dropbox\Git\project_burger\css\block\screen.scss, in `tablets'\A         from line 100 of C:\Users\user\Dropbox\Git\project_burger\css\block\screen.scss\A \A 95:     font-weight: 300;\A 96:     line-height: 1.5rem;\A 97:     color: #fff;\A 98:     font-family: \"ubuntulight\";\A 99: \A 100:     @include tablets() {\A 101:         width: 12.5rem;\A 102:     }\A 103: \A 104:     @include phones() {\A 105:         width: 10rem;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 100 of C:\Users\user\Dropbox\Git\project_burger\css\block\screen.scss, in `tablets'\A         from line 100 of C:\Users\user\Dropbox\Git\project_burger\css\block\screen.scss\A \A 95:     font-weight: 300;\A 96:     line-height: 1.5rem;\A 97:     color: #fff;\A 98:     font-family: \"ubuntulight\";\A 99: \A 100:     @include tablets() {\A 101:         width: 12.5rem;\A 102:     }\A 103: \A 104:     @include phones() {\A 105:         width: 8rem;"; }

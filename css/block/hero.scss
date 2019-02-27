@@ -25,6 +25,10 @@
         align-items: center;
         text-align: center;
     }
+
+    @include phones() {
+        top: 10%;
+    }
     
 }
 
