@@ -114,7 +114,7 @@
     margin-right: 0.9375rem;
 }
 .checkbox,
-.radio_inpyt {
+.radio_input {
     position: absolute;
     overflow: hidden;
     clip: rect(0 0 0 0);
@@ -125,8 +125,17 @@
     margin: -0.0625rem;
 }
 .radio_custom,
-.radio_inpyt:checked + .radio_custom::before {
+.radio_input:checked + .radio_custom::before {
     border-radius: 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+    background: #e45028;
+    
 }
 .checkbox_custom,
 .radio_custom,
@@ -145,8 +154,17 @@
 .checkbox_text {
     margin-left: 0.625rem;
 }
-
+.checkbox:checked + .checkbox_custom::before {
+    content: url(../img/arrow-scroll.svg);
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: 2px;
+}
 .btn_colorless:hover {
     background-color: #646261;
     border-radius: 5px;
+}
+.error {
+    color: red;
 }

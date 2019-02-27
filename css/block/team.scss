@@ -1,3 +1,4 @@
+
 .team_section {
     //background-color: rgba(0, 0, 0, 0.31);
     background: url(../img/team-activ.jpg) 50% no-repeat;
@@ -21,13 +22,14 @@
     //justify-content: space-around;
     padding: 5% 2% 0 7%;
 
-    @include tablets() {
+    @include tablets {
         left: 0;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
+
 }    
 .title_team {
     margin-bottom: 12%;
@@ -45,7 +47,7 @@
     align-items: flex-start;
     margin-bottom: 8.4375rem;
 
-    @include tablets() {
+    @include tablets {
         text-align: center;
     }
 }
@@ -61,15 +63,16 @@
         margin-bottom: 0;
     }*/
 
-    &_activ {
+    &.activ { 
         .team_name_activ {
+        
             color: #f9b43b;
+        
     &:before {
-        transform: rotate(-180eg);
-   
+        transform: rotate(-180deg);
+    }
     }
  }
-}
 }
 
 .team_name_activ::before {
@@ -77,7 +80,7 @@
     margin-right: 0.625rem;
     content: "";
     display: block;
-    position: absolute;
+    //position: absolute;
     left: -1.125rem;
     top: 0.5rem;
     height: 0;
@@ -103,7 +106,7 @@
     cursor: pointer;
     text-decoration: none;
 
-    @include tablets() {
+    @include tablets {
         display: inline-block;
     }
 }
@@ -115,11 +118,14 @@
    height: 0;
    overflow: hidden;
    display: flex;
+   margin-right: 30px;
+   
 
-   @include tablets() {
+   @include tablets {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: .5s;
 }
    
 }

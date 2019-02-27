@@ -74,10 +74,34 @@
     max-width: 0rem;
     visibility: hidden;
     opacity: 0;
-    transition: 1s;
+    transition: .3s;
     transition-property: max-width, opacity, visibility;
     transition-timing-function: ease;
     transition-duration: .8s;
     transition-property: width;
 }
 
+.accordeon_item_activ
+.accordeon_item_link_text {
+    max-width: 46rem;
+    padding: 3rem 3rem;
+    visibility: visible;
+    opacity: 1;
+    
+}
+.accordeon_item_text {
+    width: 43.75rem;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: #fff;
+    font-family: "ubuntulight";
+
+    @include tablets() {
+        width: 12.5rem;
+    }
+
+    @include phones() {
+        width: 10rem;
+    }
+}

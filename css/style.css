@@ -1,3 +1,7 @@
+/*$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;*/
 @import url(./_misc/normalize.css);
 html {
   font-size: 16px; }
@@ -179,6 +183,9 @@ footer {
   background-color: #c1401e;
   cursor: pointer; }
 
+@media screen and (max-width: 768px) {
+  .logo {
+    margin: 10px 0px 0px 20px; } }
 .hero {
   background: url(../img/video-bg.jpg) center center/cover no-repeat; }
 
@@ -191,6 +198,7 @@ footer {
   margin-left: 0.9375rem; }
 
 .content_hero {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -503,7 +511,7 @@ footer {
   margin-right: 0.9375rem; }
 
 .checkbox,
-.radio_inpyt {
+.radio_input {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -514,8 +522,16 @@ footer {
   margin: -0.0625rem; }
 
 .radio_custom,
-.radio_inpyt:checked + .radio_custom::before {
-  border-radius: 50%; }
+.radio_input:checked + .radio_custom::before {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+  background: #e45028; }
 
 .checkbox_custom,
 .radio_custom,
@@ -534,9 +550,19 @@ footer {
 .checkbox_text {
   margin-left: 0.625rem; }
 
+.checkbox:checked + .checkbox_custom::before {
+  content: url(../img/arrow-scroll.svg);
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: 2px; }
+
 .btn_colorless:hover {
   background-color: #646261;
   border-radius: 5px; }
+
+.error {
+  color: red; }
 
 .fixed-menu {
   position: fixed;
@@ -575,20 +601,291 @@ footer {
   transform: rotate(90deg);
   position: absolute;
   left: 3.5%;
-  top: 50%; }
+  top: 50%;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 2; }
+  @media screen and (max-width: 768px) {
+    .slider-left {
+      left: 5%; } }
 
 .slider-right {
   transform: rotate(-90deg);
   position: absolute;
   right: 3.5%;
-  top: 50%; }
+  top: 50%;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 2; }
+  @media screen and (max-width: 768px) {
+    .slider-right {
+      right: 5%; } }
 
-.slider_conteiner {
-  display: flex;
-  width: 100%;
+.slider_container {
+  width: 4800px;
+  position: relative;
+  transition: right 0.3s;
+  height: 30rem;
+  display: flex; }
+  @media screen and (max-width: 480px) {
+    .slider_container {
+      height: 100%; } }
+
+.burger_conteiner {
+  margin: 0 auto;
   height: 100%;
-  justify-content: center;
-  align-items: center; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.burger {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 480px; }
+  @media screen and (max-width: 768px) {
+    .burger {
+      height: 100%; } }
+
+.slider_burger {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 90%;
+  justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .slider_burger {
+      flex-direction: column;
+      max-width: 37.5rem;
+      justify-content: center; } }
+  @media screen and (max-width: 480px) {
+    .slider_burger {
+      justify-content: center;
+      max-width: 22rem; } }
+
+.slider-icon {
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%; }
+
+.burger_ingredient {
+  position: absolute;
+  top: 12%;
+  left: 2%;
+  display: flex;
+  flex-direction: column;
+  width: 5rem;
+  height: 5rem;
+  background-color: #f08c33;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px; }
+  .burger_ingredient:hover .ingredient_table {
+    display: block; }
+  @media screen and (max-width: 480px) {
+    .burger_ingredient {
+      top: 10%; } }
+
+.ingredient_btn {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  fill: #fff; }
+
+.btn_burger {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "gagalinregular"; }
+
+.ingredient_table {
+  display: none;
+  position: absolute;
+  left: 5.3125rem;
+  top: 0;
+  font-family: "Ubuntubold";
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  border-radius: 10px;
+  width: 16.875rem; }
+
+.ingredient {
+  display: flex;
+  height: 54px;
+  justify-content: space-between;
+  margin-left: 10px; }
+
+.ingredient_scroll {
+  width: 38px;
+  height: 38px; }
+
+.ingredient_menu {
+  width: 100px;
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  font-family: "ubuntumedium"; }
+
+.ingredient_gram {
+  width: 70px;
+  font-family: "ubuntulight";
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem; }
+
+.burger_calories {
+  position: absolute;
+  bottom: 12%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 5.625rem;
+  height: 5.625rem;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff; }
+  @media screen and (max-width: 768px) {
+    .burger_calories {
+      top: 10%;
+      right: 0;
+      left: 80%; } }
+  @media screen and (max-width: 480px) {
+    .burger_calories {
+      top: 8%;
+      right: 0;
+      left: 76%; } }
+
+.burger_btn-cal {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  fill: #fff; }
+
+.burger_calories-nam {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 90px;
+  height: 95px;
+  margin: -50px 0px;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: "gagalinregular"; }
+
+.burger_calories-nam p {
+  font-size: 14px; }
+
+.burger img {
+  max-width: 100%;
+  display: block; }
+
+@media screen and (max-width: 768px) {
+  .burger_slider-img {
+    margin-top: 9rem; } }
+@media screen and (max-width: 480px) {
+  .burger_slider-img {
+    margin-top: 6.25rem; } }
+
+.burger_img {
+  margin: 30% 0; }
+  @media screen and (max-width: 768px) {
+    .burger_img {
+      margin: 0.9375rem 0; } }
+  @media screen and (max-width: 480px) {
+    .burger_img {
+      margin: 0.31rem 0;
+      height: 12.5rem; } }
+
+.burger_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 480px;
+  margin-left: 15px;
+  width: 80%; }
+  @media screen and (max-width: 768px) {
+    .burger_content {
+      align-items: center; } }
+  @media screen and (max-width: 480px) {
+    .burger_content {
+      max-width: 20rem;
+      text-align: center;
+      height: 16rem; } }
+
+.burger_title {
+  font-family: 'gagalinregular';
+  font-size: 4.5rem;
+  color: #ffffff;
+  line-height: 64px; }
+  @media screen and (max-width: 480px) {
+    .burger_title {
+      font-size: 50px;
+      line-height: 48px; } }
+
+@media screen and (max-width: 768px) {
+  .burger_content-title {
+    max-width: 470px;
+    text-align: center;
+    margin-top: 25px; } }
+@media screen and (max-width: 480px) {
+  .burger_content-title {
+    margin-top: 15px; } }
+
+.burger_content-text {
+  font-family: "ubuntulight";
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: #fff;
+  margin-top: 35px; }
+  @media screen and (max-width: 768px) {
+    .burger_content-text {
+      text-align: center; } }
+  @media screen and (max-width: 480px) {
+    .burger_content-text {
+      margin-top: 15px; } }
+
+.burger_content-order {
+  display: flex;
+  margin-top: 3.75rem; }
+  @media screen and (max-width: 480px) {
+    .burger_content-order {
+      margin-top: 15px; } }
+
+.burger_content-price {
+  font-size: 72px;
+  line-height: 12px;
+  font-family: 'gagalinregular';
+  color: #e35028;
+  margin-right: 15px; }
+  @media screen and (max-width: 480px) {
+    .burger_content-price {
+      font-size: 50px; } }
+
+.burger_content-price--currency {
+  font-size: 30px; }
+  @media screen and (max-width: 480px) {
+    .burger_content-price--currency {
+      font-size: 24px; } }
+
+.order-link {
+  font-family: 'ubuntumedium';
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  margin: auto;
+  color: #fff;
+  text-decoration: none; }
 
 .team_section {
   background: url(../img/team-activ.jpg) 50% no-repeat;
@@ -637,16 +934,15 @@ footer {
   /* &:last-child {
        margin-bottom: 0;
    }*/ }
-  .team_item_activ .team_name_activ {
+  .team_item.activ .team_name_activ {
     color: #f9b43b; }
-    .team_item_activ .team_name_activ:before {
-      transform: rotate(-180eg); }
+    .team_item.activ .team_name_activ:before {
+      transform: rotate(-180deg); }
 
 .team_name_activ::before {
   margin-right: 0.625rem;
   content: "";
   display: block;
-  position: absolute;
   left: -1.125rem;
   top: 0.5rem;
   height: 0;
@@ -676,12 +972,14 @@ footer {
 .activ_content {
   height: 0;
   overflow: hidden;
-  display: flex; }
+  display: flex;
+  margin-right: 30px; }
   @media screen and (max-width: 768px) {
     .activ_content {
       display: flex;
       flex-direction: column;
-      align-items: center; } }
+      align-items: center;
+      transition: .5s; } }
 
 .activ_content_text {
   color: #fff;
@@ -768,36 +1066,126 @@ footer {
   max-width: 0rem;
   visibility: hidden;
   opacity: 0;
-  transition: 1s;
+  transition: .3s;
   transition-property: max-width, opacity, visibility;
   transition-timing-function: ease;
   transition-duration: .8s;
   transition-property: width; }
 
-.hamburger_menu {
+.accordeon_item_activ
+.accordeon_item_link_text {
+  max-width: 46rem;
+  padding: 3rem 3rem;
+  visibility: visible;
+  opacity: 1; }
+
+.accordeon_item_text {
+  width: 43.75rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: #fff;
+  font-family: "ubuntulight"; }
+  @media screen and (max-width: 768px) {
+    .accordeon_item_text {
+      width: 12.5rem; } }
+  @media screen and (max-width: 480px) {
+    .accordeon_item_text {
+      width: 10rem; } }
+
+.hamburger_menu_btn {
   vertical-align: middle;
   position: relative;
   height: 1.375rem;
-  align-items: center;
   display: flex;
   margin-left: 1.875rem;
-  display: none; }
+  z-index: 5;
+  display: none;
+  border-top: 4px #fff solid;
+  border-bottom: 4px #fff solid;
+  margin: 10px 20px;
+  width: 1.375rem;
+  border-radius: 1px; }
   @media screen and (max-width: 768px) {
-    .hamburger_menu {
+    .hamburger_menu_btn {
       display: flex; } }
 
 .hamburger_menu_bars, .hamburger_menu_bars:before, .hamburger_menu_bars:after {
   background: #fff;
-  width: 1.5rem;
-  height: 0.3125rem;
   border-radius: 3px;
   cursor: pointer; }
 .hamburger_menu_bars:before, .hamburger_menu_bars:after {
   content: "";
-  display: block;
-  position: absolute; }
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  border-top: 4px #fff solid;
+  margin-top: 4px;
+  border-radius: 1px; }
 .hamburger_menu_bars:before {
   top: 0; }
+
+.hamburger_container {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  opacity: 0; }
+
+.hamburger_links {
+  display: flex;
+  flex-direction: column; }
+
+.hamburger_links_menu {
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  background: rgba(47, 50, 52, 0.99);
+  height: 100%; }
+
+.hamdurger_links_container {
+  display: flex;
+  justify-content: space-between; }
+
+.closeIcon {
+  margin: 30px 20px 0px 0px; }
+
+.hamburger_menu_nav {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-content: center; }
+
+.hamburger_menu_link {
+  display: inline-block;
+  margin: 30px;
+  font-family: "Ubuntu";
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  position: relative;
+  text-decoration: none; }
+  .hamburger_menu_link::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 200%; }
+
+.hamburger_menu_item:last-child .hamburger_menu_link::after {
+  display: none; }
+
+.opened {
+  opacity: 1;
+  transition: opacity 0.3s;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 .contacts {
   background: url("../img/map.jpg") no-repeat;
