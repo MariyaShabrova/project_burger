@@ -31,7 +31,7 @@ function openItem(item) {
     const block = content.firstElementChild;
     const reqHeight = block.getBoundingClientRect().height;
     item.classList.add("activ");
-    content.style.height = '100px';    
+    content.style.height = '200px';    
 }
 /*Секция третья, слайдер*/
 const leftBtn = document.querySelector('#left');

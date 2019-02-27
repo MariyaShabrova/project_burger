@@ -198,6 +198,7 @@ footer {
   margin-left: 0.9375rem; }
 
 .content_hero {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -560,6 +561,9 @@ footer {
   background-color: #646261;
   border-radius: 5px; }
 
+.error {
+  color: red; }
+
 .fixed-menu {
   position: fixed;
   top: 5.625rem;
@@ -601,6 +605,9 @@ footer {
   text-decoration: none;
   cursor: pointer;
   z-index: 2; }
+  @media screen and (max-width: 768px) {
+    .slider-left {
+      left: 5%; } }
 
 .slider-right {
   transform: rotate(-90deg);
@@ -610,6 +617,9 @@ footer {
   text-decoration: none;
   cursor: pointer;
   z-index: 2; }
+  @media screen and (max-width: 768px) {
+    .slider-right {
+      right: 5%; } }
 
 .slider_container {
   width: 4800px;
@@ -617,6 +627,9 @@ footer {
   transition: right 0.3s;
   height: 30rem;
   display: flex; }
+  @media screen and (max-width: 480px) {
+    .slider_container {
+      height: 100%; } }
 
 .burger_conteiner {
   margin: 0 auto;
@@ -647,6 +660,10 @@ footer {
       flex-direction: column;
       max-width: 37.5rem;
       justify-content: center; } }
+  @media screen and (max-width: 480px) {
+    .slider_burger {
+      justify-content: center;
+      max-width: 22rem; } }
 
 .slider-icon {
   overflow: hidden;
@@ -673,6 +690,9 @@ footer {
   border-radius: 5px; }
   .burger_ingredient:hover .ingredient_table {
     display: block; }
+  @media screen and (max-width: 480px) {
+    .burger_ingredient {
+      top: 10%; } }
 
 .ingredient_btn {
   width: 60px;
@@ -732,6 +752,16 @@ footer {
   border-radius: 5px;
   text-align: center;
   color: #fff; }
+  @media screen and (max-width: 768px) {
+    .burger_calories {
+      top: 10%;
+      right: 0;
+      left: 80%; } }
+  @media screen and (max-width: 480px) {
+    .burger_calories {
+      top: 8%;
+      right: 0;
+      left: 76%; } }
 
 .burger_btn-cal {
   width: 60px;
@@ -760,11 +790,22 @@ footer {
   max-width: 100%;
   display: block; }
 
+@media screen and (max-width: 768px) {
+  .burger_slider-img {
+    margin-top: 9rem; } }
+@media screen and (max-width: 480px) {
+  .burger_slider-img {
+    margin-top: 6.25rem; } }
+
 .burger_img {
   margin: 30% 0; }
   @media screen and (max-width: 768px) {
     .burger_img {
-      margin: 15px 0; } }
+      margin: 0.9375rem 0; } }
+  @media screen and (max-width: 480px) {
+    .burger_img {
+      margin: 0.31rem 0;
+      height: 12.5rem; } }
 
 .burger_content {
   display: flex;
@@ -773,12 +814,33 @@ footer {
   height: 480px;
   margin-left: 15px;
   width: 80%; }
+  @media screen and (max-width: 768px) {
+    .burger_content {
+      align-items: center; } }
+  @media screen and (max-width: 480px) {
+    .burger_content {
+      max-width: 20rem;
+      text-align: center;
+      height: 16rem; } }
 
 .burger_title {
   font-family: 'gagalinregular';
   font-size: 4.5rem;
   color: #ffffff;
   line-height: 64px; }
+  @media screen and (max-width: 480px) {
+    .burger_title {
+      font-size: 50px;
+      line-height: 48px; } }
+
+@media screen and (max-width: 768px) {
+  .burger_content-title {
+    max-width: 470px;
+    text-align: center;
+    margin-top: 25px; } }
+@media screen and (max-width: 480px) {
+  .burger_content-title {
+    margin-top: 15px; } }
 
 .burger_content-text {
   font-family: "ubuntulight";
@@ -787,10 +849,19 @@ footer {
   line-height: 1.5rem;
   color: #fff;
   margin-top: 35px; }
+  @media screen and (max-width: 768px) {
+    .burger_content-text {
+      text-align: center; } }
+  @media screen and (max-width: 480px) {
+    .burger_content-text {
+      margin-top: 15px; } }
 
 .burger_content-order {
   display: flex;
   margin-top: 3.75rem; }
+  @media screen and (max-width: 480px) {
+    .burger_content-order {
+      margin-top: 15px; } }
 
 .burger_content-price {
   font-size: 72px;
@@ -798,9 +869,15 @@ footer {
   font-family: 'gagalinregular';
   color: #e35028;
   margin-right: 15px; }
+  @media screen and (max-width: 480px) {
+    .burger_content-price {
+      font-size: 50px; } }
 
 .burger_content-price--currency {
   font-size: 30px; }
+  @media screen and (max-width: 480px) {
+    .burger_content-price--currency {
+      font-size: 24px; } }
 
 .order-link {
   font-family: 'ubuntumedium';
@@ -1003,12 +1080,18 @@ footer {
   opacity: 1; }
 
 .accordeon_item_text {
-  width: 700px;
+  width: 43.75rem;
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem;
   color: #fff;
   font-family: "ubuntulight"; }
+  @media screen and (max-width: 768px) {
+    .accordeon_item_text {
+      width: 12.5rem; } }
+  @media screen and (max-width: 480px) {
+    .accordeon_item_text {
+      width: 10rem; } }
 
 .hamburger_menu_btn {
   vertical-align: middle;

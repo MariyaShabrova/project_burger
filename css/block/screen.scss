@@ -90,10 +90,18 @@
     
 }
 .accordeon_item_text {
-    width: 700px;
+    width: 43.75rem;
     font-size: 0.875rem;
     font-weight: 300;
     line-height: 1.5rem;
     color: #fff;
     font-family: "ubuntulight";
+
+    @include tablets() {
+        width: 12.5rem;
+    }
+
+    @include phones() {
+        width: 10rem;
+    }
 }
