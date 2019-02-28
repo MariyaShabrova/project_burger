@@ -97,24 +97,18 @@ close.addEventListener('click', e => {
 hamburger.classList.remove('opened');
 })
 
-/*Аккардеон*/
-/*const accordeon = document.querySelector('.accordeon_list');
+/*модальное окно*/
+var modal = document.querySelectorAll("#modal");
+var btnModal = document.querySelector("#btn_modal");
+var span = document.querySelector(".close")[0];
 
-createAccord(accordElement);
-
-
-function createAccord(element) {
-    const accordeonLink = document.querySelectorAll('.accordeon_item');
-    let activContent;
+btnModal.onclick = function (event) {
+    event.preventDefault();
+    modal.style.display = "block";
 }
-for (i=0; i<accordeonLink.length; i++) {
-    const accordeon_item_link = accordeonLink[i];
+
+span.onclick = function() {
+    modal.style.display = "none";
 }
-accordeon_item_link.addEventListener('click', function() {
-    if(activContent) {
-        activContent.classList.remove('.accordeon_item_activ')
-    }
-    activContent = accordeon_item_link.nextElementSibling;
-    activContent.classList.add('.accordeon_item_activ');
-}) */
+
 
