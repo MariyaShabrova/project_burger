@@ -40,44 +40,7 @@
                     <div class="hamburger_menu_bars"></div>
                   </a>
                 </div>
-                <div class="hamburger_container">
-                <div class="hamburger_links_menu">
-                    <div class="hamdurger_links_container">
-                    <div class="logo">
-                        <a href class="logo">
-                        <img src="img/logo.svg" alt="Mr Burger" class="logo_img">
-                        </a>  
-                    </div>
-                    <div class="closeIcon" id="closeIcon">
-                        <a href="#" class="closeIcon_links">
-                        <img src="img/">
-                        </a>
-                    </div>
-                   </div>
-                   <nav class="hamburger_menu_nav">
-                       <ul class="hamburger_menu_list">
-                           <li class="hamburger_menu_item">
-                               <a href="#" class="hamburger_menu_link">Почему мы</a>
-                           </li>
-                           <li class="hamburger_menu_item">
-                                <a href="#" class="hamburger_menu_link">Меню</a>
-                            </li>
-                            <li class="hamburger_menu_item">
-                                <a href="#" class="hamburger_menu_link">Советы</a>
-                            </li>
-                            <li class="hamburger_menu_item">
-                                <a href="#" class="hamburger_menu_link">Кто мы</a>
-                            </li>
-                            <li class="hamburger_menu_item">
-                                <a href="#" class="hamburger_menu_link">Свяжитесь с нами</a>
-                            </li>
-                            <li class="hamburger_menu_item">
-                                <a href="#" class="hamburger_menu_link">Контакты</a>
-                            </li>
-                       </ul>
-                   </nav>
-                  </div>
-                </div>
+               
               </header>
               <div class="content_hero">
                   <div class="content_hero_img">
@@ -93,10 +56,48 @@
               </a> 
           </div>
       </section>
+      <div class="hamburger_container">
+            <div class="hamburger_links_menu">
+                <div class="hamdurger_links_container">
+                <div class="logo">
+                    <a href class="logo">
+                    <img src="img/logo.svg" alt="Mr Burger" class="logo_img">
+                    </a>  
+                </div>
+                <div class="closeIcon" id="closeIcon">
+                    <a href="#" class="closeIcon_links">
+                    <img src="img/">
+                    </a>
+                </div>
+               </div>
+               <nav class="hamburger_menu_nav">
+                   <ul class="hamburger_menu_list">
+                       <li class="hamburger_menu_item">
+                           <a href="#" class="hamburger_menu_link">Почему мы</a>
+                       </li>
+                       <li class="hamburger_menu_item">
+                            <a href="#" class="hamburger_menu_link">Меню</a>
+                        </li>
+                        <li class="hamburger_menu_item">
+                            <a href="#" class="hamburger_menu_link">Советы</a>
+                        </li>
+                        <li class="hamburger_menu_item">
+                            <a href="#" class="hamburger_menu_link">Кто мы</a>
+                        </li>
+                        <li class="hamburger_menu_item">
+                            <a href="#" class="hamburger_menu_link">Свяжитесь с нами</a>
+                        </li>
+                        <li class="hamburger_menu_item">
+                            <a href="#" class="hamburger_menu_link">Контакты</a>
+                        </li>
+                   </ul>
+               </nav>
+              </div>
+            </div>
        <!---Вторая секция-->
       <section class="section section_centered profit">
           <div class="container">
-              <div class="title">мы лучшие</div>
+              <div class="title profit_title">мы лучшие</div>
               <ul class="profit_list">
                   <li class="profit_item">
                     <div class="profit_img">
@@ -611,7 +612,7 @@
       <!--Пятая секция-->
       <section class="section section_screen">
           <div class="container screen_title">
-              <h1 class="title">Меню</h1>
+              <h1 class="title accordeon_title">Меню</h1>
           </div>
           <div class="screen_activ">
               <ul class="accordeon_list">
@@ -661,8 +662,9 @@
                     <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                 </div>
                 <div class="review_btn">
-                    <a href="#" class="btn btn_background_black">Подробнее</a>
+                    <a href="#" class="btn btn_background_black" id="btn_modal">Подробнее</a>
                 </div>
+                   
             </div>
             </li>
             <li class="review_item" style="background-image: url('./img/review-2.jpg')">
@@ -672,8 +674,14 @@
                             <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                         </div>
                         <div class="review_btn">
-                            <a href="#" class="btn btn_background_black">Подробнее</a>
-                        </div>
+                            <a href="#" class="btn btn_background_black" id="btn_modal">Подробнее</a>
+                        <!--<div class="modal-content" data-modal="2">
+                             <span class="close">$times;</span>
+                            <p>Удовольствие мы действительно получили! Бургер довольно большой, я бы сказала широкий.Степень прожарки котлеты ты не выбираешь, но может оно и к лучшему) У нас котлеты были прожарены как раз так, как следовало, т.е. без сырого мяса))
+                            </p>
+                        </div>-->
+                    </div>        
+                    
                     </div>
             </li>
             <li class="review_item" style="background-image: url('./img/review-3.jpg')">
@@ -743,7 +751,14 @@
                       </div>
             </li>
           </ul>
+          <div class="review_modal" id="modal">
+                <div class="modal-content" data-modal="1">
+                        <span class="close">x</span>
+                        <p>Бургер Dark Beef Burger был сочный и очень вкусный, он действительно стоил того, что я сюда приехала. Если вернусь сюда снова, то куплю только его.
+                        </p>
+                </div>
       </section>
+      
        <!---Седьмая секция-->
       <section class="section order_section">
           <div class="container order_container">
