@@ -98,7 +98,7 @@ hamburger.classList.remove('opened');
 })
 
 /*модальное окно*/
-var modal = document.querySelectorAll("#modal");
+var modal = document.querySelector("#modal");
 var btnModal = document.querySelector("#btn_modal");
 var span = document.querySelector(".close")[0];
 

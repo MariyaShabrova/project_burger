@@ -72,6 +72,7 @@ footer {
   font-family: "gagalinregular";
   src: url(../fonts/Gagalin/subset-Gagalin-Regular.woff) format("woff");
   src: url(../fonts/Gagalin/subset-Gagalin-Regular.woff2) format("woff2");
+  src: url(../fonts/Gagalin/gagalin-regular-webfont.woff2) format("woff2");
   src: url(../fonts/Gagalin/subset-Gagalin-Regular.eot);
   src: url(../fonts/Gagalin/subset-Gagalin-Regular.ttf) format("truetype");
   font-weight: normal;
@@ -1277,5 +1278,14 @@ footer {
   fill: #5b5b5b;
   width: 23px;
   height: 23px; }
+
+.play_section {
+  background: url(../img/play.jpg) center center/cover no-repeat;
+  position: relative; }
+
+.play_title {
+  color: #000;
+  position: absolute;
+  top: 30px; }
 
 /*# sourceMappingURL=style.css.map */

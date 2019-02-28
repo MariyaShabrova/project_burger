@@ -1,0 +1,10 @@
+.play_section {
+  background: url(../img/play.jpg) center center/cover no-repeat;
+  position: relative; }
+
+.play_title {
+  color: #000;
+  position: absolute;
+  top: 30px; }
+
+/*# sourceMappingURL=play.css.map */
