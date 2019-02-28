@@ -1,0 +1,142 @@
+
+.team_section {
+    //background-color: rgba(0, 0, 0, 0.31);
+    background: url(../img/team-activ.jpg) 50% no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.activ_section {
+    position: absolute;
+    //width: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    //height: 100%;
+    background: rgba(47, 50, 52, 0.93);
+    //display: flex;
+    //flex-direction: column;
+    //padding-top: 3.125rem;
+    //padding-left: 5rem;
+    //justify-content: space-around;
+    padding: 5% 2% 0 7%;
+
+    @include tablets {
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}    
+.title_team {
+    margin-bottom: 12%;
+    font-size: 4.5rem;
+    color: #f9b43b;
+    font-family: "gagalinregular";
+   // line-height: 1.1;
+    text-transform: uppercase; 
+  
+}
+
+.team_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 8.4375rem;
+
+    @include tablets {
+        text-align: center;
+    }
+}
+.team_item {
+    color: #fff;
+    flex-direction: column;
+    margin-bottom: 2.1875rem;
+    font-size: 0.875rem;
+    display: block;
+    position: relative;
+
+   /* &:last-child {
+        margin-bottom: 0;
+    }*/
+
+    &.activ { 
+        .team_name_activ {
+        
+            color: #f9b43b;
+        
+    &:before {
+        transform: rotate(-180deg);
+    }
+    }
+ }
+}
+
+.team_name_activ::before {
+    //transition: .5s;
+    margin-right: 0.625rem;
+    content: "";
+    display: block;
+    //position: absolute;
+    left: -1.125rem;
+    top: 0.5rem;
+    height: 0;
+    width: 0;
+    border-top:0.4375rem solid#f9b43b;
+    border-left: 0.3125rem solid transparent;
+    border-right: 0.3125rem solid transparent;
+    border-bottom: 0rem solid transparent;
+    transform: rotate(0deg);
+    transition: .3s;
+
+}
+
+
+
+
+.team_name_activ {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-family: "gagalinregular";
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+
+    @include tablets {
+        display: inline-block;
+    }
+}
+
+.team_img {
+    border-radius: 50%;
+}
+.activ_content {
+   height: 0;
+   overflow: hidden;
+   display: flex;
+   margin-right: 30px;
+   
+
+   @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .5s;
+}
+   
+}
+.activ_content_text {
+    color: #fff;
+    margin-left: 0.9375rem;
+    font-family: "ubuntulight";
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.8125rem;
+}
+.activ_content_title {
+    font-weight: 800;
+}

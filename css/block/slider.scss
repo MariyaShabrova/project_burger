@@ -1,3 +1,335 @@
 .slider_section {
     background: url(../img/slider.jpg) center center / cover no-repeat;
 }
+.slider-left {
+    transform: rotate(90deg);
+    position: absolute;;
+    left: 3.5%;
+    top: 50%;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 2;
+
+    @include tablets() {
+        left: 5%;
+    }
+}
+.slider-right {
+    transform: rotate(-90deg);
+    position: absolute;;
+    right: 3.5%;
+    top: 50%;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 2;
+
+    @include tablets() {
+        right: 5%;
+    }
+}
+.slider_container {
+    width: 4800px;
+    position: relative;
+    transition: right 0.3s;
+    //transform: translate3d(-960px, 0px, 0px);
+    height: 30rem;
+    display: flex;
+
+    @include phones() {
+        height: 100%;
+    }
+
+}
+.burger_conteiner {
+    margin: 0 auto;
+    height: 100%;
+    //max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+
+}
+
+.burger {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 480px;
+    //padding: 20px;
+
+    @include tablets() {
+        height: 100%;
+    }
+}
+
+
+.slider_burger {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    justify-content: center;
+
+    @include tablets() {
+       flex-direction: column;
+       max-width: 37.5rem;
+       justify-content: center;
+
+    }
+
+    @include phones() {
+    justify-content: center;
+    max-width: 22rem;
+    }
+}
+.slider-icon {
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.burger_ingredient {
+    position: absolute;
+    top: 12%;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    height: 5rem;
+    background-color: #f08c33;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+
+ &:hover .ingredient_table{
+    display: block;
+ }
+
+ @include phones() {
+   top: 10%;
+ }
+       
+}
+
+.ingredient_btn {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    fill: #fff;
+}
+.btn_burger {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "gagalinregular";
+}
+.ingredient_table { 
+        display: none;
+        position: absolute;
+        left: 5.3125rem;
+        top: 0;
+        font-family: "Ubuntubold";
+        background: rgba(255, 255, 255, 0.9);
+        color: #000;
+        border-radius: 10px;
+        width: 16.875rem;
+}
+.ingredient {
+    display: flex;
+    height: 54px;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.ingredient_scroll {
+    width: 38px;
+    height: 38px;
+}
+.ingredient_menu {
+    width: 100px;
+    text-align: left;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    font-family: "ubuntumedium"; 
+}
+.ingredient_gram {
+    width: 70px;
+    font-family: "ubuntulight";
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+.burger_calories {
+    position: absolute;
+    bottom: 12%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 5.625rem;
+    height: 5.625rem;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff; 
+
+    @include tablets() {
+        top:10%;
+        right: 0;
+        left: 80%;
+    }
+
+    @include phones() {
+        top: 8%;
+        right: 0;
+        left: 76%;
+    }
+}
+.burger_btn-cal {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    fill: #fff;
+}
+.burger_calories-nam {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90px;
+    height: 95px;
+    margin: -50px 0px;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: "gagalinregular";
+}
+.burger_calories-nam p {
+    font-size: 14px;
+}
+.burger img {
+    max-width: 100%;
+    display: block;
+}
+
+.burger_slider-img {
+
+    @include tablets() {
+        margin-top: 9rem;
+    }
+
+    @include phones() {
+        margin-top: 6.25rem;
+    }
+}
+.burger_img {
+    margin: 30% 0;
+
+    @include tablets () {
+        margin: 0.9375rem 0;
+    }
+
+    @include phones() {
+        margin: 0.31rem 0;
+        height: 12.5rem;
+    }
+}
+.burger_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 480px;
+    margin-left: 15px;
+    width: 80%;
+
+    @include tablets() {
+        align-items: center;
+    }
+
+    @include phones() {
+        max-width: 20rem;
+        text-align: center;
+        height: 16rem;
+    }
+}
+.burger_title {
+    font-family: 'gagalinregular';
+    font-size: 4.5rem;
+    color: #ffffff;
+    line-height: 64px;
+
+    @include phones() {
+        font-size: 50px;
+        line-height: 48px;
+    }
+}
+
+.burger_content-title {
+
+    @include tablets() {
+        max-width: 470px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+@include phones() {
+        margin-top: 15px;
+}
+}
+.burger_content-text {
+    font-family: "ubuntulight";
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: #fff;
+    margin-top: 35px;
+
+    @include tablets() {
+        text-align: center;
+    }
+
+    @include phones() {
+        margin-top: 15px;
+    }
+}
+.burger_content-order {
+    display: flex;
+    margin-top: 3.75rem;
+
+    @include phones() {
+        margin-top: 15px;
+    }
+}
+.burger_content-price {
+    font-size: 72px;
+    line-height: 12px;
+    font-family: 'gagalinregular';
+    color: #e35028;
+    margin-right: 15px;
+
+    @include phones() {
+        font-size: 50px;
+    }
+}
+.burger_content-price--currency {
+    font-size: 30px;
+
+    @include phones() {
+        font-size: 24px;
+    }
+}
+.order-link {
+    font-family: 'ubuntumedium';
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    margin: auto;
+    color: #fff;
+    text-decoration: none;
+}

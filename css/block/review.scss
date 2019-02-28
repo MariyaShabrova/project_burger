@@ -19,10 +19,17 @@
     background: center center / cover no-repeat;
     position: relative;
     filter: grayscale(100%);
+
+    @include tablets() {
+        width: 50%;
+        height: 25%;
+    }
+
     &:hover .review_item_hover {
         opacity: 1;
-
     }
+
+   
 }
 .review_item_hover {
     position: absolute;
@@ -31,7 +38,7 @@
     right: 0;
     bottom: 0;
     background: rgba(#000, .5);
-    padding: 50px 30px 30px 20px;
+    padding: 3.125rem 1.875rem 1.875rem 1.25rem;
     color: #fff;
     opacity: 0;
     transition: opacity .3s;
@@ -40,13 +47,50 @@
 .review_name {
     font-family: "gagalinregular";
     font-size: 0.875rem;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+
+    @include phones() {
+     font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    }
 }
 .review_text {
     font-family: "ubuntulight";
     font-weight: 300;
     font-size: 0.875rem;
     line-height: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     overflow: hidden;
+
+    @include phones() {
+        display: none;
+    }
+}
+
+.review_modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8); 
+}
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 24px;
+    vertical-align: middle;
+    text-align: left;
+    border-radius: 10px;
+    width: 80%;
+}
+.close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
