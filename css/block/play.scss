@@ -2,9 +2,22 @@
     background: url(../img/play.jpg) center center/ cover no-repeat;
     position: relative;
 }
-
+.play_container {
+    position: static;
+}
 .play_title {
     color:#000;
     position: absolute;
     top: 30px;
+}
+.play_img {
+
+    @include tablets() {
+
+    display: flex;
+    top: 20%;
+    position: absolute;
+    flex-direction: column;
+    padding: 0 50px;
+    }
 }

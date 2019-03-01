@@ -98,17 +98,99 @@ hamburger.classList.remove('opened');
 })
 
 /*модальное окно*/
-var modal = document.querySelector("#modal");
-var btnModal = document.querySelector("#btn_modal");
-var span = document.querySelector(".close")[0];
+var modal = document.querySelector("#modal"); // переменная модалки
+var btns = document.querySelectorAll("#btn_modal"); //переменная кнопки открытия отзыва
+var btnclose = document.querySelector(".close");  // переменная кнопки закрытия модального окна
+var modalText = document.querySelector("#modal-text");  //переменная текта
+var texts = {
+    '1': 'Ирина Морозов. Бургер Dark Beef Burger был сочный и очень вкусный, он действительно стоил того, что я сюда приехала. Если вернусь сюда снова, то куплю только его',
+    '2': 'Константин Спилберг. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным',
+    '3': 'Татьяна Орлова. Сами бургеры просто божественны! Не пересушенные, соуса так много, что он просто покрывает бургер чуть не целиком, котлета сочная и очень вкусная, при этом не жирная, бекон — мясо, а не жареное сало.В общем, такой бургер тянет на 5 баллов, не меньше! Таким не стыдно угостить гостей!',
+    '4': '',
+    '5': '',
+    '6': '',
+    '7': '',
+    '8': '',
+};   
 
-btnModal.onclick = function (event) {
-    event.preventDefault();
-    modal.style.display = "block";
-}
+for (let i=0; i < btns.length; i++) {
 
-span.onclick = function() {
+    btns[i].addEventListener("click", e => {  
+        e.preventDefault();                                  
+
+        var sourse = btns[i].getAttribute('data-sourse');     
+
+        alert(sourse);
+        modalText.innerHTML = texts [sourse];           //присвоение определенной кнопки определенного текста
+        modal.style.display = "block";                 //открытие модального окна
+    });
+
+ 
+
+btnclose.addEventListener("click", e => {           //закрытие модального окна
     modal.style.display = "none";
+})
+
+
+
+/*Форма заказа*/
+const myForm = document.querySelector(".form_order");        //переменная формы
+const sendButton = document.querySelector("#sendButton");   //кнопка заказа
+
+
+
+sendButton.addEventListener('click', function(event) {
+    event.preventDefault();
+
+
+
+    if (validateForm(myForm)) {
+        const data = {
+            name: myForm.elements.name.value,
+            name: myForm.elements.phone.value,
+            name: myForm.elements.comment.value,
+        };
+
+
+       const xhr = new XMLHttpRequest();
+        xhr.responseType = 'json';
+        xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+        xhr.send(JSON.stringify(data));
+        xhr.addEventListener('load', () => {
+
+          if (xhr.response.status) {
+              console.log('все ок!');
+          }
+
+       })
+    }
+})
+
+function validateForm(form) {
+
+    //const msg = document.getElementById("#msg");
+    let valid = true;
+
+    
+
+    if (!validateField(form.elements.name)) {
+        valid = false;
+    }
+
+    if (!validateField(form.elements.phone)) {
+        valid = false;
+    }
+
+    if (!validateField(form.elements.comment)) {
+        valid = false;
+    }
+    
+    //msg.style.display = "inline-block";
+    return valid;
 }
 
-
+function validateField(field) {
+    field.nextElementSibling.textContent = field.validationMessage;
+    return field.checkValidity();
+}
+}
