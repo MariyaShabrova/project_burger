@@ -71,7 +71,6 @@
 .review_modal {
     display: none;
     position: fixed;
-    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
@@ -82,15 +81,23 @@
 .modal-content {
     background-color: #fff;
     margin: 15% auto;
-    padding: 24px;
+    padding: 30px;
     vertical-align: middle;
     text-align: left;
     border-radius: 10px;
     width: 80%;
+    position: absolute;
+    left: 10%;
+
 }
-.close {
+.modal-close {
     color: red;
-    float: right;
-    font-size: 28px;
+    right: 10px;
+    top: 0px;
+    position: absolute;
+    padding: 3px;
     font-weight: bold;
+    cursor: pointer;
+    border-radius: 30%;
+    
 }

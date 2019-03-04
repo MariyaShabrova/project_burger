@@ -23,17 +23,17 @@
                   <div class="header_menu_btn">
                       <nav class="navigation navigation_fonts">
                           <ul class="site-navigation">
-                              <li class="menu"><a href="" class="menu_navigation">О нас</a></li>
-                              <li class="menu"><a href="" class="menu_navigation">Бургеры</a></li>
-                              <li class="menu"><a href="" class="menu_navigation">Команда</a></li>
-                              <li class="menu"><a href="" class="menu_navigation">Меню</a></li>
-                              <li class="menu"><a href="" class="menu_navigation">Отзывы</a></li>
-                              <li class="menu"><a href="" class="menu_navigation">Контакты</a></li>
+                              <li class="menu"><a class="menu_navigation" href data-scroll-to="1">О нас</a></li>
+                              <li class="menu"><a class="menu_navigation" href data-scroll-to="2">Бургеры</a></li>
+                              <li class="menu"><a class="menu_navigation" href data-scroll-to="3">Команда</a></li>
+                              <li class="menu"><a class="menu_navigation" href data-scroll-to="4">Меню</a></li>
+                              <li class="menu"><a class="menu_navigation" href data-scroll-to="5">Отзывы</a></li>
+                              <li class="menu"><a class="menu_navigation" href data-scroll-to="8">Контакты</a></li>
                           </ul>
                       </nav>
                   </div>
                   <div class="header_links">
-                 <a href="" class="btn order_btn">Заказать</a>    
+                 <a class="btn order_btn" href data-scroll-to="8">Заказать</a>    
                   </div>
                   <div class="hamburger_links">
                   <a class="hamburger_menu_btn" id="hamburger">
@@ -55,7 +55,6 @@
                   <img src="./img/arrow-scroll.svg" class="hero_bottom_img">
               </a> 
           </div>
-      </section>
       <div class="hamburger_container">
             <div class="hamburger_links_menu">
                 <div class="hamdurger_links_container">
@@ -66,7 +65,7 @@
                 </div>
                 <div class="closeIcon" id="closeIcon">
                     <a href="#" class="closeIcon_links">
-                    <img src="img/">
+                    <img src="./img/close.svg#close" class="close">
                     </a>
                 </div>
                </div>
@@ -94,6 +93,7 @@
                </nav>
               </div>
             </div>
+        </section>
        <!---Вторая секция-->
       <section class="section section_centered profit">
           <div class="container">
@@ -154,7 +154,7 @@
                   <div class="slider_container" id="slider">
                       <div class="slider_burger">           
                  <div class="burger_ingredient">
-                     <img class="ingredient_btn" href="./img/burger.svg#burger" /> 
+                     <img class="ingredient_btn" src="./img/burger.svg#burger" /> 
                         <!--- <use xlink:href="./img/burger.svg#burger">
                         </use>
                          </svg>-->
@@ -199,7 +199,7 @@
             </div>
         </div>
                  <div class="burger_calories">
-                     <svg class="burger_btn-cal"></svg>
+                     <img src="./img/kkal.svg" class="burger_btn-cal"></img>
                      <div class="burger_calories-nam">
                      1200
                      <p>Ккал</p> 
@@ -657,12 +657,12 @@
           <ul class="review_list">
             <li class="review_item" style="background-image: url('./img/review-1.jpg')">
             <div class="review_item_hover">
-                <div class="review_name">Константин Спилберг</div>
+                <div class="review_name">Ирина Морозова</div>
                 <div class="review_text">
-                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                    <p>Бургер Dark Beef Burger был сочный и очень вкусный, он действительно стоил того, что я сюда приехала. Если вернусь сюда снова, то куплю только его.</p>
                 </div>
                 <div class="review_btn">
-                    <a href="#" class="btn btn_background_black" id="btn_modal">Подробнее</a>
+                    <a href="#" class="btn btn_background_black" id="btn_modal" data-sourse="1">Подробнее</a>
                 </div>
                    
             </div>
@@ -674,131 +674,148 @@
                             <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                         </div>
                         <div class="review_btn">
-                            <a href="#" class="btn btn_background_black" id="btn_modal">Подробнее</a>
-                        <!--<div class="modal-content" data-modal="2">
-                             <span class="close">$times;</span>
-                            <p>Удовольствие мы действительно получили! Бургер довольно большой, я бы сказала широкий.Степень прожарки котлеты ты не выбираешь, но может оно и к лучшему) У нас котлеты были прожарены как раз так, как следовало, т.е. без сырого мяса))
-                            </p>
-                        </div>-->
-                    </div>        
-                    
+                            <a href="#" class="btn btn_background_black" id="btn_modal" data-sourse="2">Подробнее</a>
+                    </div>       
                     </div>
             </li>
             <li class="review_item" style="background-image: url('./img/review-3.jpg')">
                 <div class="review_item_hover">
-                        <div class="review_name">Константин Спилберг</div>
+                        <div class="review_name">Татьяна Орлова</div>
                         <div class="review_text">
-                            <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            <p>Сами бургеры просто божественны! Не пересушенные, соуса так много, что он просто покрывает бургер чуть не целиком.</p>
                         </div>
                         <div class="review_btn">
-                            <a href="#" class="btn btn_background_black">Подробнее</a>
+                            <a href="#" class="btn btn_background_black" id="btn_modal" data-sourse="3">Подробнее</a>
                         </div>
                     </div>
             </li>
             <li class="review_item" style="background-image: url('./img/review-4.jpg')">
                 <div class="review_item_hover">
-                        <div class="review_name">Константин Спилберг</div>
+                        <div class="review_name">Лев Попов</div>
                         <div class="review_text">
-                            <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            <p>Перефразируя строки уже наверное ставшие классикой, можно сказать следующие: «И толстый, толстый слой моцареллы.</p>
                         </div>
                         <div class="review_btn">
-                            <a href="#" class="btn btn_background_black">Подробнее</a>
+                            <a href="#" class="btn btn_background_black" id="btn_modal" data-sourse="4">Подробнее</a>
                         </div>
                     </div>
             </li>
             <li class="review_item" style="background-image: url('./img/review-5.jpg')">
                 <div class="review_item_hover">
-                        <div class="review_name">Константин Спилберг</div>
+                        <div class="review_name">Руслан Ковшин</div>
                         <div class="review_text">
-                            <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            <p>Первое знакомство с бургерами SPICY SHRIMP BURGER оказалось удачным.</p>
                         </div>
                         <div class="review_btn">
-                            <a href="#" class="btn btn_background_black">Подробнее</a>
+                            <a href="#" class="btn btn_background_black" id="btn_modal" data-sourse="5">Подробнее</a>
                         </div>
                     </div>
             </li>
             <li class="review_item" style="background-image: url('./img/review-6.jpg')">
                 <div class="review_item_hover">
-                        <div class="review_name">Константин Спилберг</div>
+                        <div class="review_name">Ольга Туркина</div>
                         <div class="review_text">
-                            <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            <p>Очень крутые бургеры, котлета просто супер, можно сказать идеальная.</p>
                         </div>
                         <div class="review_btn">
-                            <a href="#" class="btn btn_background_black">Подробнее</a>
+                            <a href="#" class="btn btn_background_black" id="btn_modal" data-sourse="6">Подробнее</a>
                         </div>
                     </div>
             </li>
             <li class="review_item" style="background-image: url('./img/review-7.jpg')">
                 <div class="review_item_hover">
-                        <div class="review_name">Константин Спилберг</div>
+                        <div class="review_name">Алексей Карлович</div>
                         <div class="review_text">
-                            <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            <p>Бургер сам по себе оказался довольно вкусным, нежный сыр и хороший соус, приятная котлета.</p>
                         </div>
                         <div class="review_btn">
-                            <a href="#" class="btn btn_background_black">Подробнее</a>
+                            <a href="#" class="btn btn_background_black" id="btn_modal" data-sourse="7">Подробнее</a>
                         </div>
                     </div>     
             </li>
             <li class="review_item" style="background-image: url('./img/review-8.jpg')">
                 <div class="review_item_hover">
-                        <div class="review_name">Константин Спилберг</div>
+                        <div class="review_name">Станислав Морин</div>
                         <div class="review_text">
-                            <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            <p>Бургеры выше всяких похвал, мясо срочное, приготовлено отлично, сочетание вкусов хорошее.</p>
                         </div>
                         <div class="review_btn">
-                            <a href="#" class="btn btn_background_black">Подробнее</a>
+                            <a href="#" class="btn btn_background_black" id="btn_modal" data-sourse="8">Подробнее</a>
                         </div>
                       </div>
             </li>
           </ul>
           <div class="review_modal" id="modal">
-                <div class="modal-content" data-modal="1">
-                        <span class="close">x</span>
-                        <p>Бургер Dark Beef Burger был сочный и очень вкусный, он действительно стоил того, что я сюда приехала. Если вернусь сюда снова, то куплю только его.
-                        </p>
-                </div>
+                <div class="modal-content">
+                        <p id="modal-text">текст</p>
+                        <span class="modal-close">X</span>
+                 </div>
+         </div>
       </section>
+      <!--Седьмая секция-->
+      <section class="section play_section">
+            <div class="title play_title">Как мы работаем</div>
+          <div class="container play_container">
+              <div class="play_player">
+                  <video id="play_video">
+                  <sourse src="./img/videoplayback.mp4" type="video/mp4">
+                  </video>
+                  <img src="./img/Play-white.png" alt="" class="play play_white">
+              </div>
+              <div class="play_tool">
+                  <div class="scale">
+                      <img src="./img/Play-gray.png" class="play scale_img">
+                      <input type="range" class="scale_play" id="scaleplay" min="0">
+                  </div>
+                  <div class="volume">
+                      <img src="img/Volum-gray.png" class="volume_img" id="volumeplay" alt="">
+                      <input type="range" class="scale_volume" id="scalevolume" alt="">
+                  </div>
+              </div>
+          </div>
+      </section>          
       
-       <!---Седьмая секция-->
+       <!---Восьмая секция-->
       <section class="section order_section">
           <div class="container order_container">
           <div class="title">Закажите доставку</div>
-          <form action="" class="form_order">
+          <form action="" class="form_order" method="POST">
                 <div class="form_content_column">
               <div class="form--left">
               <div class="form">
                     <label for="" class="form_content">
                         <div class="form_content_title">Имя</div>
-                        <input type="text" class="form_content_input" value="" name="name" required>
+                        <input type="text" class="form_content_input"  name="name" required>
                         <div class="error"></div>
                     </label>
                     <label for="" class="form_content">
                             <div class="form_content_title">Телефон</div>
-                            <input type="text" class="form_content_input" value="" name="phone">
+                            <input type="text" class="form_content_input" name="phone" required>
+                            <div class="error"></div>
                         </label>      
               </div>
               <div class="form">
                 <label for="" class="form_content">
                     <div class="form_content_title">Улица</div>
-                    <input type="text" class="form_content_input" value="" name="street">
+                    <input type="text" class="form_content_input" name="street" required>
                 </label>      
           </div>
           <div class="form">
               <label for="" class="form_content">
               <div class="form_content_title">Дом</div>
-                <input type="text" class="form_content_input" value="" name="house">
+                <input type="text" class="form_content_input" name="house" required>
             </label>
             <label for="" class="form_content">
                 <div class="form_content_title">Корпус</div>
-                  <input type="text" class="form_content_input" value="" name="body">
+                  <input type="text" class="form_content_input" name="body" required>
               </label>
               <label for="" class="form_content">
                 <div class="form_content_title">Квартира</div>
-                  <input type="text" class="form_content_input" value="" name="apartment">
+                  <input type="text" class="form_content_input" value="" name="apartment" required>
               </label>
               <label for="" class="form_content">
                 <div class="form_content_title">Этаж</div>
-                  <input type="text" class="form_content_input" value="" name="floor">
+                  <input type="text" class="form_content_input" value="" name="floor" required>
               </label>
       </div>
       </div>
@@ -806,7 +823,8 @@
             <div class="form_right_row">
                     <label class="form_content_row">
                         <div class="form_content_title_row">Комментарий</div>
-                        <textarea class="form_content_input_row" name="comment"></textarea>
+                        <textarea class="form_content_input_row" value="" name="comment" required></textarea>
+                        <div class="error"></div>
                     </label>
         </div>
         <div class="form_content row1">
@@ -833,15 +851,16 @@
 </div>
 </div>
 <div class="form_content row3">
-    <a href="" class="btn btn_order" type="sambit">Заказать</a> 
+    <a href="" class="btn btn_order" type="sambit" id="sendButton">Заказать</a> 
     <a href="" class="btn_order_colorless" type="reset">Очистить</a> 
+    
 </div>
       </div>
           </form>
         </div>
     </div>
 </section>
-      <!--Восьмая секция-->
+      <!--Девятая секция-->
       <section class="section contacts">
           <div class="map">
             <div class="contacts_title">Контакты</div>
@@ -891,21 +910,38 @@
    <!---Навигация фиксированная справа-->
   <nav class="fixed-menu">
   <ul class="fixed-menu-list">
-      <li class="fixed-menu-item">
-          <a href="" class="fixed-menu-link"></a>
+      <li class="fixed-menu-item active">
+          <a class="fixed-menu-link" href data-scroll-to="0"></a>
       </li>
-      <li class="fixed-menu-item"></li>
-      <li class="fixed-menu-item"></li>
-      <li class="fixed-menu-item"></li>
-      <li class="fixed-menu-item"></li>
-      <li class="fixed-menu-item"></li>
-      <li class="fixed-menu-item"></li>
-      <li class="fixed-menu-item"></li>
+      <li class="fixed-menu-item">
+            <a class="fixed-menu-link" href data-scroll-to="1"></a>
+      </li>
+      <li class="fixed-menu-item">
+            <a class="fixed-menu-link" href data-scroll-to="2"></a>
+      </li>
+      <li class="fixed-menu-item">
+            <a class="fixed-menu-link" href data-scroll-to="3"></a>
+      </li>
+      <li class="fixed-menu-item">
+            <a class="fixed-menu-link" href data-scroll-to="4"></a>
+      </li>
+      <li class="fixed-menu-item">
+            <a class="fixed-menu-link" href data-scroll-to="5"></a>
+      </li>
+      <li class="fixed-menu-item">
+            <a class="fixed-menu-link" href data-scroll-to="6"></a>
+      </li>
+      <li class="fixed-menu-item">
+            <a class="fixed-menu-link" href data-scroll-to="7"></a>
+      </li>
+      <li class="fixed-menu-item">
+            <a class="fixed-menu-link" href data-scroll-to="8"></a>
+      </li>
   </ul>
 </nav>
-  </div>
-<script type="text/javascript" src="./js/script.js"></script>    
+  </div>   
 <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
 <script type="text/javascript" src="./js/jQuery-script.js"></script>
 </body>
 </html>

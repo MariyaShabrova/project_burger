@@ -16,4 +16,8 @@
 .accordeon_title {
     text-align: left;
     color: #fff;
+
+    @include phones() {
+        font-size: 3.5rem;
+    }
 }

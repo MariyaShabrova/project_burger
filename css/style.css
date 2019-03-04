@@ -17,7 +17,7 @@ body {
   height: 100%; }
 
 body {
-  /*font-size: 16px;*/
+  font-size: 16px;
   line-height: 1.42;
   position: relative;
   color: black;
@@ -25,14 +25,22 @@ body {
 
 .wrapper {
   overflow: hidden;
-  min-height: 100%;
-  width: 100%; }
+  height: 100%;
+  width: 100%;
+  position: relative; }
+
+.main_content {
+  transition: transform 1s;
+  height: 100%;
+  will-change: transform; }
 
 .container {
+  display: flex;
   position: relative;
   margin: 0 auto;
   max-width: 58.75rem;
   width: 95%;
+  flex-direction: column;
   /*text-align: center;*/ }
 
 .section {
@@ -72,6 +80,7 @@ footer {
   font-family: "gagalinregular";
   src: url(../fonts/Gagalin/subset-Gagalin-Regular.woff) format("woff");
   src: url(../fonts/Gagalin/subset-Gagalin-Regular.woff2) format("woff2");
+  src: url(../fonts/Gagalin/gagalin-regular-webfont.woff2) format("woff2");
   src: url(../fonts/Gagalin/subset-Gagalin-Regular.eot);
   src: url(../fonts/Gagalin/subset-Gagalin-Regular.ttf) format("truetype");
   font-weight: normal;
@@ -209,10 +218,13 @@ footer {
     .content_hero {
       flex-direction: column;
       align-items: center;
-      text-align: center; } }
+      text-align: center;
+      top: 15%;
+      padding: 0 4.6875rem; } }
   @media screen and (max-width: 480px) {
     .content_hero {
-      top: 10%; } }
+      top: 10%;
+      padding: 0; } }
 
 .title_hero {
   font-size: 4.5rem;
@@ -234,7 +246,7 @@ footer {
   width: 28.75rem; }
   @media screen and (max-width: 768px) {
     .hero_burger_img {
-      width: 26rem; } }
+      width: 30rem; } }
   @media screen and (max-width: 480px) {
     .hero_burger_img {
       width: 25rem;
@@ -305,6 +317,9 @@ footer {
 .accordeon_title {
   text-align: left;
   color: #fff; }
+  @media screen and (max-width: 480px) {
+    .accordeon_title {
+      font-size: 3.5rem; } }
 
 .profit {
   background: url(../img/bg.jpg) center center/cover no-repeat; }
@@ -425,7 +440,6 @@ footer {
 .review_modal {
   display: none;
   position: fixed;
-  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
@@ -436,17 +450,23 @@ footer {
 .modal-content {
   background-color: #fff;
   margin: 15% auto;
-  padding: 24px;
+  padding: 30px;
   vertical-align: middle;
   text-align: left;
   border-radius: 10px;
-  width: 80%; }
+  width: 80%;
+  position: absolute;
+  left: 10%; }
 
-.close {
+.modal-close {
   color: red;
-  float: right;
-  font-size: 28px;
-  font-weight: bold; }
+  right: 10px;
+  top: 0px;
+  position: absolute;
+  padding: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 30%; }
 
 .order_section {
   background: url("../img/order.jpg") center center/cover no-repeat; }
@@ -600,6 +620,11 @@ footer {
 
 .error {
   color: red; }
+
+.msg {
+  display: none;
+  color: black;
+  font-size: 16px; }
 
 .fixed-menu {
   position: fixed;
@@ -1277,5 +1302,60 @@ footer {
   fill: #5b5b5b;
   width: 23px;
   height: 23px; }
+
+.play_section {
+  background: url(../img/play.jpg) center center/cover no-repeat;
+  position: relative; }
+
+.play_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.play_title {
+  color: #000;
+  padding-top: 30px; }
+
+.play_player {
+  position: relative;
+  max-width: 41.25rem; }
+
+.play_tool {
+  width: 41.25rem;
+  height: 2.4875rem;
+  background-color: #3e3e3e;
+  margin-top: -11px;
+  display: flex; }
+
+.scale_play {
+  width: 27.75rem;
+  height: 1.25rem;
+  border-radius: 1px;
+  background-color: #626262; }
+
+.scale {
+  padding-left: 6px;
+  padding-right: 10px; }
+
+.scale_img, .volume_img {
+  padding-top: 10px; }
+
+.volume {
+  padding-left: 6px;
+  padding-right: 10px; }
+
+.scale_volume {
+  width: 8.75rem;
+  height: 1.25rem;
+  border-radius: 1px;
+  background-color: #626262; }
+
+#play_video {
+  position: absolute;
+  min-width: 41.25rem;
+  max-width: 41.25rem;
+  min-height: 23.125rem;
+  max-height: 23.125rem; }
 
 /*# sourceMappingURL=style.css.map */
