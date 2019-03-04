@@ -23,17 +23,17 @@
                   <div class="header_menu_btn">
                       <nav class="navigation navigation_fonts">
                           <ul class="site-navigation">
-                              <li class="menu"><a href="" class="menu_navigation">О нас</a></li>
-                              <li class="menu"><a href="" class="menu_navigation">Бургеры</a></li>
-                              <li class="menu"><a href="" class="menu_navigation">Команда</a></li>
-                              <li class="menu"><a href="" class="menu_navigation">Меню</a></li>
-                              <li class="menu"><a href="" class="menu_navigation">Отзывы</a></li>
-                              <li class="menu"><a href="" class="menu_navigation">Контакты</a></li>
+                              <li class="menu"><a class="menu_navigation" href data-scroll-to="1">О нас</a></li>
+                              <li class="menu"><a class="menu_navigation" href data-scroll-to="2">Бургеры</a></li>
+                              <li class="menu"><a class="menu_navigation" href data-scroll-to="3">Команда</a></li>
+                              <li class="menu"><a class="menu_navigation" href data-scroll-to="4">Меню</a></li>
+                              <li class="menu"><a class="menu_navigation" href data-scroll-to="5">Отзывы</a></li>
+                              <li class="menu"><a class="menu_navigation" href data-scroll-to="8">Контакты</a></li>
                           </ul>
                       </nav>
                   </div>
                   <div class="header_links">
-                 <a href="" class="btn order_btn">Заказать</a>    
+                 <a class="btn order_btn" href data-scroll-to="8">Заказать</a>    
                   </div>
                   <div class="hamburger_links">
                   <a class="hamburger_menu_btn" id="hamburger">
@@ -752,17 +752,30 @@
                  </div>
          </div>
       </section>
-      <!--Шестая секция-->
+      <!--Седьмая секция-->
       <section class="section play_section">
+            <div class="title play_title">Как мы работаем</div>
           <div class="container play_container">
-              <div class="title play_title">Как мы работаем</div>
-              <div class="play_img">
-                  <img class="play_video" src="./img/video.jpg">
+              <div class="play_player">
+                  <video id="play_video">
+                  <sourse src="./img/videoplayback.mp4" type="video/mp4">
+                  </video>
+                  <img src="./img/Play-white.png" alt="" class="play play_white">
+              </div>
+              <div class="play_tool">
+                  <div class="scale">
+                      <img src="./img/Play-gray.png" class="play scale_img">
+                      <input type="range" class="scale_play" id="scaleplay" min="0">
+                  </div>
+                  <div class="volume">
+                      <img src="img/Volum-gray.png" class="volume_img" id="volumeplay" alt="">
+                      <input type="range" class="scale_volume" id="scalevolume" alt="">
+                  </div>
               </div>
           </div>
       </section>          
       
-       <!---Седьмая секция-->
+       <!---Восьмая секция-->
       <section class="section order_section">
           <div class="container order_container">
           <div class="title">Закажите доставку</div>
@@ -847,7 +860,7 @@
         </div>
     </div>
 </section>
-      <!--Восьмая секция-->
+      <!--Девятая секция-->
       <section class="section contacts">
           <div class="map">
             <div class="contacts_title">Контакты</div>
@@ -897,21 +910,38 @@
    <!---Навигация фиксированная справа-->
   <nav class="fixed-menu">
   <ul class="fixed-menu-list">
-      <li class="fixed-menu-item">
-          <a href="" class="fixed-menu-link"></a>
+      <li class="fixed-menu-item active">
+          <a class="fixed-menu-link" href data-scroll-to="0"></a>
       </li>
-      <li class="fixed-menu-item"></li>
-      <li class="fixed-menu-item"></li>
-      <li class="fixed-menu-item"></li>
-      <li class="fixed-menu-item"></li>
-      <li class="fixed-menu-item"></li>
-      <li class="fixed-menu-item"></li>
-      <li class="fixed-menu-item"></li>
+      <li class="fixed-menu-item">
+            <a class="fixed-menu-link" href data-scroll-to="1"></a>
+      </li>
+      <li class="fixed-menu-item">
+            <a class="fixed-menu-link" href data-scroll-to="2"></a>
+      </li>
+      <li class="fixed-menu-item">
+            <a class="fixed-menu-link" href data-scroll-to="3"></a>
+      </li>
+      <li class="fixed-menu-item">
+            <a class="fixed-menu-link" href data-scroll-to="4"></a>
+      </li>
+      <li class="fixed-menu-item">
+            <a class="fixed-menu-link" href data-scroll-to="5"></a>
+      </li>
+      <li class="fixed-menu-item">
+            <a class="fixed-menu-link" href data-scroll-to="6"></a>
+      </li>
+      <li class="fixed-menu-item">
+            <a class="fixed-menu-link" href data-scroll-to="7"></a>
+      </li>
+      <li class="fixed-menu-item">
+            <a class="fixed-menu-link" href data-scroll-to="8"></a>
+      </li>
   </ul>
 </nav>
-  </div>
-<script type="text/javascript" src="./js/script.js"></script>    
+  </div>   
 <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
 <script type="text/javascript" src="./js/jQuery-script.js"></script>
 </body>
 </html>

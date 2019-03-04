@@ -16,11 +16,11 @@ html {
 
 html,
 body {
-    height: 100%;
+   height: 100%;
 }
 
 body {
-    /*font-size: 16px;*/
+    font-size: 16px;
     line-height: 1.42;
     position: relative;
     color: black;
@@ -35,12 +35,18 @@ body {
     
     
 }
+.main_content {
+   transition: transform 1s;
+   height: 100%;
+   will-change: transform;
+}
 .container {
-    //display: flex;
+    display: flex;
     position: relative;
     margin: 0 auto;
     max-width: 58.75rem;
     width: 95%;
+    flex-direction: column;
     /*text-align: center;*/
 }
 

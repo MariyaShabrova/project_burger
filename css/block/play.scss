@@ -3,21 +3,57 @@
     position: relative;
 }
 .play_container {
-    position: static;
+    //height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .play_title {
     color:#000;
-    position: absolute;
-    top: 30px;
+    padding-top: 30px;
 }
-.play_img {
 
-    @include tablets() {
-
+.play_player {
+    position: relative;
+    max-width: 41.25rem;
+}
+.play_tool {
+    width: 41.25rem;
+    height: 2.4875rem;
+    background-color: #3e3e3e;
+    margin-top: -11px;
     display: flex;
-    top: 20%;
+}
+
+.scale_play {
+    width: 27.75rem;
+    height: 1.25rem;
+    border-radius: 1px;
+    background-color: #626262;
+}
+
+.scale {
+    padding-left: 6px;
+    padding-right: 10px;
+}
+.scale_img, .volume_img {
+    padding-top: 10px;
+}
+.volume {
+    padding-left: 6px;
+    padding-right: 10px;
+}
+.scale_volume {
+    width: 8.75rem;
+    height: 1.25rem;
+    border-radius: 1px;
+    background-color: #626262;
+}
+#play_video {
     position: absolute;
-    flex-direction: column;
-    padding: 0 50px;
-    }
+    min-width: 41.25rem;
+    max-width: 41.25rem;
+    min-height: 23.125rem;
+    max-height: 23.125rem;
 }
