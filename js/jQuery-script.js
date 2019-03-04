@@ -18,7 +18,7 @@ $(document).ready(function() {
     }
     
 })
-})
+});
 
 /*видео*/
 /*$().ready(function() {
@@ -63,16 +63,16 @@ const myTransition = sectionEq => {
 };
 
 const scrollSection = direction => {
-     const activeSection = sections.filter('.active');
+     const activeSection = sections.filter(".active");
      const nextSection = activeSection.next();
      const prevSection = activeSection.prev();
      
 
      if (direction === 'next') {
-         myTransition(nextSection.index())
+         myTransition(nextSection.index());
      }
      if (direction === 'prev') {
-        myTransition(prevSection.index())
+        myTransition(prevSection.index());
     }
 }
 
