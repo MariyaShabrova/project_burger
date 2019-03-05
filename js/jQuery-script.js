@@ -55,7 +55,7 @@ const myTransition = sectionEq => {
     .addClass("active")
     .siblings()
     .removeClass("active");
-
+ 
     displayScroll.css({
         transform: "translateY(${positions})"
 })
@@ -78,6 +78,7 @@ const scrollSection = direction => {
 
   $(".wrapper").on("wheel", e => {
     const deltaY = e.originalEvent.deltaY;
+   
 
 
 if (deltaY > 0) {

@@ -705,7 +705,6 @@ footer {
 
 .burger_conteiner {
   margin: 0 auto;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center; }
