@@ -607,7 +607,6 @@
                 </li>
               </ul>
               </div>
-          </div>
       </section>
       <!--Пятая секция-->
       <section class="section section_screen">
@@ -745,12 +744,6 @@
                       </div>
             </li>
           </ul>
-          <div class="review_modal" id="modal">
-                <div class="modal-content">
-                        <p id="modal-text">текст</p>
-                        <span class="modal-close">X</span>
-                 </div>
-         </div>
       </section>
       <!--Седьмая секция-->
       <section class="section play_section">
@@ -862,85 +855,83 @@
 </section>
       <!--Девятая секция-->
       <section class="section contacts">
-          <div class="map">
-            <div class="contacts_title">Контакты</div>
-          </div>
-      <!--Footer-->
+          <div class="yandex-map" id="map"></div>
       <footer class="footer">
-          <div class="footer_wrapper">
+          <div class="container footer_container">
               <div class="footer_contact">
-                  <p class="footer_addres">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</p>
-                  <p class="footer_phone">+7 (812) 377-13-77</p>
+                  <div class="footer_addres">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
+                  <a class="footer_phone" href="+78123771377">(812) 377-13-77</a>
               </div>
-              <ul class="footer_social">
+              <div class="footer_contact footer_social">
+              <ul class="social">
                  <li class="social_item">
-                      <a href="" class="social_link--vk">
-                          <svg class="social_icons">
-
-                          </svg>
+                      <a href="" class="social_link">
+                          <img class="social_icons-vk" src="img/vk.svg#vk">
                       </a>
                     </li>
                 <li class="social_item">
-                        <a href="" class="social_link--fb">
-                            <svg class="social_icons">
-                                
-                            </svg>
+                        <a href="" class="social_link">
+                            <img class="social_icons-fb" src="/img/fb.svg#fb">
                         </a>
                     </li>
                 <li class="social_item">
-                            <a href="" class="social_link--instagram">
-                                <svg class="social_icons">
-                                    
-                                </svg>
+                            <a href="" class="social_link">
+                                <img class="social_icons-instagram" src="img/inst.svg#inst">   
                             </a>
                     </li>
                 <li class="social_item">
-                            <a href="" class="social_link--twitter">
-                                <svg class="social_icons">
-                                    
-                                </svg>
+                            <a href="" class="social_linktwitter">
+                                <img class="social_icons-twitter" src="img/twitter.svg#twitter">
                             </a>
                     </li>
-
-
               </ul>
             </div>
+            </div>
         </footer>
-        </section>
+ </section>
+</div>
    <!---Навигация фиксированная справа-->
   <nav class="fixed-menu">
   <ul class="fixed-menu-list">
       <li class="fixed-menu-item active">
-          <a class="fixed-menu-link" href data-scroll-to="0"></a>
+          <a class="fixed-menu-link" href="" data-scroll-to="0"></a>
       </li>
       <li class="fixed-menu-item">
-            <a class="fixed-menu-link" href data-scroll-to="1"></a>
+            <a class="fixed-menu-link" href="" data-scroll-to="1"></a>
       </li>
       <li class="fixed-menu-item">
-            <a class="fixed-menu-link" href data-scroll-to="2"></a>
+            <a class="fixed-menu-link" href="" data-scroll-to="2"></a>
       </li>
       <li class="fixed-menu-item">
-            <a class="fixed-menu-link" href data-scroll-to="3"></a>
+            <a class="fixed-menu-link" href="" data-scroll-to="3"></a>
       </li>
       <li class="fixed-menu-item">
-            <a class="fixed-menu-link" href data-scroll-to="4"></a>
+            <a class="fixed-menu-link" href="" data-scroll-to="4"></a>
       </li>
       <li class="fixed-menu-item">
-            <a class="fixed-menu-link" href data-scroll-to="5"></a>
+            <a class="fixed-menu-link" href="" data-scroll-to="5"></a>
       </li>
       <li class="fixed-menu-item">
-            <a class="fixed-menu-link" href data-scroll-to="6"></a>
+            <a class="fixed-menu-link" href="" data-scroll-to="6"></a>
       </li>
       <li class="fixed-menu-item">
-            <a class="fixed-menu-link" href data-scroll-to="7"></a>
+            <a class="fixed-menu-link" href="" data-scroll-to="7"></a>
       </li>
       <li class="fixed-menu-item">
-            <a class="fixed-menu-link" href data-scroll-to="8"></a>
+            <a class="fixed-menu-link" href="" data-scroll-to="8"></a>
       </li>
   </ul>
 </nav>
+/*модальное окно*/
+<div class="review_modal" id="modal">
+    <div class="modal-content">
+            <p id="modal-text">текст</p>
+            <span class="modal-close">X</span>
+     </div>
+</div>
   </div>  
     <script type="text/javascript" src="./js/jquery-3.3.1.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
     <script type="text/javascript" src="./js/jQuery-script.js"></script> 
     <script type="text/javascript" src="./js/script.js"></script>
 </body>

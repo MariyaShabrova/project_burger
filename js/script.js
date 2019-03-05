@@ -196,3 +196,30 @@ function validateField(field) {
 }
 }
 
+/*Карта яндекс*/
+
+ymaps.ready(init);
+
+function init(){     
+
+    var myMap;
+
+    myMap = new ymaps.Map("map", {
+        center: [59.93, 30.31],
+        zoom: 11
+        
+    });
+ 
+    myMap.behaviors.disable('scrollZoom');
+ 
+    myMap.controls.add("zoomControl", {
+        position: {top: 15, left: 15}
+    });
+    var myPlacemark = new ymaps.Placemark([55.7649, 37.63836] , {},
+        { iconLayout: 'default#image',
+          iconImageHref: '/img/map-marker.png',
+          iconImageSize: [40, 51],
+          iconImageOffset: [-20, -47] });     
+ 
+    myMap.geoObjects.add(myPlacemark);
+}

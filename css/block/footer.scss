@@ -3,11 +3,25 @@
     width: 100%;
     background-color: #101010;
     height: 3.4375rem;
+    bottom: 0;
 }
-.footer_wrapper {
+
+.footer_container {
     display: flex;
-    justify-content: space-between;
-    height: 100%;
+    flex-direction: row
+    /*justify-content: space-between;
+    height: 100%;*/
+}
+
+.footer_contact {
+     width: 50%;
+     margin-bottom: 0.9375rem;
+
+     @include phones() {
+         float: none;
+         width: 100%;
+         text-align: center;
+     }
 }
 .footer_addres {
     color: #fff;
@@ -25,15 +39,27 @@
     margin: 0px 0px 0px 80px;
 }
 .footer_social {
+    text-align: right;
+    margin-bottom: 0;
+
+    @include phones() {
+        text-align: center;
+    }
+}
+.social{
     display: flex;
     margin: 15px 60px 0px 0px;
 }
 .social_item {
-   // margin-right: 10px;
+    margin-right: 10px;
 }
-.social_icons {
+.social_icons-vk
+.social_icons-fb
+.social_icons-instagram
+.social_icons-twitter {
     display: inline-block;
     vertical-align: middle;
+    margin-left: 20px;
     fill: #5b5b5b;
     width: 23px;
     height: 23px;
