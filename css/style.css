@@ -53,17 +53,14 @@ body {
   @media screen and (max-width: 768px) {
     .section {
       min-height: initial; } }
-  .section_centered {
-        /*.container {
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-
-        }*/ }
-    .section_centered .title {
-      width: 100%;
-      text-align: center; }
+  .section_centered .title {
+    width: 100%;
+    text-align: center; }
+  .section_centered .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
 
 table {
   border-collapse: collapse;
@@ -1265,13 +1262,13 @@ footer {
   width: 100%;
   height: 100%; }
 
-.contacts {
-  background: url("../img/map.jpg") no-repeat;
-  background-color: rgba(236, 234, 234, 0.31);
-  background-size: cover;
-  background-position: center bottom; }
-
-.map {
+/*.contacts {
+    background: url("../img/map.jpg") no-repeat;
+    background-color: rgba(236, 234, 234, 0.31);
+    background-size: cover;
+    background-position: center bottom;
+}*/
+#map {
   width: 100%;
   height: 100%; }
 
@@ -1279,12 +1276,21 @@ footer {
   position: absolute;
   width: 100%;
   background-color: #101010;
-  height: 3.4375rem; }
+  height: 3.4375rem;
+  bottom: 0; }
 
-.footer_wrapper {
+.footer_container {
   display: flex;
-  justify-content: space-between;
-  height: 100%; }
+  flex-direction: row; }
+
+.footer_contact {
+  width: 50%;
+  margin-bottom: 0.9375rem; }
+  @media screen and (max-width: 480px) {
+    .footer_contact {
+      float: none;
+      width: 100%;
+      text-align: center; } }
 
 .footer_addres {
   color: #fff;
@@ -1302,19 +1308,34 @@ footer {
   margin: 0px 0px 0px 80px; }
 
 .footer_social {
+  text-align: right;
+  margin-bottom: 0; }
+  @media screen and (max-width: 480px) {
+    .footer_social {
+      text-align: center; } }
+
+.social {
   display: flex;
   margin: 15px 60px 0px 0px; }
 
-.social_icons {
+.social_item {
+  margin-right: 10px; }
+
+.social_icons-vk
+.social_icons-fb
+.social_icons-instagram
+.social_icons-twitter {
   display: inline-block;
   vertical-align: middle;
+  margin-left: 20px;
   fill: #5b5b5b;
   width: 23px;
   height: 23px; }
 
 .play_section {
   background: url(../img/play.jpg) center center/cover no-repeat;
-  position: relative; }
+  position: relative;
+  display: block; }
 
 .play_container {
   display: flex;

@@ -42,13 +42,18 @@ const displayScroll = $(".main_content");
 
 let inScroll = false;
 
+const setActiveClassInSideMenu = menuIndex => {
+    $('.fixed-menu-item')
+        .eq(menuIndex)
+        .addClass('active')
+        .siblings()
+        .removeClass('active');
+};
+
 const myTransition = sectionEq => {
-
-    if (inScroll === false) {
-
-     inScroll = true;   
-
     const positions = sectionEq * -100 + "%";
+    if (inScroll) return;
+     inScroll = true;   
 
     sections
     .eq(sectionEq)
@@ -57,10 +62,15 @@ const myTransition = sectionEq => {
     .removeClass("active");
  
     displayScroll.css({
-        transform: "translateY(${positions})"
-})
-}
+        transform: `translateY(${positions})`
+});
+
+    setTimeout(() => {
+        inScroll = false;
+        setActiveClassInSideMenu(sectionEq);
+    }, 1000 + 300);
 };
+
 
 const scrollSection = direction => {
      const activeSection = sections.filter(".active");
@@ -69,9 +79,11 @@ const scrollSection = direction => {
      
 
      if (direction === 'next') {
+        inScroll = false;
          myTransition(nextSection.index());
      }
      if (direction === 'prev') {
+        inScroll = false;
         myTransition(prevSection.index());
     }
 }
@@ -94,13 +106,16 @@ if (deltaY < 0) {
 
 $(document).on('keydown', e => {
     switch(e.keyCode) {
-        case 38: scrollSection("next"); break;
-        case 40: scrollSection("prev"); break;
+        case 38: scrollSection("prev");
+         break;
+        case 40: scrollSection("next");
+         break;
+        
     }
 });
 
-$("[data-scroll-to]").on('click', e => {
+$('[data-scroll-to]').on('click', e => {
     e.preventDefault();
-    const target = (e.currentTarget).attr('data-scroll-to');
+    const target = $(e.currentTarget).attr('data-scroll-to');
     myTransition(target);
 })
