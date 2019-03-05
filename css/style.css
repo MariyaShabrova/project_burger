@@ -1262,6 +1262,9 @@ footer {
   width: 100%;
   height: 100%; }
 
+.closeIcon_links {
+  stroke: #fff; }
+
 /*.contacts {
     background: url("../img/map.jpg") no-repeat;
     background-color: rgba(236, 234, 234, 0.31);
@@ -1271,6 +1274,10 @@ footer {
 #map {
   width: 100%;
   height: 100%; }
+
+.ymaps-2-1-72-controls-pane, .ymaps-2-1-72-searchpanel-pane {
+  text-align: left;
+  display: none; }
 
 .footer {
   position: absolute;
@@ -1321,9 +1328,30 @@ footer {
 .social_item {
   margin-right: 10px; }
 
-.social_icons-vk
-.social_icons-fb
-.social_icons-instagram
+.social_icons-vk {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  fill: #5b5b5b;
+  width: 23px;
+  height: 23px; }
+
+.social_icons-fb {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  fill: #5b5b5b;
+  width: 23px;
+  height: 23px; }
+
+.social_icons-instagram {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  fill: #5b5b5b;
+  width: 23px;
+  height: 23px; }
+
 .social_icons-twitter {
   display: inline-block;
   vertical-align: middle;

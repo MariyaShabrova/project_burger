@@ -205,7 +205,7 @@ function init(){
     var myMap;
 
     myMap = new ymaps.Map("map", {
-        center: [59.93, 30.31],
+        center: [59.92, 30.31],
         zoom: 11
         
     });
@@ -213,13 +213,52 @@ function init(){
     myMap.behaviors.disable('scrollZoom');
  
     myMap.controls.add("zoomControl", {
-        position: {top: 15, left: 15}
+        position: {top: 10, left: 10}
     });
-    var myPlacemark = new ymaps.Placemark([55.7649, 37.63836] , {},
+   /* var myPlacemark = new ymaps.Placemark([59.8855, 30.32] , {},
         { iconLayout: 'default#image',
-          iconImageHref: '/img/map-marker.png',
+          iconImageHref: './img/map-marker.png',
           iconImageSize: [40, 51],
           iconImageOffset: [-20, -47] });     
  
     myMap.geoObjects.add(myPlacemark);
+
+    var myPlacemarkToo = new ymaps.Placemark([58.9015, 30.35] , {},
+        { iconLayout: 'default#image',
+          iconImageHref: './img/map-market1.png',
+          iconImageSize: [40, 51],
+          iconImageOffset: [-20, -47] });     
+ 
+    myMap.geoObjects.add(myPlacemarkToo);
+}*/
+var myGeoObjects = [];
+// Метка 1
+myGeoObjects[0] = new ymaps.Placemark([59.8855, 30.32],{
+    balloonContentBody: 'Текст в балуне',
+    },{
+    iconLayout: 'default#image',
+    iconImageHref: './img/map-marker.png', 
+    iconImageSize: [40, 51],
+    iconImageOffset: [-20, -47]
+});
+
+// Метка 2
+myGeoObjects[1] = new ymaps.Placemark([57.8855,30.32],{
+    balloonContentBody: 'Текст в балуне',
+    },{
+    iconLayout: 'default#image',
+    iconImageHref: './img/map-marker1.png', 
+    iconImageSize: [40, 51],
+    iconImageOffset: [-20, -47]
+});
+
+var clusterer = new ymaps.Clusterer({
+clusterDisableClickZoom: false,
+clusterOpenBalloonOnClick: false,
+});
+
+clusterer.add(myGeoObjects);
+myMap.geoObjects.add(clusterer);
+myMap.behaviors.disable('scrollZoom');
+
 }
