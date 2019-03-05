@@ -198,14 +198,14 @@ function validateField(field) {
 
 /*Карта яндекс*/
 
-ymaps.ready(init);
+/*ymaps.ready(init);
 
 function init(){     
 
     var myMap;
 
     myMap = new ymaps.Map("map", {
-        center: [59.93, 30.31],
+        center: [59.92, 30.31],
         zoom: 11
         
     });
@@ -213,13 +213,93 @@ function init(){
     myMap.behaviors.disable('scrollZoom');
  
     myMap.controls.add("zoomControl", {
-        position: {top: 15, left: 15}
-    });
-    var myPlacemark = new ymaps.Placemark([55.7649, 37.63836] , {},
+        position: {top: 10, left: 10}
+    });*/
+   /* var myPlacemark = new ymaps.Placemark([59.8855, 30.32] , {},
         { iconLayout: 'default#image',
-          iconImageHref: '/img/map-marker.png',
+          iconImageHref: './img/map-marker.png',
           iconImageSize: [40, 51],
           iconImageOffset: [-20, -47] });     
  
     myMap.geoObjects.add(myPlacemark);
+
+    var myPlacemarkToo = new ymaps.Placemark([58.9015, 30.35] , {},
+        { iconLayout: 'default#image',
+          iconImageHref: './img/map-market1.png',
+          iconImageSize: [40, 51],
+          iconImageOffset: [-20, -47] });     
+ 
+    myMap.geoObjects.add(myPlacemarkToo);
 }
+var myGeoObjects = [];
+// Метка 1
+myGeoObjects[0] = new ymaps.Placemark([59.8855, 30.32],{
+    balloonContentBody: 'Текст в балуне',
+    },{
+    iconLayout: 'default#image',
+    iconImageHref: './img/map-marker.png', 
+    iconImageSize: [40, 51],
+    iconImageOffset: [-20, -47]
+});
+
+// Метка 2
+myGeoObjects[1] = new ymaps.Placemark([57.8855,30.32],{
+    balloonContentBody: 'Текст в балуне',
+    },{
+    iconLayout: 'default#image',
+    iconImageHref: './img/map-marker1.png', 
+    iconImageSize: [40, 51],
+    iconImageOffset: [-20, -47]
+});
+
+var clusterer = new ymaps.Clusterer({
+clusterDisableClickZoom: false,
+clusterOpenBalloonOnClick: false,
+});
+
+clusterer.add(myGeoObjects);
+myMap.geoObjects.add(clusterer);
+myMap.behaviors.disable('scrollZoom');
+
+}*/
+
+   // карта яндекс
+   $(document).ready(function(){
+    ymaps.ready(init);
+    var myMap;
+ 
+    function init(){     
+        myMap = new ymaps.Map("map", {
+            center: [59.91817154482064,30.30557799999997],
+            zoom: 11,
+            controls: [],
+        });
+        myMap.behaviors.disable('scrollZoom'); 
+      
+       
+      var coords = [
+              [59.94554327989287,30.38935262114668], 
+              [59.91142323563909,30.50024587065841], 
+              [59.88693161784606,30.319658102103713], 
+              [59.97033574821672,30.315194906302924]
+          ],
+          myCollection = new ymaps.GeoObjectCollection({}, {
+              iconLayout: 'default#image',
+              iconImageHref: './img/map-marker.png',
+              iconImageSize: [46, 57],
+              iconImageOffset: [-26, -52],
+              draggable: false 
+          });
+      
+          for (var i = 0; i < coords.length; i++) {
+              myCollection.add(new ymaps.Placemark(coords[i]));
+          }
+          myMap.geoObjects.add(myCollection);
+           
+     
+ 
+ 
+       
+    }
+ 
+ })

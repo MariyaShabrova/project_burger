@@ -53,9 +53,30 @@
 .social_item {
     margin-right: 10px;
 }
-.social_icons-vk
-.social_icons-fb
-.social_icons-instagram
+.social_icons-vk {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    fill: #5b5b5b;
+    width: 23px;
+    height: 23px;
+}
+.social_icons-fb {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    fill: #5b5b5b;
+    width: 23px;
+    height: 23px;
+}
+.social_icons-instagram {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    fill: #5b5b5b;
+    width: 23px;
+    height: 23px;
+}
 .social_icons-twitter {
     display: inline-block;
     vertical-align: middle;
@@ -64,3 +85,4 @@
     width: 23px;
     height: 23px;
 }
+

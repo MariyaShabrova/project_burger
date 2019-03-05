@@ -20,6 +20,17 @@ $(document).ready(function() {
 })
 });
 
+// смена кнопки в "отзывах" по размеру экрана
+$(document).ready(function(){
+    var smallSize = false;
+    $(window).resize(function(){
+    if (!smallSize && $(window).width() <= 480) {
+        $(".seeReview").text("Читать отзыв!")
+        smallSize = true;
+        }
+    })
+})
+
 /*видео*/
 /*$().ready(function() {
     video = document.getElementById("play_video");
