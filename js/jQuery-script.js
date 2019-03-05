@@ -18,7 +18,7 @@ $(document).ready(function() {
     }
     
 })
-})
+});
 
 /*видео*/
 /*$().ready(function() {
@@ -55,7 +55,7 @@ const myTransition = sectionEq => {
     .addClass("active")
     .siblings()
     .removeClass("active");
-
+ 
     displayScroll.css({
         transform: "translateY(${positions})"
 })
@@ -63,21 +63,22 @@ const myTransition = sectionEq => {
 };
 
 const scrollSection = direction => {
-     const activeSection = sections.filter('.active');
+     const activeSection = sections.filter(".active");
      const nextSection = activeSection.next();
      const prevSection = activeSection.prev();
      
 
      if (direction === 'next') {
-         myTransition(nextSection.index())
+         myTransition(nextSection.index());
      }
      if (direction === 'prev') {
-        myTransition(prevSection.index())
+        myTransition(prevSection.index());
     }
 }
 
   $(".wrapper").on("wheel", e => {
     const deltaY = e.originalEvent.deltaY;
+   
 
 
 if (deltaY > 0) {

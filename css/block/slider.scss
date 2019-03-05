@@ -42,7 +42,7 @@
 }
 .burger_conteiner {
     margin: 0 auto;
-    height: 100%;
+    //height: 100%;
     //max-width: 1100px;
     display: flex;
     flex-direction: column;
@@ -66,7 +66,7 @@
 .slider_burger {
     position: relative;
     overflow: hidden;
-    width: 100%;
+    width: 960px;
     display: flex;
     flex-direction: row;
     height: 90%;
