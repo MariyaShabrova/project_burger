@@ -13,45 +13,192 @@
   color: #000;
   padding-top: 30px; }
 
-.play_player {
-  position: relative;
-  max-width: 41.25rem; }
-
+/*.play_player {
+    position: relative;
+    max-width: 41.25rem;
+}
 .play_tool {
-  width: 41.25rem;
-  height: 2.4875rem;
-  background-color: #3e3e3e;
-  margin-top: -11px;
-  display: flex; }
+    width: 41.25rem;
+    height: 2.4875rem;
+    background-color: #3e3e3e;
+    margin-top: -11px;
+    display: flex;
+}
 
 .scale_play {
-  width: 27.75rem;
-  height: 1.25rem;
-  border-radius: 1px;
-  background-color: #626262; }
+    width: 27.75rem;
+    //height: 1.25rem;
+    border-radius: 1px;
+    background-color: #626262;
+}
 
 .scale {
-  padding-left: 6px;
-  padding-right: 10px; }
-
+    display: flex;
+    padding-left: 6px;
+    padding-right: 10px;
+}
 .scale_img, .volume_img {
-  padding-top: 10px; }
-
+    padding-top: 10px;
+}
 .volume {
-  padding-left: 6px;
-  padding-right: 10px; }
-
+    padding-left: 6px;
+    padding-right: 10px;
+}
 .scale_volume {
-  width: 8.75rem;
-  height: 1.25rem;
-  border-radius: 1px;
-  background-color: #626262; }
-
+    width: 8.75rem;
+    height: 1.25rem;
+    border-radius: 1px;
+    background-color: #626262;
+}
 #play_video {
+    position: absolute;
+    min-width: 41.25rem;
+    max-width: 41.25rem;
+    min-height: 23.125rem;
+    max-height: 23.125rem;
+}
+.play_start-btn {
+    background: url(../img/Play-gray.png) center center /cover no-repeat ;
+    width: 15px;
+    height: 22px;
+    border: none;
+    margin-top: 9px;
+    margin-right: 5px;
+}*/
+.player {
+  max-width: 750px;
   position: absolute;
-  min-width: 41.25rem;
-  max-width: 41.25rem;
-  min-height: 23.125rem;
-  max-height: 23.125rem; }
+  box-shadow: 0px 25px 50px 0px rgba(54, 60, 82, 0.45);
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+/* This css is only applied when fullscreen is active. */
+.player:fullscreen {
+  width: 100%; }
+
+.player:-webkit-full-screen {
+  width: 100%; }
+
+.player__video {
+  width: 100%; }
+
+.player__button {
+  background: none;
+  border: 0;
+  color: #fff;
+  text-align: center;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+  max-width: 50px; }
+
+.player__button:focus {
+  border-color: #79cffe; }
+
+.player__slider {
+  width: 10px;
+  height: 30px; }
+
+.player__controls {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  -webkit-transform: translate(100%, -5px);
+  -moz-transform: translate(100%, -5px);
+  -ms-transform: translate(100%, -5px);
+  -o-transform: translate(100%, -5px);
+  transform: translate(100%, -5px);
+  transition: all .3s; }
+
+.player:hover .player__controls {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0); }
+
+.player:hover .progress {
+  height: 15px; }
+
+.player__controls > * {
+  flex: 1; }
+
+.progress {
+  display: flex;
+  flex: 10;
+  flex-basis: 100%;
+  position: relative;
+  height: 5px;
+  transition: height 0.3s;
+  cursor: ew-resize; }
+
+.progress__filled {
+  flex: 0;
+  flex-basis: 50%;
+  width: 50%;
+  background-color: #79cffe; }
+
+i {
+  margin-top: -8px !important;
+  font-size: 1.25em;
+  position: absolute; }
+
+/* unholy css to style input type="range" */
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 0 5px;
+  width: 100%;
+  background-color: transparent; }
+
+input[type=range]:focus {
+  outline: none; }
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  border-radius: 1.3px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
+  border: 0.2px solid rgba(1, 1, 1, 0);
+  cursor: pointer; }
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -3.5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: #79cffe;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer; }
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background-color: #bada55; }
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  border-radius: 1.3px;
+  border: 0.2px solid rgba(1, 1, 1, 0);
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
+  cursor: pointer; }
+
+input[type=range]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: #79cffe;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(13, 13, 13, 0);
+  cursor: pointer; }
 
 /*# sourceMappingURL=play.css.map */
