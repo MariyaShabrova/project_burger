@@ -75,22 +75,22 @@
                <nav class="hamburger_menu_nav">
                    <ul class="hamburger_menu_list">
                        <li class="hamburger_menu_item">
-                           <a href="#" class="hamburger_menu_link">Почему мы</a>
+                           <a href="#" class="hamburger_menu_link" data-scroll-to="1">Почему мы</a>
                        </li>
                        <li class="hamburger_menu_item">
-                            <a href="#" class="hamburger_menu_link">Меню</a>
+                            <a href="#" class="hamburger_menu_link" data-scroll-to="4">Меню</a>
                         </li>
                         <li class="hamburger_menu_item">
-                            <a href="#" class="hamburger_menu_link">Советы</a>
+                            <a href="#" class="hamburger_menu_link" data-scroll-to="5">Советы</a>
                         </li>
                         <li class="hamburger_menu_item">
-                            <a href="#" class="hamburger_menu_link">Кто мы</a>
+                            <a href="#" class="hamburger_menu_link" data-scroll-to="3">Кто мы</a>
                         </li>
                         <li class="hamburger_menu_item">
-                            <a href="#" class="hamburger_menu_link">Свяжитесь с нами</a>
+                            <a href="#" class="hamburger_menu_link" data-scroll-to="7">Свяжитесь с нами</a>
                         </li>
                         <li class="hamburger_menu_item">
-                            <a href="#" class="hamburger_menu_link">Контакты</a>
+                            <a href="#" class="hamburger_menu_link" data-scroll-to="8">Контакты</a>
                         </li>
                    </ul>
                </nav>
@@ -751,16 +751,20 @@
       <!--Седьмая секция-->
       <section class="section play_section">
             <div class="title play_title">Как мы работаем</div>
-          <div class="container play_container">
+          <div class="container play_container hidden">
               <div class="play_player">
-                  <video id="play_video">
+                  <video id="play_video" controls poster="./img/video.jpg">
                   <sourse src="./img/videoplayback.mp4" type="video/mp4">
+                    <object>
+                        <embed src="./img/video.jpg" type= "application/x-shockwave-flash" allowfullscreen="false" allowscriptaccess="always" />
+                      </object>  
                   </video>
                   <img src="./img/Play-white.png" alt="" class="play play_white">
               </div>
               <div class="play_tool">
                   <div class="scale">
-                      <img src="./img/Play-gray.png" class="play scale_img">
+                      <button class="play_start-btn">
+                      <!--<img src="./img/Play-gray.png" class="play scale_img"></button>-->
                       <input type="range" class="scale_play" id="scaleplay" min="0">
                   </div>
                   <div class="volume">
@@ -768,9 +772,8 @@
                       <input type="range" class="scale_volume" id="scalevolume" alt="">
                   </div>
               </div>
-          </div>
-      </section>          
-      
+            </section>
+          
        <!---Восьмая секция-->
       <section class="section order_section">
           <div class="container order_container">
@@ -925,15 +928,18 @@
       </li>
   </ul>
 </nav>
-/*модальное окно*/
+<!--модальное окно*/-->
 <div class="review_modal" id="modal">
     <div class="modal-content">
             <p id="modal-text">текст</p>
             <span class="modal-close">X</span>
      </div>
 </div>
-  </div>  
+  </div> 
+</div>
     <script type="text/javascript" src="./js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="./js/mobile-detect.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.touchSwipe.min.js"></script>
     <script src="http://api-maps.yandex.ru/2.1.17/?lang=ru_RU" type="text/javascript"></script>
     <script type="text/javascript" src="./js/jQuery-script.js"></script> 
     <script type="text/javascript" src="./js/script.js"></script>
