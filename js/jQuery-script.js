@@ -143,6 +143,7 @@ const isMobile = md.mobile();
 
 
 
+
 const setActiveClassInSideMenu = menuIndex => {
 
     $('.fixed-menu-item')
@@ -201,7 +202,9 @@ const scrollSection = direction => {
   $(".wrapper").on("wheel", e => {
     const deltaY = e.originalEvent.deltaY;
    
-
+$(".wrapper").on('touchmove', e => {
+  e.preventDefault();
+})
 
 if (deltaY > 0) {
  

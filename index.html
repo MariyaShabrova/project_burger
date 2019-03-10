@@ -751,7 +751,7 @@
       <!--Седьмая секция-->
       <section class="section play_section">
             <div class="title play_title">Как мы работаем</div>
-          <div class="container play_container hidden">
+          <div class="container play_container">
               <div class="play_player">
                   <video id="play_video" controls poster="./img/video.jpg">
                   <sourse src="./img/videoplayback.mp4" type="video/mp4">
@@ -763,15 +763,15 @@
               </div>
               <div class="play_tool">
                   <div class="scale">
-                      <button class="play_start-btn">
-                      <!--<img src="./img/Play-gray.png" class="play scale_img"></button>-->
+                    <img src="./img/Play-gray.png" class="play scale_img">
                       <input type="range" class="scale_play" id="scaleplay" min="0">
                   </div>
                   <div class="volume">
                       <img src="img/Volum-gray.png" class="volume_img" id="volumeplay" alt="">
-                      <input type="range" class="scale_volume" id="scalevolume" alt="">
+                      <input type="range" class="scale_play volume" id="scalevolume" alt="">
                   </div>
               </div>
+          </div>
             </section>
           
        <!---Восьмая секция-->
@@ -938,7 +938,7 @@
   </div> 
 </div>
     <script type="text/javascript" src="./js/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="./js/mobile-detect.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
     <script type="text/javascript" src="./js/jquery.touchSwipe.min.js"></script>
     <script src="http://api-maps.yandex.ru/2.1.17/?lang=ru_RU" type="text/javascript"></script>
     <script type="text/javascript" src="./js/jQuery-script.js"></script> 
