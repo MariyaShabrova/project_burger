@@ -1,11 +1,15 @@
-.contacts {
-  background: url("../img/map.jpg") no-repeat;
-  background-color: rgba(236, 234, 234, 0.31);
-  background-size: cover;
-  background-position: center bottom; }
-
-.map {
+/*.contacts {
+    background: url("../img/map.jpg") no-repeat;
+    background-color: rgba(236, 234, 234, 0.31);
+    background-size: cover;
+    background-position: center bottom;
+}*/
+#map {
   width: 100%;
   height: 100%; }
+
+.ymaps-2-1-72-controls-pane, .ymaps-2-1-72-searchpanel-pane {
+  text-align: left;
+  display: none; }
 
 /*# sourceMappingURL=contacts.css.map */

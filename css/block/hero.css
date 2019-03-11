@@ -12,8 +12,8 @@ Error: Undefined mixin 'tablets'.
 24:         flex-direction: column;
 25:         align-items: center;
 26:         text-align: center;
-27:     }
-28: 
+27:         top: 15%;
+28:         padding: 0 4.6875rem;
 
 Backtrace:
 C:\Users\user\Dropbox\Git\project_burger\css\block\hero.scss:23:in `tablets'
@@ -66,4 +66,4 @@ C:/Program Files/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 23 of C:\Users\user\Dropbox\Git\project_burger\css\block\hero.scss, in `tablets'\A         from line 23 of C:\Users\user\Dropbox\Git\project_burger\css\block\hero.scss\A \A 18:     justify-content: center;\A 19:     flex: .65;\A 20:     top: 20%;\A 21: \A 22: \A 23:     @include tablets() {\A 24:         flex-direction: column;\A 25:         align-items: center;\A 26:         text-align: center;\A 27:     }\A 28: "; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 23 of C:\Users\user\Dropbox\Git\project_burger\css\block\hero.scss, in `tablets'\A         from line 23 of C:\Users\user\Dropbox\Git\project_burger\css\block\hero.scss\A \A 18:     justify-content: center;\A 19:     flex: .65;\A 20:     top: 20%;\A 21: \A 22: \A 23:     @include tablets() {\A 24:         flex-direction: column;\A 25:         align-items: center;\A 26:         text-align: center;\A 27:         top: 15%;\A 28:         padding: 0 4.6875rem;"; }

@@ -16,11 +16,11 @@ html {
 
 html,
 body {
-    height: 100%;
+   height: 100%;
 }
 
 body {
-    /*font-size: 16px;*/
+    font-size: 16px;
     line-height: 1.42;
     position: relative;
     color: black;
@@ -29,23 +29,37 @@ body {
 
 .wrapper {
     overflow: hidden;
-    min-height: 100%;
+    height: 100%;
     width: 100%;
+    position: relative;
     
     
 }
+.main_content {
+   transition: transform 1s;
+   height: 100%;
+   min-height: 40.625rem;
+   will-change: transform;
+}
 .container {
-    //display: flex;
+    display: flex;
     position: relative;
     margin: 0 auto;
     max-width: 58.75rem;
     width: 95%;
+    flex-direction: column;
     /*text-align: center;*/
 }
 
 .section {
-    height: 100vh;
+    height: 100%;
     min-height: 40.625rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    @include tablets() {
+        min-height: initial;
+    }
 
     &_centered {
 
