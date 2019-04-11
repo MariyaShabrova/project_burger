@@ -1,3 +1,9 @@
+/*!
+ * Start Bootstrap - Basic v5.1.4 (https://startbootstrap.com/template-overviews/creative)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
+ */
+
 .btn {
   background: #e35028;
   padding: 0.5625rem 0.9375rem;
@@ -5,10 +11,13 @@
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
-  font-size: 0.8125rem; }
-  .btn_background_black {
-    background: #2f3234;
-    font-family: "ubuntumedium"; }
+  font-size: 0.8125rem;
+}
+
+.btn_background_black {
+  background: #2f3234;
+  font-family: "ubuntumedium";
+}
 
 .btn_order {
   font-family: "ubuntumedium";
@@ -19,7 +28,8 @@
   color: #fff;
   text-decoration: none;
   font-size: 0.8125rem;
-  margin: auto; }
+  margin: auto;
+}
 
 .btn_order_colorless {
   font-family: "ubuntumedium";
@@ -30,6 +40,5 @@
   text-decoration: none;
   font-size: 0.8125rem;
   border: none;
-  background: none; }
-
-/*# sourceMappingURL=btn.css.map */
+  background: none;
+}

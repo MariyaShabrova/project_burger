@@ -1,14 +1,14 @@
 /*Секция четвертая, команда*/
-const items = document.querySelectorAll(".team_item");
+var items = document.querySelectorAll(".team_item");
 
-for (item of items) {
-item.addEventListener("click", handleAccoOpening); 
+for(var i=0; i<items.length; i++) {
+item[i].addEventListener("click", handleAccoOpening); 
 }
 
 
 function handleAccoOpening(e) {
-    const curItem = e.currentTarget;
-    const isClosedItem = curItem.classList.contains("activ");
+    var curItem = e.currentTarget;
+    var isClosedItem = curItem.classList.contains("activ");
 
 
     if (isClosedItem) {
@@ -20,32 +20,32 @@ function handleAccoOpening(e) {
 }
 
 function closeItems(items) {
-    Array.from(items).forEach(elem => {
+    Array.from(items).forEach(function(elem) {
         elem.classList.remove('activ');
         elem.querySelector('.activ_content').style.height = 0;
     });
 }
 
 function openItem(item) {
-    const content = item.querySelector(".activ_content");
-    const block = content.firstElementChild;
-    const reqHeight = block.getBoundingClientRect().height;
+    var content = item.querySelector(".activ_content");
+    var block = content.firstElementChild;
+    var reqHeight = block.getBoundingClientRect().height;
     item.classList.add("activ");
     content.style.height = '200px';    
 }
 /*Секция третья, слайдер*/
-const leftBtn = document.querySelector('#left');
-const rightBtn = document.querySelector('#right');
-const slider = document.querySelector('#slider');
+var leftBtn = document.querySelector('#left');
+var rightBtn = document.querySelector('#right');
+var slider = document.querySelector('#slider');
 
-const step = slider.firstElementChild.getBoundingClientRect().width;
-const slidersInView = 1;
-const maxRight = (slider.children.length - slidersInView) * step;
-const minRight = 0;
-let currentRight = 0;
+var step = slider.firstElementChild.getBoundingClientRect().width;
+var slidersInView = 1;
+var maxRight = (slider.children.length - slidersInView) * step;
+var minRight = 0;
+var currentRight = 0;
 
 
-rightBtn.addEventListener('click', e => {
+rightBtn.addEventListener('click', function(e) {
     e.preventDefault();
     if (currentRight < maxRight) {
     currentRight += step;
@@ -56,7 +56,7 @@ rightBtn.addEventListener('click', e => {
     }
 })
 
-leftBtn.addEventListener('click', e => {
+leftBtn.addEventListener('click', function(e) {
     e.preventDefault();
     if (currentRight > minRight) {
     currentRight -= step;
@@ -84,16 +84,16 @@ function loop(direction) {
 }*/
 
 /*Гамбургер модалка*/
-const btn = document.querySelector('#hamburger');
-const hamburger = document.querySelector('.hamburger_container');
-const close = document.querySelector('.closeIcon_links');
+var btn = document.querySelector('#hamburger');
+var hamburger = document.querySelector('.hamburger_container');
+var close = document.querySelector('.closeIcon_links');
 
-btn.addEventListener('click', e => {
+btn.addEventListener('click', function(e) {
  hamburger.classList.add('opened');
 }
 )
 
-close.addEventListener('click', e => {
+close.addEventListener('click', function(e) {
 hamburger.classList.remove('opened');
 })
 

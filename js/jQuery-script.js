@@ -1,13 +1,13 @@
 
 $(document).ready(function() {
-    let btn = $('.accordeon_item_link');
+    var btn = $('.accordeon_item_link');
 
     var activeClass = 'accordeon_item_activ';
 
     btn.click(function(event) {
         event.preventDefault();
     
-    let parent = $(this).parent();
+    var parent = $(this).parent();
 
         if (parent.hasClass(activeClass)) {
             parent.removeClass(activeClass);        

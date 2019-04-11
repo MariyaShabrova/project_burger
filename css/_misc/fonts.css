@@ -1,3 +1,9 @@
+/*!
+ * Start Bootstrap - Basic v5.1.4 (https://startbootstrap.com/template-overviews/creative)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
+ */
+
 @font-face {
   font-family: "gagalinregular";
   src: url(../fonts/Gagalin/subset-Gagalin-Regular.woff) format("woff");
@@ -5,7 +11,9 @@
   src: url(../fonts/Gagalin/subset-Gagalin-Regular.eot);
   src: url(../fonts/Gagalin/subset-Gagalin-Regular.ttf) format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 @font-face {
   font-family: "lifehackmedium";
   src: url(../fonts/LifehackMedium/subset-Lifehack-Medium.woff) format("woff");
@@ -13,7 +21,9 @@
   src: url(../fonts/LifehackMedium/subset-Lifehack-Medium.eot);
   src: url(../fonts/LifehackMedium/subset-Lifehack-Medium.ttf) format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 @font-face {
   font-family: "ubuntulight";
   src: url(../fonts/Ubuntu/subset-Ubuntu-Light.woff) format("woff");
@@ -21,7 +31,9 @@
   src: url(../fonts/Ubuntu/subset-Ubuntu-Light.eot);
   src: url(../fonts/Ubuntu/subset-Ubuntu-Light.ttf) format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 @font-face {
   font-family: "ubuntumedium";
   src: url(../fonts/Ubuntu/subset-Ubuntu-Medium.woff) format("woff");
@@ -29,7 +41,9 @@
   src: url(../fonts/Ubuntu/subset-Ubuntu-Medium.eot);
   src: url(../fonts/Ubuntu/subset-Ubuntu-Medium.ttf) format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 @font-face {
   font-family: "Ubuntubold";
   src: url(../fonts/Ubuntu/subset-Ubuntu-Bold.woff) format("woff");
@@ -37,7 +51,9 @@
   src: url(../fonts/Ubuntu/subset-Ubuntu-Bold.eot);
   src: url(../fonts/Ubuntu/subset-Ubuntu-Bold.ttf) format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 @font-face {
   font-family: "Ubuntu";
   src: url(../fonts/Ubuntu/subset-Ubuntu.woff) format("woff");
@@ -45,7 +61,9 @@
   src: url(../fonts/Ubuntu/subset-Ubuntu.eot);
   src: url(../fonts/Ubuntu/subset-Ubuntu.ttf) format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 /*@mixin gagalin() {
     font-family: "Gagalin-Regular", Helvetica, sans-serif;
 }
@@ -60,5 +78,3 @@
         font-weight: 500;
     }
 }*/
-
-/*# sourceMappingURL=fonts.css.map */
